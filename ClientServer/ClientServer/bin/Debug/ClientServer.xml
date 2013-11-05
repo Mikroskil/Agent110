@@ -1,0 +1,24 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+ClientServer
+</name>
+</assembly>
+<members>
+<member name="P:ClientServer.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:ClientServer.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:ClientServer.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>
