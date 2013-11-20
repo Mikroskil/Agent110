@@ -131,7 +131,7 @@ Partial Class Monitoring
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
         Me.PictureBox2.Location = New System.Drawing.Point(294, 452)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(106, 39)
+        Me.PictureBox2.Size = New System.Drawing.Size(95, 59)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 65
         Me.PictureBox2.TabStop = False
@@ -139,9 +139,9 @@ Partial Class Monitoring
         'PictureBox3
         '
         Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(425, 452)
+        Me.PictureBox3.Location = New System.Drawing.Point(424, 452)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(106, 39)
+        Me.PictureBox3.Size = New System.Drawing.Size(106, 59)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox3.TabIndex = 66
         Me.PictureBox3.TabStop = False
@@ -878,7 +878,7 @@ Partial Class Monitoring
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(795, 500)
+        Me.ClientSize = New System.Drawing.Size(795, 537)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.PictureBox2)

@@ -27,3 +27,16 @@ D:\kuliah\SEM V\PKTI\Agent110\Server\Server\obj\x86\Debug\Server.LoginAdmin.reso
 D:\kuliah\SEM V\PKTI\Agent110\Server\Server\obj\x86\Debug\Server.Resources.resources
 D:\kuliah\SEM V\PKTI\Agent110\Server\Server\obj\x86\Debug\Server.vbproj.GenerateResource.Cache
 D:\kuliah\SEM V\PKTI\Agent110\Server\Server\obj\x86\Debug\Server.Monitoring.resources
+F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Agent110\Server\Server\obj\x86\Debug\Server.exe
+F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Agent110\Server\Server\obj\x86\Debug\Server.xml
+F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Agent110\Server\Server\obj\x86\Debug\Server.pdb
+F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Agent110\Server\Server\bin\Debug\Server.exe
+F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Agent110\Server\Server\bin\Debug\Server.pdb
+F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Agent110\Server\Server\bin\Debug\Server.xml
+F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Agent110\Server\Server\obj\x86\Debug\Server.vbprojResolveAssemblyReference.cache
+F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Agent110\Server\Server\obj\x86\Debug\Server.Component1.resources
+F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Agent110\Server\Server\obj\x86\Debug\Server.HOME.resources
+F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Agent110\Server\Server\obj\x86\Debug\Server.LoginAdmin.resources
+F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Agent110\Server\Server\obj\x86\Debug\Server.Monitoring.resources
+F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Agent110\Server\Server\obj\x86\Debug\Server.Resources.resources
+F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Agent110\Server\Server\obj\x86\Debug\Server.vbproj.GenerateResource.Cache
