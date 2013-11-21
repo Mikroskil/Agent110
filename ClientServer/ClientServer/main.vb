@@ -6,6 +6,17 @@
     End Sub
 
     Public Sub setcontrols()
+        PictureBox1.Top = (Me.Height - PictureBox1.Width - 50) / 2
+        PictureBox1.Left = (Me.Width - PictureBox1.Width - 50) / 3
+
+        Label4.Top = Label4.Height / 2
+        Label4.Left = (Me.Width - Label4.Width - 50) / 2
+
+        Panel1.Width = Label1.Width * 3
+        Panel1.Left = (Me.Width / 3 + (Panel1.Width / 3))
+        Panel1.Top = (Me.Height - PictureBox1.Width - 50) / 2
+
+
         'Sets the location for all of the controls on the form.
         pnlappbar.Width = Me.Width
         pnlappbar.Left = Me.Left
@@ -78,6 +89,10 @@
     End Sub
 
     Private Sub TextBox2_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
+    End Sub
+
+    Private Sub Label4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label4.Click
 
     End Sub
 End Class

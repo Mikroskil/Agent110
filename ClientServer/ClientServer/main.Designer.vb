@@ -33,6 +33,7 @@ Partial Class main
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlappbar.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -41,7 +42,7 @@ Partial Class main
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(87, 53)
+        Me.PictureBox1.Location = New System.Drawing.Point(82, 112)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(195, 168)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -87,7 +88,7 @@ Partial Class main
         'Label1
         '
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(37, 54)
+        Me.Label1.Location = New System.Drawing.Point(37, 47)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(130, 23)
         Me.Label1.TabIndex = 5
@@ -96,7 +97,7 @@ Partial Class main
         'TextBox1
         '
         Me.TextBox1.BackColor = System.Drawing.SystemColors.Window
-        Me.TextBox1.Location = New System.Drawing.Point(40, 85)
+        Me.TextBox1.Location = New System.Drawing.Point(40, 76)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(247, 20)
         Me.TextBox1.TabIndex = 7
@@ -104,7 +105,7 @@ Partial Class main
         'Label2
         '
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(38, 120)
+        Me.Label2.Location = New System.Drawing.Point(38, 111)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(129, 27)
         Me.Label2.TabIndex = 8
@@ -112,7 +113,7 @@ Partial Class main
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(41, 149)
+        Me.TextBox2.Location = New System.Drawing.Point(41, 140)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(246, 20)
         Me.TextBox2.TabIndex = 9
@@ -124,20 +125,31 @@ Partial Class main
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.TextBox1)
         Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Location = New System.Drawing.Point(310, 46)
+        Me.Panel1.Location = New System.Drawing.Point(315, 112)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(348, 179)
+        Me.Panel1.Size = New System.Drawing.Size(348, 168)
         Me.Panel1.TabIndex = 10
         '
         'Label3
         '
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(87, 4)
+        Me.Label3.Location = New System.Drawing.Point(87, -3)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(167, 36)
         Me.Label3.TabIndex = 10
         Me.Label3.Text = "User Login"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.Black
+        Me.Label4.Location = New System.Drawing.Point(116, 29)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(657, 73)
+        Me.Label4.TabIndex = 11
+        Me.Label4.Text = "STMIK-STIE Mikroskil"
         '
         'main
         '
@@ -145,6 +157,7 @@ Partial Class main
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.MediumTurquoise
         Me.ClientSize = New System.Drawing.Size(831, 398)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.pnlappbar)
@@ -157,6 +170,7 @@ Partial Class main
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
@@ -169,4 +183,5 @@ Partial Class main
     Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Label4 As System.Windows.Forms.Label
 End Class

@@ -1,26 +1,26 @@
-F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Agent110\ClientServer\ClientServer\bin\Debug\ClientServer.exe
-F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Agent110\ClientServer\ClientServer\bin\Debug\ClientServer.pdb
-F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Agent110\ClientServer\ClientServer\bin\Debug\ClientServer.xml
-F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Agent110\ClientServer\ClientServer\bin\Debug\DevComponents.DotNetBar2.dll
-F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Agent110\ClientServer\ClientServer\bin\Debug\DevComponents.DotNetBar2.xml
-F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Agent110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.main.resources
-F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Agent110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.splash.resources
-F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Agent110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.Resources.resources
-F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Agent110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.vbproj.GenerateResource.Cache
-F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Agent110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.exe
-F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Agent110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.xml
-F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Agent110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.pdb
-D:\KuliAh\PKTI\Agent110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.exe
-D:\KuliAh\PKTI\Agent110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.xml
-D:\KuliAh\PKTI\Agent110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.pdb
-D:\KuliAh\PKTI\Agent110\ClientServer\ClientServer\bin\Debug\ClientServer.exe
-D:\KuliAh\PKTI\Agent110\ClientServer\ClientServer\bin\Debug\ClientServer.pdb
-D:\KuliAh\PKTI\Agent110\ClientServer\ClientServer\bin\Debug\ClientServer.xml
-D:\KuliAh\PKTI\Agent110\ClientServer\ClientServer\bin\Debug\DevComponents.DotNetBar2.dll
-D:\KuliAh\PKTI\Agent110\ClientServer\ClientServer\bin\Debug\DevComponents.DotNetBar2.xml
-D:\KuliAh\PKTI\Agent110\ClientServer\ClientServer\obj\x86\Debug\ResolveAssemblyReference.cache
-D:\KuliAh\PKTI\Agent110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.main.resources
-D:\KuliAh\PKTI\Agent110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.splash.resources
-D:\KuliAh\PKTI\Agent110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.Resources.resources
-D:\KuliAh\PKTI\Agent110\ClientServer\ClientServer\obj\x86\Debug\GenerateResource.read.1.tlog
-D:\KuliAh\PKTI\Agent110\ClientServer\ClientServer\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Project\Agent110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.exe
+D:\Project\Agent110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.xml
+D:\Project\Agent110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.pdb
+D:\Project\Agent110\ClientServer\ClientServer\bin\Debug\ClientServer.exe
+D:\Project\Agent110\ClientServer\ClientServer\bin\Debug\ClientServer.pdb
+D:\Project\Agent110\ClientServer\ClientServer\bin\Debug\ClientServer.xml
+D:\Project\Agent110\ClientServer\ClientServer\bin\Debug\DevComponents.DotNetBar2.xml
+D:\Project\Agent110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.vbprojResolveAssemblyReference.cache
+D:\Project\Agent110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.main.resources
+D:\Project\Agent110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.splash.resources
+D:\Project\Agent110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.Resources.resources
+D:\Project\Agent110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.vbproj.GenerateResource.Cache
+D:\Project\Agent110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.Register.resources
+D:\Project\Backup\ClientServer\ClientServer\obj\x86\Debug\ClientServer.exe
+D:\Project\Backup\ClientServer\ClientServer\obj\x86\Debug\ClientServer.xml
+D:\Project\Backup\ClientServer\ClientServer\obj\x86\Debug\ClientServer.pdb
+D:\Project\Backup\ClientServer\ClientServer\bin\Debug\ClientServer.exe
+D:\Project\Backup\ClientServer\ClientServer\bin\Debug\ClientServer.pdb
+D:\Project\Backup\ClientServer\ClientServer\bin\Debug\ClientServer.xml
+D:\Project\Backup\ClientServer\ClientServer\bin\Debug\DevComponents.DotNetBar2.xml
+D:\Project\Backup\ClientServer\ClientServer\obj\x86\Debug\ClientServer.vbprojResolveAssemblyReference.cache
+D:\Project\Backup\ClientServer\ClientServer\obj\x86\Debug\ClientServer.Register.resources
+D:\Project\Backup\ClientServer\ClientServer\obj\x86\Debug\ClientServer.main.resources
+D:\Project\Backup\ClientServer\ClientServer\obj\x86\Debug\ClientServer.splash.resources
+D:\Project\Backup\ClientServer\ClientServer\obj\x86\Debug\ClientServer.Resources.resources
+D:\Project\Backup\ClientServer\ClientServer\obj\x86\Debug\ClientServer.vbproj.GenerateResource.Cache
