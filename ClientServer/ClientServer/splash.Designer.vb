@@ -80,15 +80,15 @@ Partial Class splash
         '
         Me.tmrdisplay.Interval = 5000
         '
-        'Form1
+        'splash
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.BackColor = System.Drawing.SystemColors.Window
         Me.ClientSize = New System.Drawing.Size(904, 293)
         Me.Controls.Add(Me.pnllogo)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "Form1"
+        Me.Name = "splash"
         Me.Text = "Form1"
         CType(Me.piclogo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnllogo.ResumeLayout(False)

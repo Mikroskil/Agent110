@@ -10,3 +10,17 @@ F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Agent110\ClientServer
 F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Agent110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.exe
 F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Agent110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.xml
 F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Agent110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.pdb
+D:\KuliAh\PKTI\Agent110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.exe
+D:\KuliAh\PKTI\Agent110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.xml
+D:\KuliAh\PKTI\Agent110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.pdb
+D:\KuliAh\PKTI\Agent110\ClientServer\ClientServer\bin\Debug\ClientServer.exe
+D:\KuliAh\PKTI\Agent110\ClientServer\ClientServer\bin\Debug\ClientServer.pdb
+D:\KuliAh\PKTI\Agent110\ClientServer\ClientServer\bin\Debug\ClientServer.xml
+D:\KuliAh\PKTI\Agent110\ClientServer\ClientServer\bin\Debug\DevComponents.DotNetBar2.dll
+D:\KuliAh\PKTI\Agent110\ClientServer\ClientServer\bin\Debug\DevComponents.DotNetBar2.xml
+D:\KuliAh\PKTI\Agent110\ClientServer\ClientServer\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\KuliAh\PKTI\Agent110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.main.resources
+D:\KuliAh\PKTI\Agent110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.splash.resources
+D:\KuliAh\PKTI\Agent110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.Resources.resources
+D:\KuliAh\PKTI\Agent110\ClientServer\ClientServer\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\KuliAh\PKTI\Agent110\ClientServer\ClientServer\obj\x86\Debug\GenerateResource.write.1.tlog

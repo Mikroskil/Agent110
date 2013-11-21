@@ -26,11 +26,11 @@
     End Sub
 
     Private Sub btnclose_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnCancel.MouseEnter
-        btnCancel.BackColor = Color.Gray
+        btnCancel.BackColor = Color.SlateGray
     End Sub
 
     Private Sub Cancel_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnCancel.MouseLeave
-        btnCancel.BackColor = Color.Black
+        btnCancel.BackColor = Color.DarkTurquoise
     End Sub
 #End Region 'Close Button
 
@@ -44,11 +44,12 @@
     End Sub
 
     Private Sub Login_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnLogin.MouseEnter
-        btnLogin.BackColor = Color.Gray
+        btnLogin.BackColor = Color.SlateGray
     End Sub
 
     Private Sub Login_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnLogin.MouseLeave
-        btnLogin.BackColor = Color.Black
+        btnLogin.BackColor = Color.DarkTurquoise
+
     End Sub
 #End Region 'Login Button'
 
@@ -56,4 +57,27 @@
 
 
 
+    Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
+    End Sub
+
+    Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox1.TextChanged
+
+    End Sub
+
+    Private Sub Label2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label2.Click
+
+    End Sub
+
+    Private Sub Label1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label1.Click
+
+    End Sub
+
+    Private Sub Panel1_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs)
+
+    End Sub
+
+    Private Sub TextBox2_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
+    End Sub
 End Class
