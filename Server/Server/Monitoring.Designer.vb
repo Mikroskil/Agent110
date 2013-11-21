@@ -98,9 +98,9 @@ Partial Class Monitoring
         '
         'Label1
         '
-        Me.Label1.Font = New System.Drawing.Font("Forte", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Label1.Location = New System.Drawing.Point(137, 15)
+        Me.Label1.Location = New System.Drawing.Point(181, 15)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(393, 41)
         Me.Label1.TabIndex = 1
@@ -111,13 +111,14 @@ Partial Class Monitoring
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(673, 4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(100, 50)
+        Me.PictureBox1.Size = New System.Drawing.Size(100, 52)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 2
         Me.PictureBox1.TabStop = False
         '
         'Kembali
         '
+        Me.Kembali.BackColor = System.Drawing.Color.Transparent
         Me.Kembali.Image = CType(resources.GetObject("Kembali.Image"), System.Drawing.Image)
         Me.Kembali.Location = New System.Drawing.Point(16, 15)
         Me.Kembali.Name = "Kembali"
@@ -878,6 +879,7 @@ Partial Class Monitoring
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.DimGray
         Me.ClientSize = New System.Drawing.Size(795, 537)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.PictureBox3)

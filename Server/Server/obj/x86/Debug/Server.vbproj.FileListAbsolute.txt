@@ -40,3 +40,17 @@ F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Agent110\Serv
 F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Agent110\Server\Server\obj\x86\Debug\Server.Monitoring.resources
 F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Agent110\Server\Server\obj\x86\Debug\Server.Resources.resources
 F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Agent110\Server\Server\obj\x86\Debug\Server.vbproj.GenerateResource.Cache
+D:\KuliAh\PKTI\Agent110\Server\Server\obj\x86\Debug\Server.exe
+D:\KuliAh\PKTI\Agent110\Server\Server\obj\x86\Debug\Server.xml
+D:\KuliAh\PKTI\Agent110\Server\Server\obj\x86\Debug\Server.pdb
+D:\KuliAh\PKTI\Agent110\Server\Server\bin\Debug\Server.exe
+D:\KuliAh\PKTI\Agent110\Server\Server\bin\Debug\Server.pdb
+D:\KuliAh\PKTI\Agent110\Server\Server\bin\Debug\Server.xml
+D:\KuliAh\PKTI\Agent110\Server\Server\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\KuliAh\PKTI\Agent110\Server\Server\obj\x86\Debug\Server.Component1.resources
+D:\KuliAh\PKTI\Agent110\Server\Server\obj\x86\Debug\Server.HOME.resources
+D:\KuliAh\PKTI\Agent110\Server\Server\obj\x86\Debug\Server.LoginAdmin.resources
+D:\KuliAh\PKTI\Agent110\Server\Server\obj\x86\Debug\Server.Monitoring.resources
+D:\KuliAh\PKTI\Agent110\Server\Server\obj\x86\Debug\Server.Resources.resources
+D:\KuliAh\PKTI\Agent110\Server\Server\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\KuliAh\PKTI\Agent110\Server\Server\obj\x86\Debug\GenerateResource.write.1.tlog

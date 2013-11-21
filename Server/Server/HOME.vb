@@ -27,4 +27,9 @@
         Me.Hide()
         Monitoring.Show()
     End Sub
+
+    Private Sub MetroLogout_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MetroLogout.Click
+        Me.Hide()
+        LoginAdmin.Show()
+    End Sub
 End Class

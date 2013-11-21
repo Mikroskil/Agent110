@@ -1,8 +1,5 @@
 ﻿Public Class LoginAdmin
 
-    Dim db As ADODB.Connection
-    Dim rs As ADODB.Recordset
-
 #Region "Set Form"
     Private Sub LoginAdmin_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         setcontrols()
@@ -51,6 +48,18 @@
 
     Private Sub btnCancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancel.Click
         End
+
+    End Sub
+
+    Private Sub LblID_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LblID.Click
+
+    End Sub
+
+    Private Sub TxtID_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TxtID.TextChanged
+
+    End Sub
+
+    Private Sub LblAdmin_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LblAdmin.Click
 
     End Sub
 End Class
