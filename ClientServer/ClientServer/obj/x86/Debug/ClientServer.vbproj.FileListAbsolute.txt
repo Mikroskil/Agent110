@@ -38,3 +38,17 @@ F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Agent110\Clie
 F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Agent110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.splash.resources
 F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Agent110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.Resources.resources
 F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Agent110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.vbproj.GenerateResource.Cache
+F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\ClientServer\ClientServer\obj\x86\Debug\ClientServer.exe
+F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\ClientServer\ClientServer\obj\x86\Debug\ClientServer.xml
+F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\ClientServer\ClientServer\obj\x86\Debug\ClientServer.pdb
+F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\ClientServer\ClientServer\bin\Debug\ClientServer.exe
+F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\ClientServer\ClientServer\bin\Debug\ClientServer.pdb
+F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\ClientServer\ClientServer\bin\Debug\ClientServer.xml
+F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\ClientServer\ClientServer\bin\Debug\DevComponents.DotNetBar2.dll
+F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\ClientServer\ClientServer\bin\Debug\DevComponents.DotNetBar2.xml
+F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\ClientServer\ClientServer\obj\x86\Debug\ClientServer.vbprojResolveAssemblyReference.cache
+F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\ClientServer\ClientServer\obj\x86\Debug\ClientServer.Register.resources
+F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\ClientServer\ClientServer\obj\x86\Debug\ClientServer.main.resources
+F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\ClientServer\ClientServer\obj\x86\Debug\ClientServer.splash.resources
+F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\ClientServer\ClientServer\obj\x86\Debug\ClientServer.Resources.resources
+F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\ClientServer\ClientServer\obj\x86\Debug\ClientServer.vbproj.GenerateResource.Cache
