@@ -51,15 +51,8 @@
 
     End Sub
 
-    Private Sub LblID_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LblID.Click
-
-    End Sub
-
-    Private Sub TxtID_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TxtID.TextChanged
-
-    End Sub
-
-    Private Sub LblAdmin_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LblAdmin.Click
+    
+    Private Sub pnlappbar_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles pnlappbar.Paint
 
     End Sub
 End Class

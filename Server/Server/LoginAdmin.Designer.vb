@@ -58,6 +58,7 @@ Partial Class LoginAdmin
         '
         'btnCancel
         '
+        Me.btnCancel.BackColor = System.Drawing.Color.LightSeaGreen
         Me.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCancel.Font = New System.Drawing.Font("Segoe UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCancel.ForeColor = System.Drawing.Color.White
@@ -66,11 +67,11 @@ Partial Class LoginAdmin
         Me.btnCancel.Size = New System.Drawing.Size(120, 45)
         Me.btnCancel.TabIndex = 1
         Me.btnCancel.Text = "Cancel"
-        Me.btnCancel.UseVisualStyleBackColor = True
+        Me.btnCancel.UseVisualStyleBackColor = False
         '
         'pnlappbar
         '
-        Me.pnlappbar.BackColor = System.Drawing.Color.Black
+        Me.pnlappbar.BackColor = System.Drawing.Color.Teal
         Me.pnlappbar.Controls.Add(Me.btnLogin)
         Me.pnlappbar.Controls.Add(Me.btnCancel)
         Me.pnlappbar.Location = New System.Drawing.Point(86, 457)
@@ -80,6 +81,7 @@ Partial Class LoginAdmin
         '
         'btnLogin
         '
+        Me.btnLogin.BackColor = System.Drawing.Color.LightSeaGreen
         Me.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnLogin.Font = New System.Drawing.Font("Segoe UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLogin.ForeColor = System.Drawing.Color.White
@@ -88,7 +90,7 @@ Partial Class LoginAdmin
         Me.btnLogin.Size = New System.Drawing.Size(120, 45)
         Me.btnLogin.TabIndex = 5
         Me.btnLogin.Text = "Login"
-        Me.btnLogin.UseVisualStyleBackColor = True
+        Me.btnLogin.UseVisualStyleBackColor = False
         '
         'Panel1
         '
@@ -203,7 +205,7 @@ Partial Class LoginAdmin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.MediumTurquoise
         Me.ClientSize = New System.Drawing.Size(880, 567)
         Me.ControlBox = False
         Me.Controls.Add(Me.Panel3)
