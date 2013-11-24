@@ -60,7 +60,8 @@ Partial Class Register
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(112, 20)
         Me.Label4.TabIndex = 3
-        Me.Label4.Text = "Jurusan :"
+        Me.Label4.Text = "Jurusan"
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label3
         '
@@ -70,7 +71,8 @@ Partial Class Register
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(112, 20)
         Me.Label3.TabIndex = 2
-        Me.Label3.Text = "Re-Password :"
+        Me.Label3.Text = "Re-Password"
+        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label2
         '
@@ -80,7 +82,8 @@ Partial Class Register
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(112, 20)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Password :"
+        Me.Label2.Text = "Password"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label1
         '
@@ -90,7 +93,8 @@ Partial Class Register
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(112, 20)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "No. ID :"
+        Me.Label1.Text = "No. ID"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Panel2
         '
@@ -106,7 +110,7 @@ Partial Class Register
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Teknik Informatika", "Sistem Informasi", "Manajemen Informatika"})
+        Me.ComboBox1.Items.AddRange(New Object() {"Teknik Informatika", "Sistem Informasi", "Manajemen", "Akuntansi", "Manajemen Informatika"})
         Me.ComboBox1.Location = New System.Drawing.Point(21, 159)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(245, 21)

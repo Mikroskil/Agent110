@@ -24,3 +24,6 @@ D:\Project\Backup\ClientServer\ClientServer\obj\x86\Debug\ClientServer.main.reso
 D:\Project\Backup\ClientServer\ClientServer\obj\x86\Debug\ClientServer.splash.resources
 D:\Project\Backup\ClientServer\ClientServer\obj\x86\Debug\ClientServer.Resources.resources
 D:\Project\Backup\ClientServer\ClientServer\obj\x86\Debug\ClientServer.vbproj.GenerateResource.Cache
+D:\Project\Backup\Agent110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.exe
+D:\Project\Backup\Agent110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.xml
+D:\Project\Backup\Agent110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.pdb

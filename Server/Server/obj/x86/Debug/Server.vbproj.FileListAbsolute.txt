@@ -69,3 +69,6 @@ D:\KuliAh\PKTI\backup\Server\Server\obj\x86\Debug\Server.Resources.resources
 D:\KuliAh\PKTI\backup\Server\Server\obj\x86\Debug\Server.register.resources
 D:\KuliAh\PKTI\backup\Server\Server\obj\x86\Debug\GenerateResource.read.1.tlog
 D:\KuliAh\PKTI\backup\Server\Server\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Project\Agent110\Server\Server\obj\x86\Debug\Server.exe
+D:\Project\Agent110\Server\Server\obj\x86\Debug\Server.xml
+D:\Project\Agent110\Server\Server\obj\x86\Debug\Server.pdb
