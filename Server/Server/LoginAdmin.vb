@@ -6,9 +6,12 @@
     End Sub
 
     Private Sub setcontrols()
+
         'Panel 3 Label Administrator
-        Panel3.Top = Panel3.Height / 5
-        Panel3.Left = (Me.Width - Panel3.Width - 50) / 2
+        BtnSignUp.Left = (Me.Width - BtnSignUp.Width - 10)
+
+        Panel3.Top = Panel3.Height * 1.8
+        Panel3.Left = (Me.Width - Panel3.Width - 50) / 1.75
         'LblAdmin.Left = (Me.Width - LblAdmin.Width - 50) / 2
         'LblAdmin.Top = LblAdmin.Height / 5
 
@@ -43,9 +46,16 @@
     Private Sub btnLogin_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnLogin.Click
         Me.Hide()
         HOME.Show()
+
     End Sub
 
     Private Sub btnCancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancel.Click
         End
+
+    End Sub
+
+    
+    Private Sub pnlappbar_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles pnlappbar.Paint
+
     End Sub
 End Class

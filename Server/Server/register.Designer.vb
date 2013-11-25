@@ -22,46 +22,55 @@ Partial Class register
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.TxtRePass = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.TxtNip = New System.Windows.Forms.TextBox()
+        Me.TxtPass = New System.Windows.Forms.TextBox()
+        Me.TxtNo = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.BtnSubmit = New System.Windows.Forms.Button()
+        Me.BtnCancel = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
+        'Label1
+        '
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(282, 35)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(290, 44)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Register Administrator"
+        '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.MediumTurquoise
-        Me.Panel1.Controls.Add(Me.TextBox4)
+        Me.Panel1.Controls.Add(Me.TxtRePass)
         Me.Panel1.Controls.Add(Me.Label5)
-        Me.Panel1.Controls.Add(Me.TextBox3)
-        Me.Panel1.Controls.Add(Me.TextBox2)
-        Me.Panel1.Controls.Add(Me.TextBox1)
+        Me.Panel1.Controls.Add(Me.TxtNip)
+        Me.Panel1.Controls.Add(Me.TxtPass)
+        Me.Panel1.Controls.Add(Me.TxtNo)
         Me.Panel1.Controls.Add(Me.Label4)
         Me.Panel1.Controls.Add(Me.Label3)
         Me.Panel1.Controls.Add(Me.Label2)
-        Me.Panel1.Location = New System.Drawing.Point(216, 59)
+        Me.Panel1.Location = New System.Drawing.Point(184, 82)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(437, 223)
-        Me.Panel1.TabIndex = 6
+        Me.Panel1.TabIndex = 1
         '
-        'TextBox4
+        'TxtRePass
         '
-        Me.TextBox4.Location = New System.Drawing.Point(203, 130)
-        Me.TextBox4.Multiline = True
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(203, 28)
-        Me.TextBox4.TabIndex = 7
+        Me.TxtRePass.Location = New System.Drawing.Point(203, 130)
+        Me.TxtRePass.Multiline = True
+        Me.TxtRePass.Name = "TxtRePass"
+        Me.TxtRePass.Size = New System.Drawing.Size(203, 28)
+        Me.TxtRePass.TabIndex = 7
         '
         'Label5
         '
@@ -73,29 +82,29 @@ Partial Class register
         Me.Label5.TabIndex = 6
         Me.Label5.Text = "RE-Password"
         '
-        'TextBox3
+        'TxtNip
         '
-        Me.TextBox3.Location = New System.Drawing.Point(202, 179)
-        Me.TextBox3.Multiline = True
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(202, 27)
-        Me.TextBox3.TabIndex = 5
+        Me.TxtNip.Location = New System.Drawing.Point(202, 179)
+        Me.TxtNip.Multiline = True
+        Me.TxtNip.Name = "TxtNip"
+        Me.TxtNip.Size = New System.Drawing.Size(202, 27)
+        Me.TxtNip.TabIndex = 5
         '
-        'TextBox2
+        'TxtPass
         '
-        Me.TextBox2.Location = New System.Drawing.Point(202, 75)
-        Me.TextBox2.Multiline = True
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(203, 28)
-        Me.TextBox2.TabIndex = 4
+        Me.TxtPass.Location = New System.Drawing.Point(202, 75)
+        Me.TxtPass.Multiline = True
+        Me.TxtPass.Name = "TxtPass"
+        Me.TxtPass.Size = New System.Drawing.Size(203, 28)
+        Me.TxtPass.TabIndex = 4
         '
-        'TextBox1
+        'TxtNo
         '
-        Me.TextBox1.Location = New System.Drawing.Point(202, 23)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(204, 26)
-        Me.TextBox1.TabIndex = 3
+        Me.TxtNo.Location = New System.Drawing.Point(202, 23)
+        Me.TxtNo.Multiline = True
+        Me.TxtNo.Name = "TxtNo"
+        Me.TxtNo.Size = New System.Drawing.Size(204, 26)
+        Me.TxtNo.TabIndex = 3
         '
         'Label4
         '
@@ -130,76 +139,68 @@ Partial Class register
         Me.Label2.Text = "No. ID"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'Label1
+        'BtnSubmit
         '
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(314, 12)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(290, 44)
-        Me.Label1.TabIndex = 5
-        Me.Label1.Text = "Register Administrator"
+        Me.BtnSubmit.BackColor = System.Drawing.Color.LightSeaGreen
+        Me.BtnSubmit.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnSubmit.Location = New System.Drawing.Point(134, 33)
+        Me.BtnSubmit.Name = "BtnSubmit"
+        Me.BtnSubmit.Size = New System.Drawing.Size(121, 40)
+        Me.BtnSubmit.TabIndex = 2
+        Me.BtnSubmit.Text = "Submit"
+        Me.BtnSubmit.UseVisualStyleBackColor = False
         '
-        'Button2
+        'BtnCancel
         '
-        Me.Button2.BackColor = System.Drawing.Color.LightSeaGreen
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(364, 33)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(131, 40)
-        Me.Button2.TabIndex = 3
-        Me.Button2.Text = "Cancel"
-        Me.Button2.UseVisualStyleBackColor = False
-        '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.LightSeaGreen
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(134, 33)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(121, 40)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "Submit"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.BtnCancel.BackColor = System.Drawing.Color.LightSeaGreen
+        Me.BtnCancel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnCancel.Location = New System.Drawing.Point(364, 33)
+        Me.BtnCancel.Name = "BtnCancel"
+        Me.BtnCancel.Size = New System.Drawing.Size(131, 40)
+        Me.BtnCancel.TabIndex = 3
+        Me.BtnCancel.Text = "Cancel"
+        Me.BtnCancel.UseVisualStyleBackColor = False
         '
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.Teal
-        Me.Panel2.Controls.Add(Me.Button2)
-        Me.Panel2.Controls.Add(Me.Button1)
-        Me.Panel2.Location = New System.Drawing.Point(127, 415)
+        Me.Panel2.Controls.Add(Me.BtnCancel)
+        Me.Panel2.Controls.Add(Me.BtnSubmit)
+        Me.Panel2.Location = New System.Drawing.Point(95, 438)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(616, 96)
-        Me.Panel2.TabIndex = 7
+        Me.Panel2.TabIndex = 4
         '
         'register
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.MediumTurquoise
-        Me.ClientSize = New System.Drawing.Size(870, 522)
+        Me.ClientSize = New System.Drawing.Size(838, 546)
+        Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Panel2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "register"
         Me.Text = "register"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents Panel1 As System.Windows.Forms.Panel
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
-    Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents TxtNo As System.Windows.Forms.TextBox
+    Friend WithEvents TxtPass As System.Windows.Forms.TextBox
+    Friend WithEvents TxtNip As System.Windows.Forms.TextBox
+    Friend WithEvents BtnSubmit As System.Windows.Forms.Button
+    Friend WithEvents BtnCancel As System.Windows.Forms.Button
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
+    Friend WithEvents TxtRePass As System.Windows.Forms.TextBox
+    Friend WithEvents Label5 As System.Windows.Forms.Label
 End Class

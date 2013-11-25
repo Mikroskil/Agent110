@@ -54,6 +54,49 @@ D:\KuliAh\PKTI\Agent110\Server\Server\obj\x86\Debug\Server.Monitoring.resources
 D:\KuliAh\PKTI\Agent110\Server\Server\obj\x86\Debug\Server.Resources.resources
 D:\KuliAh\PKTI\Agent110\Server\Server\obj\x86\Debug\GenerateResource.read.1.tlog
 D:\KuliAh\PKTI\Agent110\Server\Server\obj\x86\Debug\GenerateResource.write.1.tlog
-F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\TMP\Server\Server\obj\x86\Debug\Server.exe
-F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\TMP\Server\Server\obj\x86\Debug\Server.xml
-F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\TMP\Server\Server\obj\x86\Debug\Server.pdb
+D:\KuliAh\PKTI\backup\Server\Server\obj\x86\Debug\Server.exe
+D:\KuliAh\PKTI\backup\Server\Server\obj\x86\Debug\Server.xml
+D:\KuliAh\PKTI\backup\Server\Server\obj\x86\Debug\Server.pdb
+D:\KuliAh\PKTI\backup\Server\Server\bin\Debug\Server.exe
+D:\KuliAh\PKTI\backup\Server\Server\bin\Debug\Server.pdb
+D:\KuliAh\PKTI\backup\Server\Server\bin\Debug\Server.xml
+D:\KuliAh\PKTI\backup\Server\Server\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\KuliAh\PKTI\backup\Server\Server\obj\x86\Debug\Server.Component1.resources
+D:\KuliAh\PKTI\backup\Server\Server\obj\x86\Debug\Server.HOME.resources
+D:\KuliAh\PKTI\backup\Server\Server\obj\x86\Debug\Server.LoginAdmin.resources
+D:\KuliAh\PKTI\backup\Server\Server\obj\x86\Debug\Server.Monitoring.resources
+D:\KuliAh\PKTI\backup\Server\Server\obj\x86\Debug\Server.Resources.resources
+D:\KuliAh\PKTI\backup\Server\Server\obj\x86\Debug\Server.register.resources
+D:\KuliAh\PKTI\backup\Server\Server\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\KuliAh\PKTI\backup\Server\Server\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Project\Agent110\Server\Server\obj\x86\Debug\Server.exe
+D:\Project\Agent110\Server\Server\obj\x86\Debug\Server.xml
+D:\Project\Agent110\Server\Server\obj\x86\Debug\Server.pdb
+D:\kuliah\SEM V\PKTI\Backup2\Agent110\Server\Server\obj\x86\Debug\Server.exe
+D:\kuliah\SEM V\PKTI\Backup2\Agent110\Server\Server\obj\x86\Debug\Server.xml
+D:\kuliah\SEM V\PKTI\Backup2\Agent110\Server\Server\obj\x86\Debug\Server.pdb
+D:\kuliah\SEM V\PKTI\Backup2\Agent110\Server\Server\bin\Debug\Server.exe
+D:\kuliah\SEM V\PKTI\Backup2\Agent110\Server\Server\bin\Debug\Server.pdb
+D:\kuliah\SEM V\PKTI\Backup2\Agent110\Server\Server\bin\Debug\Server.xml
+D:\kuliah\SEM V\PKTI\Backup2\Agent110\Server\Server\obj\x86\Debug\Server.vbprojResolveAssemblyReference.cache
+D:\kuliah\SEM V\PKTI\Backup2\Agent110\Server\Server\obj\x86\Debug\Server.Component1.resources
+D:\kuliah\SEM V\PKTI\Backup2\Agent110\Server\Server\obj\x86\Debug\Server.HOME.resources
+D:\kuliah\SEM V\PKTI\Backup2\Agent110\Server\Server\obj\x86\Debug\Server.LoginAdmin.resources
+D:\kuliah\SEM V\PKTI\Backup2\Agent110\Server\Server\obj\x86\Debug\Server.Monitoring.resources
+D:\kuliah\SEM V\PKTI\Backup2\Agent110\Server\Server\obj\x86\Debug\Server.Resources.resources
+D:\kuliah\SEM V\PKTI\Backup2\Agent110\Server\Server\obj\x86\Debug\Server.register.resources
+D:\kuliah\SEM V\PKTI\Backup2\Agent110\Server\Server\obj\x86\Debug\Server.vbproj.GenerateResource.Cache
+D:\kuliah\SEM V\PKTI\Backup\Server\Server\obj\x86\Debug\Server.exe
+D:\kuliah\SEM V\PKTI\Backup\Server\Server\obj\x86\Debug\Server.xml
+D:\kuliah\SEM V\PKTI\Backup\Server\Server\obj\x86\Debug\Server.pdb
+D:\kuliah\SEM V\PKTI\Backup\Server\Server\bin\Debug\Server.exe
+D:\kuliah\SEM V\PKTI\Backup\Server\Server\bin\Debug\Server.pdb
+D:\kuliah\SEM V\PKTI\Backup\Server\Server\bin\Debug\Server.xml
+D:\kuliah\SEM V\PKTI\Backup\Server\Server\obj\x86\Debug\Server.vbprojResolveAssemblyReference.cache
+D:\kuliah\SEM V\PKTI\Backup\Server\Server\obj\x86\Debug\Server.Component1.resources
+D:\kuliah\SEM V\PKTI\Backup\Server\Server\obj\x86\Debug\Server.HOME.resources
+D:\kuliah\SEM V\PKTI\Backup\Server\Server\obj\x86\Debug\Server.LoginAdmin.resources
+D:\kuliah\SEM V\PKTI\Backup\Server\Server\obj\x86\Debug\Server.Monitoring.resources
+D:\kuliah\SEM V\PKTI\Backup\Server\Server\obj\x86\Debug\Server.Resources.resources
+D:\kuliah\SEM V\PKTI\Backup\Server\Server\obj\x86\Debug\Server.register.resources
+D:\kuliah\SEM V\PKTI\Backup\Server\Server\obj\x86\Debug\Server.vbproj.GenerateResource.Cache

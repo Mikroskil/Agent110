@@ -1,30 +1,34 @@
 ﻿Public Class register
 #Region "submit"
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        Application.Exit()
+    Private Sub BtnSubmit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnSubmit.Click
+
+        MsgBox("Data Telah Disimpan, Silahkan Login ", vbOKOnly, "Pemberitahuan")
+        Me.Hide()
+        LoginAdmin.Show()
+
     End Sub
 
-    Private Sub Submit_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles Button1.MouseEnter
-        Button1.BackColor = Color.SlateGray
+    Private Sub BtnSubmit_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles BtnSubmit.MouseEnter
+        BtnSubmit.BackColor = Color.SlateGray
     End Sub
 
-    Private Sub Submit_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles Button1.MouseLeave
-        Button1.BackColor = Color.DarkTurquoise
+    Private Sub BtnSubmit_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles BtnSubmit.MouseLeave
+        BtnSubmit.BackColor = Color.DarkTurquoise
 
     End Sub
 #End Region
 
 #Region "cancel"
-    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+    Private Sub BtnCancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnCancel.Click
 
     End Sub
 
-    Private Sub Cancel_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles Button2.MouseEnter
-        Button2.BackColor = Color.SlateGray
+    Private Sub BtnCancel_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles BtnCancel.MouseEnter
+        BtnCancel.BackColor = Color.SlateGray
     End Sub
 
-    Private Sub Cancel_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles Button2.MouseLeave
-        Button2.BackColor = Color.DarkTurquoise
+    Private Sub BtnCancel_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles BtnCancel.MouseLeave
+        BtnCancel.BackColor = Color.DarkTurquoise
     End Sub
 #End Region
 
@@ -50,8 +54,8 @@
         Panel2.Left = Me.Left
         Panel2.Height = 100
         Panel2.Top = Me.Height - Panel2.Height()
-        Button2.Left = (Panel2.Width / 2 + 10)
-        Button1.Left = (Button2.Left - Button2.Width) - 30
+        BtnCancel.Left = (Panel2.Width / 2 + 10)
+        BtnSubmit.Left = (BtnCancel.Left - BtnCancel.Width) - 30
 
 
 

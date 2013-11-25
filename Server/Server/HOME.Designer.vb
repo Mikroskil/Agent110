@@ -25,17 +25,20 @@ Partial Class HOME
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(HOME))
         Me.ItemPanelShutdown = New DevComponents.DotNetBar.ItemPanel()
         Me.MetroShutdown = New DevComponents.DotNetBar.Metro.MetroTileItem()
-        Me.PanelHome = New System.Windows.Forms.Panel()
-        Me.LblHome = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.ItemPanelRestart = New DevComponents.DotNetBar.ItemPanel()
         Me.MetroRestart = New DevComponents.DotNetBar.Metro.MetroTileItem()
         Me.ItemPanelMonitoring = New DevComponents.DotNetBar.ItemPanel()
         Me.MetroMonitoring = New DevComponents.DotNetBar.Metro.MetroTileItem()
         Me.ItemPanelLogout = New DevComponents.DotNetBar.ItemPanel()
         Me.MetroLogout = New DevComponents.DotNetBar.Metro.MetroTileItem()
-        Me.PanelHome.SuspendLayout()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.LblAdmin = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PanelHome = New System.Windows.Forms.Panel()
+        Me.LblHome = New System.Windows.Forms.Label()
+        Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PanelHome.SuspendLayout()
         Me.SuspendLayout()
         '
         'ItemPanelShutdown
@@ -68,37 +71,6 @@ Partial Class HOME
         Me.MetroShutdown.TileStyle.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MetroShutdown.TitleText = "SHUTDOWN"
         Me.MetroShutdown.TitleTextAlignment = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'PanelHome
-        '
-        Me.PanelHome.Controls.Add(Me.LblHome)
-        Me.PanelHome.Location = New System.Drawing.Point(12, 12)
-        Me.PanelHome.Name = "PanelHome"
-        Me.PanelHome.Size = New System.Drawing.Size(149, 80)
-        Me.PanelHome.TabIndex = 14
-        '
-        'LblHome
-        '
-        Me.LblHome.BackColor = System.Drawing.Color.Transparent
-        Me.LblHome.Cursor = System.Windows.Forms.Cursors.Default
-        Me.LblHome.Font = New System.Drawing.Font("Ravie", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblHome.ForeColor = System.Drawing.Color.White
-        Me.LblHome.Location = New System.Drawing.Point(2, 3)
-        Me.LblHome.Name = "LblHome"
-        Me.LblHome.Size = New System.Drawing.Size(132, 73)
-        Me.LblHome.TabIndex = 0
-        Me.LblHome.Text = "HOME"
-        Me.LblHome.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(519, 15)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(73, 73)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 12
-        Me.PictureBox1.TabStop = False
         '
         'ItemPanelRestart
         '
@@ -196,35 +168,92 @@ Partial Class HOME
         Me.MetroLogout.TitleText = "LOGOUT"
         Me.MetroLogout.TitleTextAlignment = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'Panel1
+        '
+        Me.Panel1.AutoSize = True
+        Me.Panel1.Controls.Add(Me.LblAdmin)
+        Me.Panel1.Controls.Add(Me.PictureBox1)
+        Me.Panel1.Location = New System.Drawing.Point(393, 6)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(203, 81)
+        Me.Panel1.TabIndex = 21
+        '
+        'LblAdmin
+        '
+        Me.LblAdmin.AutoSize = True
+        Me.LblAdmin.Font = New System.Drawing.Font("Rockwell Condensed", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblAdmin.ForeColor = System.Drawing.Color.White
+        Me.LblAdmin.Location = New System.Drawing.Point(16, 26)
+        Me.LblAdmin.Name = "LblAdmin"
+        Me.LblAdmin.Size = New System.Drawing.Size(76, 31)
+        Me.LblAdmin.TabIndex = 18
+        Me.LblAdmin.Text = "Nama"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(127, 3)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(73, 73)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 12
+        Me.PictureBox1.TabStop = False
+        '
+        'PanelHome
+        '
+        Me.PanelHome.Controls.Add(Me.LblHome)
+        Me.PanelHome.Location = New System.Drawing.Point(9, 6)
+        Me.PanelHome.Name = "PanelHome"
+        Me.PanelHome.Size = New System.Drawing.Size(169, 80)
+        Me.PanelHome.TabIndex = 20
+        '
+        'LblHome
+        '
+        Me.LblHome.BackColor = System.Drawing.Color.Transparent
+        Me.LblHome.Cursor = System.Windows.Forms.Cursors.Default
+        Me.LblHome.Font = New System.Drawing.Font("Rockwell", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblHome.ForeColor = System.Drawing.Color.White
+        Me.LblHome.Location = New System.Drawing.Point(2, 3)
+        Me.LblHome.Name = "LblHome"
+        Me.LblHome.Size = New System.Drawing.Size(164, 73)
+        Me.LblHome.TabIndex = 0
+        Me.LblHome.Text = "HOME"
+        Me.LblHome.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'HOME
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DimGray
         Me.ClientSize = New System.Drawing.Size(604, 568)
+        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.PanelHome)
         Me.Controls.Add(Me.ItemPanelLogout)
-        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.ItemPanelMonitoring)
         Me.Controls.Add(Me.ItemPanelRestart)
-        Me.Controls.Add(Me.PanelHome)
         Me.Controls.Add(Me.ItemPanelShutdown)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "HOME"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
-        Me.PanelHome.ResumeLayout(False)
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.PanelHome.ResumeLayout(False)
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents ItemPanelShutdown As DevComponents.DotNetBar.ItemPanel
     Friend WithEvents MetroShutdown As DevComponents.DotNetBar.Metro.MetroTileItem
-    Friend WithEvents PanelHome As System.Windows.Forms.Panel
-    Friend WithEvents LblHome As System.Windows.Forms.Label
-    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents ItemPanelRestart As DevComponents.DotNetBar.ItemPanel
     Friend WithEvents MetroRestart As DevComponents.DotNetBar.Metro.MetroTileItem
     Friend WithEvents ItemPanelMonitoring As DevComponents.DotNetBar.ItemPanel
     Friend WithEvents MetroMonitoring As DevComponents.DotNetBar.Metro.MetroTileItem
     Friend WithEvents ItemPanelLogout As DevComponents.DotNetBar.ItemPanel
     Friend WithEvents MetroLogout As DevComponents.DotNetBar.Metro.MetroTileItem
+    Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents LblAdmin As System.Windows.Forms.Label
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents PanelHome As System.Windows.Forms.Panel
+    Friend WithEvents LblHome As System.Windows.Forms.Label
 End Class
