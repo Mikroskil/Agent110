@@ -1,8 +1,6 @@
 ﻿Public Class register
 #Region "submit"
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        'This code will Restart Windows
-        'System.Diagnostics.Process.Start("shutdown", "-r -t 05")
         Application.Exit()
     End Sub
 
@@ -30,7 +28,7 @@
     End Sub
 #End Region
 
-   
+
     Private Sub register_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
         Label1.Top = Label1.Height * 5

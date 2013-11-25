@@ -29,6 +29,7 @@ Partial Class splash
         Me.pnllogo = New System.Windows.Forms.Panel()
         Me.lbllogo = New System.Windows.Forms.Label()
         Me.tmrdisplay = New System.Windows.Forms.Timer(Me.components)
+        Me.LblIP = New System.Windows.Forms.Label()
         CType(Me.piclogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnllogo.SuspendLayout()
         Me.SuspendLayout()
@@ -57,6 +58,7 @@ Partial Class splash
         '
         'pnllogo
         '
+        Me.pnllogo.Controls.Add(Me.LblIP)
         Me.pnllogo.Controls.Add(Me.lblcompany)
         Me.pnllogo.Controls.Add(Me.lbllogo)
         Me.pnllogo.Controls.Add(Me.piclogo)
@@ -80,11 +82,21 @@ Partial Class splash
         '
         Me.tmrdisplay.Interval = 5000
         '
+        'LblIP
+        '
+        Me.LblIP.AutoSize = True
+        Me.LblIP.BackColor = System.Drawing.Color.White
+        Me.LblIP.Location = New System.Drawing.Point(467, 180)
+        Me.LblIP.Name = "LblIP"
+        Me.LblIP.Size = New System.Drawing.Size(31, 13)
+        Me.LblIP.TabIndex = 3
+        Me.LblIP.Text = "LblIP"
+        '
         'splash
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.Window
+        Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(904, 293)
         Me.Controls.Add(Me.pnllogo)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -101,4 +113,5 @@ Partial Class splash
     Friend WithEvents pnllogo As System.Windows.Forms.Panel
     Friend WithEvents lbllogo As System.Windows.Forms.Label
     Friend WithEvents tmrdisplay As System.Windows.Forms.Timer
+    Friend WithEvents LblIP As System.Windows.Forms.Label
 End Class

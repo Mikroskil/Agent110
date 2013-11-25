@@ -1,6 +1,6 @@
 ﻿Public Class main
 
-#Region "Set Form"
+#Region "Set Posisi Desain Dinamis Form"
     Private Sub main_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         setcontrols()
     End Sub
@@ -16,6 +16,7 @@
         Panel1.Left = (Me.Width / 3 + (Panel1.Width / 3))
         Panel1.Top = (Me.Height - PictureBox1.Width - 50) / 2
 
+        Me.LblIP.Text = splash.LblIP.Text.ToString
 
         'Sets the location for all of the controls on the form.
         pnlappbar.Width = Me.Width
@@ -27,7 +28,6 @@
         Me.TopMost = True
     End Sub
 #End Region 'Set Form
-
 
 #Region "Cancel Button"
     Private Sub Cancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancel.Click
@@ -43,9 +43,7 @@
     Private Sub Cancel_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnCancel.MouseLeave
         btnCancel.BackColor = Color.DarkTurquoise
     End Sub
-#End Region 'Close Button
-
-
+#End Region 'Kembali Ke Tampilan Awal'
 
 #Region "Login"
     Private Sub Login_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnLogin.Click
@@ -64,35 +62,4 @@
     End Sub
 #End Region 'Login Button'
 
-
-
-
-
-    Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-
-    End Sub
-
-    Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox1.TextChanged
-
-    End Sub
-
-    Private Sub Label2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label2.Click
-
-    End Sub
-
-    Private Sub Label1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label1.Click
-
-    End Sub
-
-    Private Sub Panel1_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs)
-
-    End Sub
-
-    Private Sub TextBox2_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
-
-    End Sub
-
-    Private Sub Label4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label4.Click
-
-    End Sub
 End Class

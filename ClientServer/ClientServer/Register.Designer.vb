@@ -47,10 +47,10 @@ Partial Class Register
         Me.Panel1.Controls.Add(Me.Label3)
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Location = New System.Drawing.Point(199, 96)
+        Me.Panel1.Location = New System.Drawing.Point(199, 69)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(161, 199)
-        Me.Panel1.TabIndex = 0
+        Me.Panel1.TabIndex = 4
         '
         'Label4
         '
@@ -102,10 +102,10 @@ Partial Class Register
         Me.Panel2.Controls.Add(Me.TextBox3)
         Me.Panel2.Controls.Add(Me.TextBox2)
         Me.Panel2.Controls.Add(Me.TextBox1)
-        Me.Panel2.Location = New System.Drawing.Point(403, 96)
+        Me.Panel2.Location = New System.Drawing.Point(403, 69)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(288, 199)
-        Me.Panel2.TabIndex = 1
+        Me.Panel2.TabIndex = 5
         '
         'ComboBox1
         '
@@ -142,10 +142,10 @@ Partial Class Register
         Me.Panel3.BackColor = System.Drawing.Color.Teal
         Me.Panel3.Controls.Add(Me.Button2)
         Me.Panel3.Controls.Add(Me.Button1)
-        Me.Panel3.Location = New System.Drawing.Point(11, 314)
+        Me.Panel3.Location = New System.Drawing.Point(11, 287)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(816, 85)
-        Me.Panel3.TabIndex = 2
+        Me.Panel3.TabIndex = 6
         '
         'Button2
         '
@@ -177,26 +177,25 @@ Partial Class Register
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(349, 25)
+        Me.Label5.Location = New System.Drawing.Point(349, -2)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(193, 31)
-        Me.Label5.TabIndex = 3
+        Me.Label5.TabIndex = 7
         Me.Label5.Text = "Register Client"
         '
         'Register
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.MediumTurquoise
-        Me.ClientSize = New System.Drawing.Size(839, 411)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Panel3)
-        Me.Controls.Add(Me.Panel2)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(839, 370)
         Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.Panel2)
+        Me.Controls.Add(Me.Panel3)
+        Me.Controls.Add(Me.Label5)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Register"
         Me.Text = "Form1"
-        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel1.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
@@ -206,17 +205,19 @@ Partial Class Register
 
     End Sub
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
+    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
     Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
     Friend WithEvents Panel3 As System.Windows.Forms.Panel
-    Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Label5 As System.Windows.Forms.Label
+
+    
 End Class

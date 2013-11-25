@@ -43,16 +43,9 @@
     Private Sub btnLogin_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnLogin.Click
         Me.Hide()
         HOME.Show()
-
     End Sub
 
     Private Sub btnCancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancel.Click
         End
-
-    End Sub
-
-    
-    Private Sub pnlappbar_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles pnlappbar.Paint
-
     End Sub
 End Class

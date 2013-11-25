@@ -34,6 +34,7 @@ Partial Class main
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.LblIP = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlappbar.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -80,14 +81,14 @@ Partial Class main
         Me.pnlappbar.BackColor = System.Drawing.Color.Teal
         Me.pnlappbar.Controls.Add(Me.btnLogin)
         Me.pnlappbar.Controls.Add(Me.btnCancel)
-        Me.pnlappbar.Location = New System.Drawing.Point(12, 286)
+        Me.pnlappbar.Location = New System.Drawing.Point(12, 396)
         Me.pnlappbar.Name = "pnlappbar"
         Me.pnlappbar.Size = New System.Drawing.Size(807, 100)
         Me.pnlappbar.TabIndex = 4
         '
         'Label1
         '
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(37, 47)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(130, 23)
@@ -104,7 +105,7 @@ Partial Class main
         '
         'Label2
         '
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(38, 111)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(129, 27)
@@ -120,6 +121,7 @@ Partial Class main
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.LblIP)
         Me.Panel1.Controls.Add(Me.Label3)
         Me.Panel1.Controls.Add(Me.TextBox2)
         Me.Panel1.Controls.Add(Me.Label2)
@@ -127,12 +129,12 @@ Partial Class main
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Location = New System.Drawing.Point(315, 112)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(348, 168)
+        Me.Panel1.Size = New System.Drawing.Size(348, 235)
         Me.Panel1.TabIndex = 10
         '
         'Label3
         '
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(87, -3)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(167, 36)
@@ -143,20 +145,30 @@ Partial Class main
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Font = New System.Drawing.Font("Segoe UI", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.Black
-        Me.Label4.Location = New System.Drawing.Point(116, 29)
+        Me.Label4.Location = New System.Drawing.Point(79, 9)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(657, 73)
+        Me.Label4.Size = New System.Drawing.Size(633, 86)
         Me.Label4.TabIndex = 11
         Me.Label4.Text = "STMIK-STIE Mikroskil"
+        '
+        'LblIP
+        '
+        Me.LblIP.AutoSize = True
+        Me.LblIP.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblIP.ForeColor = System.Drawing.Color.Black
+        Me.LblIP.Location = New System.Drawing.Point(43, 188)
+        Me.LblIP.Name = "LblIP"
+        Me.LblIP.Size = New System.Drawing.Size(0, 21)
+        Me.LblIP.TabIndex = 12
         '
         'main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.MediumTurquoise
-        Me.ClientSize = New System.Drawing.Size(831, 398)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(831, 508)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.PictureBox1)
@@ -184,4 +196,5 @@ Partial Class main
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents LblIP As System.Windows.Forms.Label
 End Class
