@@ -173,9 +173,9 @@ Partial Class HOME
         Me.Panel1.AutoSize = True
         Me.Panel1.Controls.Add(Me.LblAdmin)
         Me.Panel1.Controls.Add(Me.PictureBox1)
-        Me.Panel1.Location = New System.Drawing.Point(393, 6)
+        Me.Panel1.Location = New System.Drawing.Point(333, 6)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(203, 81)
+        Me.Panel1.Size = New System.Drawing.Size(265, 81)
         Me.Panel1.TabIndex = 21
         '
         'LblAdmin
@@ -183,7 +183,7 @@ Partial Class HOME
         Me.LblAdmin.AutoSize = True
         Me.LblAdmin.Font = New System.Drawing.Font("Rockwell Condensed", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblAdmin.ForeColor = System.Drawing.Color.White
-        Me.LblAdmin.Location = New System.Drawing.Point(16, 26)
+        Me.LblAdmin.Location = New System.Drawing.Point(6, 26)
         Me.LblAdmin.Name = "LblAdmin"
         Me.LblAdmin.Size = New System.Drawing.Size(76, 31)
         Me.LblAdmin.TabIndex = 18
@@ -192,7 +192,7 @@ Partial Class HOME
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(127, 3)
+        Me.PictureBox1.Location = New System.Drawing.Point(189, 3)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(73, 73)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage

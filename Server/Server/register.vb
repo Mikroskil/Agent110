@@ -1,10 +1,45 @@
-﻿Public Class register
+﻿Imports System.Data
+Imports System.Data.SqlClient
+
+Public Class register
+    Dim con As SqlConnection
+    Dim cmd As SqlCommand
+    Dim ad As SqlDataAdapter
+    Dim dr As DataRow
+    Public ds As DataSet
+    Dim cb As SqlCommandBuilder
+    Dim dc(0) As DataColumn
+
+
+    Sub updateDB()
+        cb = New SqlCommandBuilder(ad)
+        ad = cb.DataAdapter
+        ad.Update(ds, "Admin")
+    End Sub
+
+    Sub kosong()
+        TxtNo.Clear()
+        TxtPass.Clear()
+        TxtRePass.Clear()
+        TxtNip.Clear()
+    End Sub
+
 #Region "submit"
     Private Sub BtnSubmit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnSubmit.Click
+        
+            dr = ds.Tables("Admin").NewRow
+            dr("NO_ID") = TxtNo.Text
+            dr("NIP") = TxtNip.Text
+            dr("Password") = TxtPass.Text
+            ds.Tables("Admin").Rows.Add(dr)
+            Call updateDB()
+            BtnSubmit.Enabled = False
 
-        MsgBox("Data Telah Disimpan, Silahkan Login ", vbOKOnly, "Pemberitahuan")
+            MsgBox("Data Telah Disimpan, Silahkan Login ", vbOKOnly, "Pemberitahuan")
+            kosong()
         Me.Hide()
         LoginAdmin.Show()
+
 
     End Sub
 
@@ -20,7 +55,7 @@
 
 #Region "cancel"
     Private Sub BtnCancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnCancel.Click
-
+        End
     End Sub
 
     Private Sub BtnCancel_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles BtnCancel.MouseEnter
@@ -34,6 +69,14 @@
 
 
     Private Sub register_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+        con = New SqlConnection("Data Source = WULAN-4750; Initial Catalog = Laboratorium; Integrated Security = true")
+        cmd = New SqlCommand("select * from Admin", con)
+        ad = New SqlDataAdapter(cmd)
+        ds = New DataSet
+        ad.Fill(ds, "Admin")
+        dc(0) = ds.Tables("Admin").Columns("NO_ID")
+        ds.Tables("Admin").PrimaryKey = dc
 
         Label1.Top = Label1.Height * 5
         Label1.Left = (Me.Width - Label1.Width - 50) / 1.9
@@ -59,5 +102,41 @@
 
 
 
+    End Sub
+
+    Private Sub TxtNo_Validating(ByVal sender As Object, ByVal e As System.ComponentModel.CancelEventArgs) Handles TxtNo.Validating
+        If TxtNo.Text = "" Then
+            ErrorProvider1.SetError(TxtNo, "No ID Wajib Diisi ")
+            e.Cancel = True
+        Else
+            ErrorProvider1.SetError(TxtNo, "")
+        End If
+    End Sub
+
+    Private Sub TxtPass_Validating(ByVal sender As Object, ByVal e As System.ComponentModel.CancelEventArgs) Handles TxtPass.Validating
+        If TxtPass.Text = "" Then
+            ErrorProvider1.SetError(TxtPass, "Password Wajib Diisi ")
+            e.Cancel = True
+        Else
+            ErrorProvider1.SetError(TxtPass, "")
+        End If
+    End Sub
+
+    Private Sub TxtRePass_Validating(ByVal sender As Object, ByVal e As System.ComponentModel.CancelEventArgs) Handles TxtRePass.Validating
+        If TxtRePass.Text <> TxtPass.Text Then
+            ErrorProvider1.SetError(TxtRePass, "Harus Sama dengan Password ")
+            e.Cancel = True
+        Else
+            ErrorProvider1.SetError(TxtRePass, "")
+        End If
+    End Sub
+
+    Private Sub TxtNip_Validating(ByVal sender As Object, ByVal e As System.ComponentModel.CancelEventArgs) Handles TxtNip.Validating
+        If TxtNip.Text = "" Then
+            ErrorProvider1.SetError(TxtNip, "No ID Wajib Diisi ")
+            e.Cancel = True
+        Else
+            ErrorProvider1.SetError(TxtNip, "")
+        End If
     End Sub
 End Class

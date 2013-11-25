@@ -1,8 +1,20 @@
-﻿Public Class LoginAdmin
+﻿Imports System.Data
+Imports System.Data.SqlClient
 
+
+
+Public Class LoginAdmin
+    Dim con As SqlConnection
+    Dim cmd As SqlCommand
+    Dim ad As SqlDataAdapter
+    Dim dr As DataRow
+    Public ds As DataSet
+    Dim cb As SqlCommandBuilder
+    Dim dc(0) As DataColumn
 #Region "Set Form"
     Private Sub LoginAdmin_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         setcontrols()
+        TxtID.Focus()
     End Sub
 
     Private Sub setcontrols()
@@ -35,8 +47,8 @@
         pnlappbar.Left = Me.Left
         pnlappbar.Height = 100
         pnlappbar.Top = Me.Height - pnlappbar.Height
-        btnCancel.Left = (pnlappbar.Width / 2 + 10)
-        btnLogin.Left = (btnCancel.Left - btnCancel.Width) - 30
+        BtnCancel.Left = (pnlappbar.Width / 2 + 10)
+        btnLogin.Left = (BtnCancel.Left - BtnCancel.Width) - 30
 
         Me.TopMost = True
     End Sub
@@ -44,17 +56,18 @@
 
 
     Private Sub btnLogin_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnLogin.Click
-        Me.Hide()
+        'Me.Hide()
+
         HOME.Show()
 
     End Sub
 
-    Private Sub btnCancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancel.Click
+    Private Sub btnCancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnCancel.Click
         End
 
     End Sub
 
-    
+
     Private Sub pnlappbar_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles pnlappbar.Paint
 
     End Sub

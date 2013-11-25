@@ -100,3 +100,6 @@ D:\kuliah\SEM V\PKTI\Backup\Server\Server\obj\x86\Debug\Server.Monitoring.resour
 D:\kuliah\SEM V\PKTI\Backup\Server\Server\obj\x86\Debug\Server.Resources.resources
 D:\kuliah\SEM V\PKTI\Backup\Server\Server\obj\x86\Debug\Server.register.resources
 D:\kuliah\SEM V\PKTI\Backup\Server\Server\obj\x86\Debug\Server.vbproj.GenerateResource.Cache
+D:\kuliah\SEM V\PKTI\Agent110\Agent110\Server\Server\obj\x86\Debug\Server.exe
+D:\kuliah\SEM V\PKTI\Agent110\Agent110\Server\Server\obj\x86\Debug\Server.xml
+D:\kuliah\SEM V\PKTI\Agent110\Agent110\Server\Server\obj\x86\Debug\Server.pdb
