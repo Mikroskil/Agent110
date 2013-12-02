@@ -28,13 +28,14 @@ Partial Class main
         Me.btnLogin = New System.Windows.Forms.Button()
         Me.pnlappbar = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtUser = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txtPass = New System.Windows.Forms.TextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.LblIP = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.LblIP = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlappbar.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -79,6 +80,7 @@ Partial Class main
         'pnlappbar
         '
         Me.pnlappbar.BackColor = System.Drawing.Color.Teal
+        Me.pnlappbar.Controls.Add(Me.Button1)
         Me.pnlappbar.Controls.Add(Me.btnLogin)
         Me.pnlappbar.Controls.Add(Me.btnCancel)
         Me.pnlappbar.Location = New System.Drawing.Point(12, 396)
@@ -95,13 +97,13 @@ Partial Class main
         Me.Label1.TabIndex = 5
         Me.Label1.Text = "Username :"
         '
-        'TextBox1
+        'txtUser
         '
-        Me.TextBox1.BackColor = System.Drawing.SystemColors.Window
-        Me.TextBox1.Location = New System.Drawing.Point(40, 76)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(247, 20)
-        Me.TextBox1.TabIndex = 7
+        Me.txtUser.BackColor = System.Drawing.SystemColors.Window
+        Me.txtUser.Location = New System.Drawing.Point(40, 76)
+        Me.txtUser.Name = "txtUser"
+        Me.txtUser.Size = New System.Drawing.Size(247, 20)
+        Me.txtUser.TabIndex = 7
         '
         'Label2
         '
@@ -112,25 +114,36 @@ Partial Class main
         Me.Label2.TabIndex = 8
         Me.Label2.Text = "Password  :"
         '
-        'TextBox2
+        'txtPass
         '
-        Me.TextBox2.Location = New System.Drawing.Point(41, 140)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(246, 20)
-        Me.TextBox2.TabIndex = 9
+        Me.txtPass.Location = New System.Drawing.Point(41, 140)
+        Me.txtPass.Name = "txtPass"
+        Me.txtPass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txtPass.Size = New System.Drawing.Size(246, 20)
+        Me.txtPass.TabIndex = 9
         '
         'Panel1
         '
         Me.Panel1.Controls.Add(Me.LblIP)
         Me.Panel1.Controls.Add(Me.Label3)
-        Me.Panel1.Controls.Add(Me.TextBox2)
+        Me.Panel1.Controls.Add(Me.txtPass)
         Me.Panel1.Controls.Add(Me.Label2)
-        Me.Panel1.Controls.Add(Me.TextBox1)
+        Me.Panel1.Controls.Add(Me.txtUser)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Location = New System.Drawing.Point(315, 112)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(348, 235)
         Me.Panel1.TabIndex = 10
+        '
+        'LblIP
+        '
+        Me.LblIP.AutoSize = True
+        Me.LblIP.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblIP.ForeColor = System.Drawing.Color.Black
+        Me.LblIP.Location = New System.Drawing.Point(43, 188)
+        Me.LblIP.Name = "LblIP"
+        Me.LblIP.Size = New System.Drawing.Size(0, 21)
+        Me.LblIP.TabIndex = 12
         '
         'Label3
         '
@@ -153,15 +166,18 @@ Partial Class main
         Me.Label4.TabIndex = 11
         Me.Label4.Text = "STMIK-STIE Mikroskil"
         '
-        'LblIP
+        'Button1
         '
-        Me.LblIP.AutoSize = True
-        Me.LblIP.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblIP.ForeColor = System.Drawing.Color.Black
-        Me.LblIP.Location = New System.Drawing.Point(43, 188)
-        Me.LblIP.Name = "LblIP"
-        Me.LblIP.Size = New System.Drawing.Size(0, 21)
-        Me.LblIP.TabIndex = 12
+        Me.Button1.BackColor = System.Drawing.Color.MediumTurquoise
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Segoe UI Light", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.White
+        Me.Button1.Location = New System.Drawing.Point(138, 25)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(120, 45)
+        Me.Button1.TabIndex = 12
+        Me.Button1.Text = "SignUp"
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'main
         '
@@ -190,11 +206,12 @@ Partial Class main
     Friend WithEvents btnLogin As System.Windows.Forms.Button
     Friend WithEvents pnlappbar As System.Windows.Forms.Panel
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents txtUser As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents txtPass As System.Windows.Forms.TextBox
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents LblIP As System.Windows.Forms.Label
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class

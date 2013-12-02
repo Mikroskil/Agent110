@@ -28,13 +28,13 @@ Partial Class Register
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.cboJurusan = New System.Windows.Forms.ComboBox()
+        Me.txtRePass = New System.Windows.Forms.TextBox()
+        Me.txtPass = New System.Windows.Forms.TextBox()
+        Me.txtID = New System.Windows.Forms.TextBox()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Submit = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -98,50 +98,52 @@ Partial Class Register
         '
         'Panel2
         '
-        Me.Panel2.Controls.Add(Me.ComboBox1)
-        Me.Panel2.Controls.Add(Me.TextBox3)
-        Me.Panel2.Controls.Add(Me.TextBox2)
-        Me.Panel2.Controls.Add(Me.TextBox1)
+        Me.Panel2.Controls.Add(Me.cboJurusan)
+        Me.Panel2.Controls.Add(Me.txtRePass)
+        Me.Panel2.Controls.Add(Me.txtPass)
+        Me.Panel2.Controls.Add(Me.txtID)
         Me.Panel2.Location = New System.Drawing.Point(403, 69)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(288, 199)
         Me.Panel2.TabIndex = 5
         '
-        'ComboBox1
+        'cboJurusan
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Teknik Informatika", "Sistem Informasi", "Manajemen", "Akuntansi", "Manajemen Informatika"})
-        Me.ComboBox1.Location = New System.Drawing.Point(21, 159)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(245, 21)
-        Me.ComboBox1.TabIndex = 3
+        Me.cboJurusan.FormattingEnabled = True
+        Me.cboJurusan.Items.AddRange(New Object() {"Teknik Informatika", "Sistem Informasi", "Manajemen", "Akuntansi", "Manajemen Informatika"})
+        Me.cboJurusan.Location = New System.Drawing.Point(78, 159)
+        Me.cboJurusan.Name = "cboJurusan"
+        Me.cboJurusan.Size = New System.Drawing.Size(188, 21)
+        Me.cboJurusan.TabIndex = 3
         '
-        'TextBox3
+        'txtRePass
         '
-        Me.TextBox3.Location = New System.Drawing.Point(21, 110)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(245, 20)
-        Me.TextBox3.TabIndex = 2
+        Me.txtRePass.Location = New System.Drawing.Point(78, 110)
+        Me.txtRePass.Name = "txtRePass"
+        Me.txtRePass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txtRePass.Size = New System.Drawing.Size(188, 20)
+        Me.txtRePass.TabIndex = 2
         '
-        'TextBox2
+        'txtPass
         '
-        Me.TextBox2.Location = New System.Drawing.Point(21, 65)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(245, 20)
-        Me.TextBox2.TabIndex = 1
+        Me.txtPass.Location = New System.Drawing.Point(78, 65)
+        Me.txtPass.Name = "txtPass"
+        Me.txtPass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txtPass.Size = New System.Drawing.Size(188, 20)
+        Me.txtPass.TabIndex = 1
         '
-        'TextBox1
+        'txtID
         '
-        Me.TextBox1.Location = New System.Drawing.Point(21, 13)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(245, 20)
-        Me.TextBox1.TabIndex = 0
+        Me.txtID.Location = New System.Drawing.Point(78, 13)
+        Me.txtID.Name = "txtID"
+        Me.txtID.Size = New System.Drawing.Size(188, 20)
+        Me.txtID.TabIndex = 0
         '
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.Teal
         Me.Panel3.Controls.Add(Me.Button2)
-        Me.Panel3.Controls.Add(Me.Button1)
+        Me.Panel3.Controls.Add(Me.Submit)
         Me.Panel3.Location = New System.Drawing.Point(11, 287)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(816, 85)
@@ -160,18 +162,18 @@ Partial Class Register
         Me.Button2.Text = "Cancel"
         Me.Button2.UseVisualStyleBackColor = False
         '
-        'Button1
+        'Submit
         '
-        Me.Button1.BackColor = System.Drawing.Color.MediumTurquoise
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(223, 17)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(126, 44)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Sign Up"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.Submit.BackColor = System.Drawing.Color.MediumTurquoise
+        Me.Submit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Submit.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Submit.ForeColor = System.Drawing.Color.White
+        Me.Submit.Location = New System.Drawing.Point(223, 17)
+        Me.Submit.Name = "Submit"
+        Me.Submit.Size = New System.Drawing.Size(126, 44)
+        Me.Submit.TabIndex = 0
+        Me.Submit.Text = "Submit"
+        Me.Submit.UseVisualStyleBackColor = False
         '
         'Label5
         '
@@ -196,6 +198,7 @@ Partial Class Register
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Register"
         Me.Text = "Form1"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel1.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
@@ -210,13 +213,13 @@ Partial Class Register
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents cboJurusan As System.Windows.Forms.ComboBox
+    Friend WithEvents txtRePass As System.Windows.Forms.TextBox
+    Friend WithEvents txtPass As System.Windows.Forms.TextBox
+    Friend WithEvents txtID As System.Windows.Forms.TextBox
     Friend WithEvents Panel3 As System.Windows.Forms.Panel
     Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Submit As System.Windows.Forms.Button
     Friend WithEvents Label5 As System.Windows.Forms.Label
 
     

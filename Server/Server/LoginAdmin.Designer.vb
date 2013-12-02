@@ -158,9 +158,9 @@ Partial Class LoginAdmin
         Me.TxtPassword.Location = New System.Drawing.Point(61, 174)
         Me.TxtPassword.Multiline = True
         Me.TxtPassword.Name = "TxtPassword"
+        Me.TxtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TxtPassword.Size = New System.Drawing.Size(342, 47)
         Me.TxtPassword.TabIndex = 2
-        Me.TxtPassword.UseSystemPasswordChar = True
         Me.TxtPassword.WordWrap = False
         '
         'TxtNama
@@ -197,7 +197,7 @@ Partial Class LoginAdmin
         '
         Me.Panel3.Controls.Add(Me.LblAdmin)
         Me.Panel3.Controls.Add(Me.PictureBox1)
-        Me.Panel3.Location = New System.Drawing.Point(158, 12)
+        Me.Panel3.Location = New System.Drawing.Point(244, 71)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(290, 82)
         Me.Panel3.TabIndex = 13

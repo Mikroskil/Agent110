@@ -66,6 +66,20 @@ F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\TMP\ClientSer
 F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\TMP\ClientServer\ClientServer\bin\Debug\ClientServer.xml
 F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\TMP\ClientServer\ClientServer\bin\Debug\DevComponents.DotNetBar2.dll
 F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\TMP\ClientServer\ClientServer\bin\Debug\DevComponents.DotNetBar2.xml
+D:\kuliah\SEM V\PKTI\Backup\Agent110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.exe
+D:\kuliah\SEM V\PKTI\Backup\Agent110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.xml
+D:\kuliah\SEM V\PKTI\Backup\Agent110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.pdb
+D:\kuliah\SEM V\PKTI\Backup\Agent110\ClientServer\ClientServer\bin\Debug\ClientServer.exe
+D:\kuliah\SEM V\PKTI\Backup\Agent110\ClientServer\ClientServer\bin\Debug\ClientServer.pdb
+D:\kuliah\SEM V\PKTI\Backup\Agent110\ClientServer\ClientServer\bin\Debug\ClientServer.xml
+D:\kuliah\SEM V\PKTI\Backup\Agent110\ClientServer\ClientServer\bin\Debug\DevComponents.DotNetBar2.dll
+D:\kuliah\SEM V\PKTI\Backup\Agent110\ClientServer\ClientServer\bin\Debug\DevComponents.DotNetBar2.xml
+D:\kuliah\SEM V\PKTI\Backup\Agent110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.vbprojResolveAssemblyReference.cache
+D:\kuliah\SEM V\PKTI\Backup\Agent110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.Register.resources
+D:\kuliah\SEM V\PKTI\Backup\Agent110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.main.resources
+D:\kuliah\SEM V\PKTI\Backup\Agent110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.splash.resources
+D:\kuliah\SEM V\PKTI\Backup\Agent110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.Resources.resources
+D:\kuliah\SEM V\PKTI\Backup\Agent110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.vbproj.GenerateResource.Cache
 D:\kuliah\SEM V\PKTI\Backup\ClientServer\ClientServer\obj\x86\Debug\ClientServer.exe
 D:\kuliah\SEM V\PKTI\Backup\ClientServer\ClientServer\obj\x86\Debug\ClientServer.xml
 D:\kuliah\SEM V\PKTI\Backup\ClientServer\ClientServer\obj\x86\Debug\ClientServer.pdb

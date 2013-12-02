@@ -1,7 +1,45 @@
-﻿Public Class Register
+﻿Imports System.Data
+Imports System.Data.SqlClient
+
+Public Class Register
+    Dim con As SqlConnection
+    Dim cmd As SqlCommand
+    Dim ad As SqlDataAdapter
+    Dim dr As DataRow
+    Public ds As DataSet
+    Dim cb As SqlCommandBuilder
+    Dim dc(0) As DataColumn
+
+
+    Sub updateDB()
+        cb = New SqlCommandBuilder(ad)
+        ad = cb.DataAdapter
+        ad.Update(ds, "Client")
+    End Sub
+
+    Sub kosong()
+        txtID.Clear()
+        txtPass.Clear()
+        txtRePass.Clear()
+
+
+    End Sub
 #Region "Set Form"
     Private Sub Register_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         setcontrols()
+
+        con = New SqlConnection("Data Source = WULAN-4750; Initial Catalog = Laboratorium; Integrated Security = true")
+        cmd = New SqlCommand("select * from Client", con)
+        ad = New SqlDataAdapter(cmd)
+        ds = New DataSet
+        ad.Fill(ds, "Client")
+        dc(0) = ds.Tables("Client").Columns("Nim")
+        ds.Tables("Client").PrimaryKey = dc
+
+        kosong()
+        txtID.Focus()
+
+
     End Sub
 
     Public Sub setcontrols()
@@ -22,16 +60,16 @@
         Panel3.Height = 100
         Panel3.Top = Me.Height - Panel3.Height
         Button2.Left = (Panel3.Width / 2) + 55
-        Button1.Left = (Panel3.Width / 3) + 20
+        Submit.Left = (Panel3.Width / 3) + 20
         Me.TopMost = True
     End Sub
 #End Region 'Set Form
 
 #Region "Cancel Button"
     Private Sub Cancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
-        Me.Visible = False
-        splash.Visible = True
-
+        'Me.Visible = False
+        'splash.Visible = True
+        End
     End Sub
 
     Private Sub btnclose_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles Button2.MouseEnter
@@ -45,26 +83,40 @@
 
 
 
-#Region "Sign Up"
-    Private Sub Login_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+
+    Private Sub Submit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Submit.Click
         'This code will Restart Windows
         'System.Diagnostics.Process.Start("shutdown", "-r -t 05")
-        Application.Exit()
+        'Application.Exit()
+
+        dr = ds.Tables("Client").NewRow
+        dr("Nim") = txtID.Text
+        dr("Pass") = txtPass.Text
+        dr("Jurusan") = cboJurusan.SelectedItem
+        ds.Tables("Client").Rows.Add(dr)
+        Call updateDB()
+        Submit.Enabled = False
+
+        MsgBox("Data Telah Disimpan, Silahkan Login", vbOKOnly, "Pemberitahuan")
+        kosong()
+        Me.Hide()
+        splash.Show()
+
+
     End Sub
 
-    Private Sub Login_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles Button1.MouseEnter
-        Button1.BackColor = Color.SlateGray
+    Private Sub Submit_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles Submit.MouseEnter
+        Submit.BackColor = Color.SlateGray
     End Sub
 
-    Private Sub Login_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles Button1.MouseLeave
-        Button1.BackColor = Color.DarkTurquoise
+    Private Sub Submit_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles Submit.MouseLeave
+        Submit.BackColor = Color.DarkTurquoise
 
     End Sub
-#End Region 'Login Button'
 
 
 
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Submit.Click
 
     End Sub
 

@@ -1,31 +1,31 @@
-﻿Imports System.Data
+﻿Imports System.Data.Sql
 Imports System.Data.SqlClient
-
-
-
 Public Class LoginAdmin
-    Dim con As SqlConnection
-    Dim cmd As SqlCommand
-    Dim ad As SqlDataAdapter
-    Dim dr As DataRow
-    Public ds As DataSet
-    Dim cb As SqlCommandBuilder
-    Dim dc(0) As DataColumn
+    Dim koneksi As SqlConnection
 #Region "Set Form"
     Private Sub LoginAdmin_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         setcontrols()
+        Dim strKoneksi As String
+        strKoneksi = "Data Source=WULAN-4750; Initial Catalog = Laboratorium; Integrated Security=True"
+        koneksi = New SqlConnection(strKoneksi)
+
+        Try
+            koneksi.Open()
+
+        Catch ex As Exception
+            MessageBox.Show("Koneksi Gagal !!")
+        End Try
+        TxtID.Text = ""
+        TxtNama.Text = ""
+        TxtPassword.Text = ""
         TxtID.Focus()
     End Sub
 
     Private Sub setcontrols()
-
         'Panel 3 Label Administrator
-        BtnSignUp.Left = (Me.Width - BtnSignUp.Width - 10)
-
-        Panel3.Top = Panel3.Height * 1.8
-        Panel3.Left = (Me.Width - Panel3.Width - 50) / 1.75
-        'LblAdmin.Left = (Me.Width - LblAdmin.Width - 50) / 2
-        'LblAdmin.Top = LblAdmin.Height / 5
+        Panel3.Top = Panel3.Height / 0.7
+        Panel3.Left = (Me.Width - Panel3.Width - 50) / 2
+        BtnSignUp.Left = Me.Width / 1.1
 
         'Panel  Label ID, Nama, Pass
         Panel1.Width = LblID.Width * 2
@@ -47,8 +47,8 @@ Public Class LoginAdmin
         pnlappbar.Left = Me.Left
         pnlappbar.Height = 100
         pnlappbar.Top = Me.Height - pnlappbar.Height
-        BtnCancel.Left = (pnlappbar.Width / 2 + 10)
-        btnLogin.Left = (BtnCancel.Left - BtnCancel.Width) - 30
+        btnCancel.Left = (pnlappbar.Width / 2 + 10)
+        btnLogin.Left = (btnCancel.Left - btnCancel.Width) - 30
 
         Me.TopMost = True
     End Sub
@@ -56,19 +56,39 @@ Public Class LoginAdmin
 
 
     Private Sub btnLogin_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnLogin.Click
-        'Me.Hide()
+        Dim Sql, user, pass, id As String
+        Dim cmd As SqlCommand
+        Dim rdr As SqlDataReader
 
-        HOME.Show()
+        user = TxtNama.Text
+        pass = TxtPassword.Text
+        id = TxtID.Text
 
+        Sql = "SELECT Id,Pass FROM Admin WHERE Id='" + id + "' AND Pass='" + pass + "'"
+        cmd = New SqlCommand(Sql, koneksi)
+
+        rdr = cmd.ExecuteReader()
+
+        If rdr.HasRows = True Then
+            HOME.Show()
+            Me.Hide()
+        Else
+            MessageBox.Show("Kombinasi Username ,Password dan Hak Akses Salah", "Konfirmasi", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            TxtID.Focus()
+
+        End If
+
+        rdr.Close()
+        cmd.Dispose()
     End Sub
 
-    Private Sub btnCancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnCancel.Click
+    Private Sub btnCancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancel.Click
         End
-
     End Sub
 
-
-    Private Sub pnlappbar_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles pnlappbar.Paint
+    Private Sub BtnSignUp_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnSignUp.Click
+        Me.Hide()
+        register.Show()
 
     End Sub
 End Class

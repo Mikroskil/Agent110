@@ -72,6 +72,7 @@ Partial Class register
         Me.TxtRePass.Location = New System.Drawing.Point(203, 130)
         Me.TxtRePass.Multiline = True
         Me.TxtRePass.Name = "TxtRePass"
+        Me.TxtRePass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TxtRePass.Size = New System.Drawing.Size(203, 28)
         Me.TxtRePass.TabIndex = 7
         '
@@ -98,6 +99,7 @@ Partial Class register
         Me.TxtPass.Location = New System.Drawing.Point(202, 75)
         Me.TxtPass.Multiline = True
         Me.TxtPass.Name = "TxtPass"
+        Me.TxtPass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TxtPass.Size = New System.Drawing.Size(203, 28)
         Me.TxtPass.TabIndex = 4
         '

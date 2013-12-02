@@ -1,8 +1,25 @@
-﻿Public Class main
+﻿Imports System.Data.Sql
+Imports System.Data.SqlClient
 
+Public Class main
+    Dim koneksi As SqlConnection
 #Region "Set Posisi Desain Dinamis Form"
     Private Sub main_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         setcontrols()
+        Dim strKoneksi As String
+        strKoneksi = "Data Source=WULAN-4750; Initial Catalog = Laboratorium; Integrated Security=True"
+        koneksi = New SqlConnection(strKoneksi)
+
+        Try
+            koneksi.Open()
+
+        Catch ex As Exception
+            MessageBox.Show("Koneksi Gagal !!")
+        End Try
+        txtUser.Text = ""
+        txtPass.Text = ""
+        txtUser.Focus()
+
     End Sub
 
     Public Sub setcontrols()
@@ -25,6 +42,7 @@
         pnlappbar.Top = Me.Height - pnlappbar.Height
         btnCancel.Left = (pnlappbar.Width / 2) - 10
         btnLogin.Left = (btnCancel.Left - btnCancel.Width) - 30
+        Button1.Left = (btnCancel.Left - btnCancel.Width) - 100 * 1.8
         Me.TopMost = True
     End Sub
 #End Region 'Set Form
@@ -49,7 +67,31 @@
     Private Sub Login_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnLogin.Click
         'This code will Restart Windows
         'System.Diagnostics.Process.Start("shutdown", "-r -t 05")
-        Application.Exit()
+        'Application.Exit()
+        Dim Sql, user, pass As String
+        Dim cmd As SqlCommand
+        Dim rdr As SqlDataReader
+
+        user = txtUser.Text
+        pass = txtPass.Text
+        
+        Sql = "SELECT Nim,Pass FROM Client WHERE Nim='" + user + "' AND Pass='" + pass + "'"
+        cmd = New SqlCommand(Sql, koneksi)
+
+        rdr = cmd.ExecuteReader()
+
+        If rdr.HasRows = True Then
+            splash.Show()
+            Me.Hide()
+        Else
+            MessageBox.Show("Kombinasi Username ,Password dan Hak Akses Salah", "Konfirmasi", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            txtUser.Focus()
+
+        End If
+
+        rdr.Close()
+        cmd.Dispose()
+
     End Sub
 
     Private Sub Login_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnLogin.MouseEnter
@@ -62,4 +104,9 @@
     End Sub
 #End Region 'Login Button'
 
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        Me.Hide()
+        Register.Show()
+
+    End Sub
 End Class

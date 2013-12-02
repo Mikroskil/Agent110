@@ -20,7 +20,8 @@
     End Sub
 
     Private Sub MetroShutdown_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MetroShutdown.Click
-      
+        MsgBox("Apakah kamu yakin ingin meshutdown semua komputer Client", vbYesNoCancel, "Peringatan")
+
     End Sub
 
     Private Sub MetroMonitoring_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MetroMonitoring.Click
@@ -35,5 +36,13 @@
     Private Sub MetroLogout_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MetroLogout.Click
         Me.Hide()
         LoginAdmin.Show()
+        LoginAdmin.TxtID.Text = ""
+        LoginAdmin.TxtNama.Text = ""
+        LoginAdmin.TxtPassword.Text = ""
+        LoginAdmin.TxtID.Focus()
+    End Sub
+
+    Private Sub MetroRestart_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles MetroRestart.Click
+        MsgBox("Apakah kamu yakin meRestart semua Komputer Client", vbYesNo, "Peringatan")
     End Sub
 End Class
