@@ -22,11 +22,13 @@ Partial Class main
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(main))
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnCancel = New System.Windows.Forms.Button()
         Me.btnLogin = New System.Windows.Forms.Button()
         Me.pnlappbar = New System.Windows.Forms.Panel()
+        Me.BtnSignUp = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtUser = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -35,7 +37,7 @@ Partial Class main
         Me.LblIP = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlappbar.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -80,13 +82,26 @@ Partial Class main
         'pnlappbar
         '
         Me.pnlappbar.BackColor = System.Drawing.Color.Teal
-        Me.pnlappbar.Controls.Add(Me.Button1)
+        Me.pnlappbar.Controls.Add(Me.BtnSignUp)
         Me.pnlappbar.Controls.Add(Me.btnLogin)
         Me.pnlappbar.Controls.Add(Me.btnCancel)
         Me.pnlappbar.Location = New System.Drawing.Point(12, 396)
         Me.pnlappbar.Name = "pnlappbar"
         Me.pnlappbar.Size = New System.Drawing.Size(807, 100)
         Me.pnlappbar.TabIndex = 4
+        '
+        'BtnSignUp
+        '
+        Me.BtnSignUp.BackColor = System.Drawing.Color.MediumTurquoise
+        Me.BtnSignUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnSignUp.Font = New System.Drawing.Font("Segoe UI Light", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnSignUp.ForeColor = System.Drawing.SystemColors.Window
+        Me.BtnSignUp.Location = New System.Drawing.Point(138, 25)
+        Me.BtnSignUp.Name = "BtnSignUp"
+        Me.BtnSignUp.Size = New System.Drawing.Size(120, 45)
+        Me.BtnSignUp.TabIndex = 12
+        Me.BtnSignUp.Text = "SignUp"
+        Me.BtnSignUp.UseVisualStyleBackColor = False
         '
         'Label1
         '
@@ -166,18 +181,11 @@ Partial Class main
         Me.Label4.TabIndex = 11
         Me.Label4.Text = "STMIK-STIE Mikroskil"
         '
-        'Button1
+        'NotifyIcon1
         '
-        Me.Button1.BackColor = System.Drawing.Color.MediumTurquoise
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Segoe UI Light", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(138, 25)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(120, 45)
-        Me.Button1.TabIndex = 12
-        Me.Button1.Text = "SignUp"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.NotifyIcon1.Icon = CType(resources.GetObject("NotifyIcon1.Icon"), System.Drawing.Icon)
+        Me.NotifyIcon1.Text = "NotifyIcon1"
+        Me.NotifyIcon1.Visible = True
         '
         'main
         '
@@ -213,5 +221,6 @@ Partial Class main
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents LblIP As System.Windows.Forms.Label
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents BtnSignUp As System.Windows.Forms.Button
+    Friend WithEvents NotifyIcon1 As System.Windows.Forms.NotifyIcon
 End Class

@@ -85,10 +85,6 @@ Public Class Register
 
 
     Private Sub Submit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Submit.Click
-        'This code will Restart Windows
-        'System.Diagnostics.Process.Start("shutdown", "-r -t 05")
-        'Application.Exit()
-
         dr = ds.Tables("Client").NewRow
         dr("Nim") = txtID.Text
         dr("Pass") = txtPass.Text
@@ -114,13 +110,4 @@ Public Class Register
 
     End Sub
 
-
-
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Submit.Click
-
-    End Sub
-
-    Private Sub Label3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label3.Click
-
-    End Sub
 End Class
