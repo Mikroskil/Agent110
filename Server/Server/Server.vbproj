@@ -8,11 +8,11 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{55AE98FA-225B-4F8A-964D-0D12F7D70AB6}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Server.My.MyApplication</StartupObject>
+    <StartupObject>Server.LoginAdmin</StartupObject>
     <RootNamespace>Server</RootNamespace>
     <AssemblyName>Server</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <MyType>WindowsForms</MyType>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <IsWebBootstrapper>false</IsWebBootstrapper>
@@ -40,6 +40,7 @@
     <OutputPath>bin\Debug\</OutputPath>
     <DocumentationFile>Server.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -90,13 +91,10 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Component1.Designer.vb">
-      <DependentUpon>Component1.vb</DependentUpon>
+    <Compile Include="FormPercobaan.Designer.vb">
+      <DependentUpon>FormPercobaan.vb</DependentUpon>
     </Compile>
-    <Compile Include="Component1.vb">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Connection.vb" />
+    <Compile Include="FormPercobaan.vb" />
     <Compile Include="HOME.Designer.vb">
       <DependentUpon>HOME.vb</DependentUpon>
     </Compile>
@@ -108,12 +106,6 @@
     </Compile>
     <Compile Include="LoginAdmin.Designer.vb">
       <DependentUpon>LoginAdmin.vb</DependentUpon>
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Monitoring.Designer.vb">
-      <DependentUpon>Monitoring.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Monitoring.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -131,26 +123,28 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Recordset.vb" />
     <Compile Include="register.Designer.vb">
       <DependentUpon>register.vb</DependentUpon>
     </Compile>
     <Compile Include="register.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Shutdown.Designer.vb">
+      <DependentUpon>Shutdown.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Shutdown.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Component1.resx">
-      <DependentUpon>Component1.vb</DependentUpon>
+    <EmbeddedResource Include="FormPercobaan.resx">
+      <DependentUpon>FormPercobaan.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HOME.resx">
       <DependentUpon>HOME.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginAdmin.resx">
       <DependentUpon>LoginAdmin.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Monitoring.resx">
-      <DependentUpon>Monitoring.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -160,6 +154,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="register.resx">
       <DependentUpon>register.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shutdown.resx">
+      <DependentUpon>Shutdown.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

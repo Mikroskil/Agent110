@@ -37,6 +37,7 @@ Partial Class register
         Me.BtnCancel = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.ErrorProvider1 = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.BtnSignUp = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -72,7 +73,6 @@ Partial Class register
         Me.TxtRePass.Location = New System.Drawing.Point(203, 130)
         Me.TxtRePass.Multiline = True
         Me.TxtRePass.Name = "TxtRePass"
-        Me.TxtRePass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TxtRePass.Size = New System.Drawing.Size(203, 28)
         Me.TxtRePass.TabIndex = 7
         '
@@ -99,7 +99,6 @@ Partial Class register
         Me.TxtPass.Location = New System.Drawing.Point(202, 75)
         Me.TxtPass.Multiline = True
         Me.TxtPass.Name = "TxtPass"
-        Me.TxtPass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TxtPass.Size = New System.Drawing.Size(203, 28)
         Me.TxtPass.TabIndex = 4
         '
@@ -180,12 +179,26 @@ Partial Class register
         '
         Me.ErrorProvider1.ContainerControl = Me
         '
+        'BtnSignUp
+        '
+        Me.BtnSignUp.BackColor = System.Drawing.Color.LightSeaGreen
+        Me.BtnSignUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnSignUp.Font = New System.Drawing.Font("Segoe UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnSignUp.ForeColor = System.Drawing.Color.White
+        Me.BtnSignUp.Location = New System.Drawing.Point(681, 12)
+        Me.BtnSignUp.Name = "BtnSignUp"
+        Me.BtnSignUp.Size = New System.Drawing.Size(81, 34)
+        Me.BtnSignUp.TabIndex = 15
+        Me.BtnSignUp.Text = "Sign Up"
+        Me.BtnSignUp.UseVisualStyleBackColor = False
+        '
         'register
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.MediumTurquoise
         Me.ClientSize = New System.Drawing.Size(838, 546)
+        Me.Controls.Add(Me.BtnSignUp)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Label1)
@@ -214,4 +227,5 @@ Partial Class register
     Friend WithEvents TxtRePass As System.Windows.Forms.TextBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents ErrorProvider1 As System.Windows.Forms.ErrorProvider
+    Friend WithEvents BtnSignUp As System.Windows.Forms.Button
 End Class

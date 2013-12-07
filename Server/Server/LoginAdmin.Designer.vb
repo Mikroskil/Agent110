@@ -37,7 +37,6 @@ Partial Class LoginAdmin
         Me.TxtID = New System.Windows.Forms.TextBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.BtnSignUp = New System.Windows.Forms.Button()
         Me.pnlappbar.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -67,7 +66,7 @@ Partial Class LoginAdmin
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(120, 45)
         Me.btnCancel.TabIndex = 1
-        Me.btnCancel.Text = "Cancel"
+        Me.btnCancel.Text = "Reset"
         Me.btnCancel.UseVisualStyleBackColor = False
         '
         'pnlappbar
@@ -155,33 +154,36 @@ Partial Class LoginAdmin
         '
         Me.TxtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TxtPassword.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtPassword.Location = New System.Drawing.Point(61, 174)
+        Me.TxtPassword.Location = New System.Drawing.Point(61, 187)
         Me.TxtPassword.Multiline = True
         Me.TxtPassword.Name = "TxtPassword"
-        Me.TxtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TxtPassword.Size = New System.Drawing.Size(342, 47)
+        Me.TxtPassword.Size = New System.Drawing.Size(342, 25)
         Me.TxtPassword.TabIndex = 2
+        Me.TxtPassword.Text = "asdasd"
+        Me.TxtPassword.UseSystemPasswordChar = True
         Me.TxtPassword.WordWrap = False
         '
         'TxtNama
         '
         Me.TxtNama.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TxtNama.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtNama.Location = New System.Drawing.Point(61, 96)
+        Me.TxtNama.Location = New System.Drawing.Point(61, 109)
         Me.TxtNama.Multiline = True
         Me.TxtNama.Name = "TxtNama"
-        Me.TxtNama.Size = New System.Drawing.Size(342, 47)
+        Me.TxtNama.Size = New System.Drawing.Size(342, 25)
         Me.TxtNama.TabIndex = 1
+        Me.TxtNama.Text = "asdasd"
         '
         'TxtID
         '
         Me.TxtID.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TxtID.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtID.Location = New System.Drawing.Point(61, 12)
+        Me.TxtID.Location = New System.Drawing.Point(61, 25)
         Me.TxtID.Multiline = True
         Me.TxtID.Name = "TxtID"
-        Me.TxtID.Size = New System.Drawing.Size(342, 47)
+        Me.TxtID.Size = New System.Drawing.Size(342, 25)
         Me.TxtID.TabIndex = 0
+        Me.TxtID.Text = "asdasd"
         '
         'PictureBox1
         '
@@ -197,23 +199,10 @@ Partial Class LoginAdmin
         '
         Me.Panel3.Controls.Add(Me.LblAdmin)
         Me.Panel3.Controls.Add(Me.PictureBox1)
-        Me.Panel3.Location = New System.Drawing.Point(244, 71)
+        Me.Panel3.Location = New System.Drawing.Point(158, 12)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(290, 82)
         Me.Panel3.TabIndex = 13
-        '
-        'BtnSignUp
-        '
-        Me.BtnSignUp.BackColor = System.Drawing.Color.LightSeaGreen
-        Me.BtnSignUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnSignUp.Font = New System.Drawing.Font("Segoe UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnSignUp.ForeColor = System.Drawing.Color.White
-        Me.BtnSignUp.Location = New System.Drawing.Point(793, 14)
-        Me.BtnSignUp.Name = "BtnSignUp"
-        Me.BtnSignUp.Size = New System.Drawing.Size(81, 34)
-        Me.BtnSignUp.TabIndex = 14
-        Me.BtnSignUp.Text = "Sign Up"
-        Me.BtnSignUp.UseVisualStyleBackColor = False
         '
         'LoginAdmin
         '
@@ -222,7 +211,6 @@ Partial Class LoginAdmin
         Me.BackColor = System.Drawing.Color.MediumTurquoise
         Me.ClientSize = New System.Drawing.Size(880, 567)
         Me.ControlBox = False
-        Me.Controls.Add(Me.BtnSignUp)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
@@ -255,6 +243,5 @@ Partial Class LoginAdmin
     Friend WithEvents LblID As System.Windows.Forms.Label
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Panel3 As System.Windows.Forms.Panel
-    Friend WithEvents BtnSignUp As System.Windows.Forms.Button
 
 End Class

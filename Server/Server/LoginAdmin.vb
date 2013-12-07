@@ -1,20 +1,32 @@
-﻿Imports System.Data.Sql
-Imports System.Data.SqlClient
+﻿'Imports System.Data
+'Imports System.Data.SqlClient
+
 Public Class LoginAdmin
-    Dim koneksi As SqlConnection
+
+    '======== untuk koneksi ==============
+    'Dim con As SqlConnection
+    'Dim cmd As SqlCommand
+    'Dim ad As SqlDataAdapter
+    'Dim dr As DataRow
+    'Public ds As DataSet
+    'Dim cb As SqlCommandBuilder
+    'Dim dc(0) As DataColumn
+    'Dim koneksi As SqlConnection
+    '=====================================
+
 #Region "Set Form"
     Private Sub LoginAdmin_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         setcontrols()
-        Dim strKoneksi As String
-        strKoneksi = "Data Source=WULAN-4750; Initial Catalog = Laboratorium; Integrated Security=True"
-        koneksi = New SqlConnection(strKoneksi)
+        
+        'Dim strKoneksi As String
+        'strKoneksi = "Data Source=ASUS-1025C\SQLEXPRESS; Initial Catalog = Laboratorium; Integrated Security=True"
+        'koneksi = (New SqlConnection(strKoneksi))
+        'Try
+        '    koneksi.Open()
+        'Catch ex As Exception
+        '    MessageBox.Show("Koneksi Gagal")
+        'End Try
 
-        Try
-            koneksi.Open()
-
-        Catch ex As Exception
-            MessageBox.Show("Koneksi Gagal !!")
-        End Try
         TxtID.Text = ""
         TxtNama.Text = ""
         TxtPassword.Text = ""
@@ -22,10 +34,12 @@ Public Class LoginAdmin
     End Sub
 
     Private Sub setcontrols()
+
         'Panel 3 Label Administrator
-        Panel3.Top = Panel3.Height / 0.7
-        Panel3.Left = (Me.Width - Panel3.Width - 50) / 2
-        BtnSignUp.Left = Me.Width / 1.1
+        'BtnSignUp.Left = (Me.Width - BtnSignUp.Width - 10)
+        'BtnSignUp.Left = Me.Width / 1.1
+        Panel3.Top = Panel3.Height * 1.8
+        Panel3.Left = (Me.Width - Panel3.Width - 50) / 1.75
 
         'Panel  Label ID, Nama, Pass
         Panel1.Width = LblID.Width * 2
@@ -54,41 +68,23 @@ Public Class LoginAdmin
     End Sub
 #End Region 'Set Form'
 
-
     Private Sub btnLogin_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnLogin.Click
-        Dim Sql, user, pass, id As String
-        Dim cmd As SqlCommand
-        Dim rdr As SqlDataReader
-
-        user = TxtNama.Text
-        pass = TxtPassword.Text
-        id = TxtID.Text
-
-        Sql = "SELECT Id,Pass FROM Admin WHERE Id='" + id + "' AND Pass='" + pass + "'"
-        cmd = New SqlCommand(Sql, koneksi)
-
-        rdr = cmd.ExecuteReader()
-
-        If rdr.HasRows = True Then
+        If TxtID.Text = "Admin" And TxtPassword.Text = "admin" Then
             HOME.Show()
             Me.Hide()
         Else
-            MessageBox.Show("Kombinasi Username ,Password dan Hak Akses Salah", "Konfirmasi", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("ID dan Password yang anda masukkan salah")
+            TxtID.Clear()
+            TxtPassword.Clear()
             TxtID.Focus()
-
         End If
-
-        rdr.Close()
-        cmd.Dispose()
     End Sub
 
     Private Sub btnCancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancel.Click
-        End
+        TxtID.Clear()
+        TxtNama.Clear()
+        TxtPassword.Clear()
+        TxtID.Focus()
     End Sub
 
-    Private Sub BtnSignUp_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnSignUp.Click
-        Me.Hide()
-        register.Show()
-
-    End Sub
 End Class

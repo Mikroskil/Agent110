@@ -28,9 +28,9 @@ Public Class register
     Private Sub BtnSubmit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnSubmit.Click
         
             dr = ds.Tables("Admin").NewRow
-        dr("Id") = TxtNo.Text
+            dr("NO_ID") = TxtNo.Text
             dr("NIP") = TxtNip.Text
-        dr("Pass") = TxtPass.Text
+            dr("Password") = TxtPass.Text
             ds.Tables("Admin").Rows.Add(dr)
             Call updateDB()
             BtnSubmit.Enabled = False
@@ -75,7 +75,7 @@ Public Class register
         ad = New SqlDataAdapter(cmd)
         ds = New DataSet
         ad.Fill(ds, "Admin")
-        dc(0) = ds.Tables("Admin").Columns("Id")
+        dc(0) = ds.Tables("Admin").Columns("NO_ID")
         ds.Tables("Admin").PrimaryKey = dc
 
         Label1.Top = Label1.Height * 5
