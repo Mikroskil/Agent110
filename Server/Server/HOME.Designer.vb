@@ -874,13 +874,15 @@ Partial Class HOME
         'Kom1
         '
         Me.Kom1.AutoSize = True
+        Me.Kom1.BackColor = System.Drawing.Color.DimGray
         Me.Kom1.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Kom1.ForeColor = System.Drawing.Color.Black
         Me.Kom1.Location = New System.Drawing.Point(8, 25)
         Me.Kom1.Name = "Kom1"
         Me.Kom1.Size = New System.Drawing.Size(109, 22)
         Me.Kom1.TabIndex = 64
         Me.Kom1.Text = "Komputer 1"
-        Me.Kom1.UseVisualStyleBackColor = True
+        Me.Kom1.UseVisualStyleBackColor = False
         '
         'BtnShutdown
         '
@@ -990,7 +992,6 @@ Partial Class HOME
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.PanelHome)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "HOME"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel1.ResumeLayout(False)

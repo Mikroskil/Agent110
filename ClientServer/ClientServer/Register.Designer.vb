@@ -28,7 +28,7 @@ Partial Class Register
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.cboJurusan = New System.Windows.Forms.ComboBox()
+        Me.cboRuangLab = New System.Windows.Forms.ComboBox()
         Me.txtRePass = New System.Windows.Forms.TextBox()
         Me.txtPass = New System.Windows.Forms.TextBox()
         Me.txtID = New System.Windows.Forms.TextBox()
@@ -36,6 +36,7 @@ Partial Class Register
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Submit = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.LblIP = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
@@ -60,7 +61,7 @@ Partial Class Register
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(112, 20)
         Me.Label4.TabIndex = 3
-        Me.Label4.Text = "Jurusan"
+        Me.Label4.Text = "Ruang Lab"
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label3
@@ -93,12 +94,12 @@ Partial Class Register
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(112, 20)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "No. ID"
+        Me.Label1.Text = "No.Komputer"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Panel2
         '
-        Me.Panel2.Controls.Add(Me.cboJurusan)
+        Me.Panel2.Controls.Add(Me.cboRuangLab)
         Me.Panel2.Controls.Add(Me.txtRePass)
         Me.Panel2.Controls.Add(Me.txtPass)
         Me.Panel2.Controls.Add(Me.txtID)
@@ -107,14 +108,14 @@ Partial Class Register
         Me.Panel2.Size = New System.Drawing.Size(288, 199)
         Me.Panel2.TabIndex = 5
         '
-        'cboJurusan
+        'cboRuangLab
         '
-        Me.cboJurusan.FormattingEnabled = True
-        Me.cboJurusan.Items.AddRange(New Object() {"Teknik Informatika", "Sistem Informasi", "Manajemen", "Akuntansi", "Manajemen Informatika"})
-        Me.cboJurusan.Location = New System.Drawing.Point(78, 159)
-        Me.cboJurusan.Name = "cboJurusan"
-        Me.cboJurusan.Size = New System.Drawing.Size(188, 21)
-        Me.cboJurusan.TabIndex = 3
+        Me.cboRuangLab.FormattingEnabled = True
+        Me.cboRuangLab.Items.AddRange(New Object() {"Lab 1", "Lab 2", "Lab 3"})
+        Me.cboRuangLab.Location = New System.Drawing.Point(78, 159)
+        Me.cboRuangLab.Name = "cboRuangLab"
+        Me.cboRuangLab.Size = New System.Drawing.Size(188, 21)
+        Me.cboRuangLab.TabIndex = 3
         '
         'txtRePass
         '
@@ -185,12 +186,23 @@ Partial Class Register
         Me.Label5.TabIndex = 7
         Me.Label5.Text = "Register Client"
         '
+        'LblIP
+        '
+        Me.LblIP.AutoSize = True
+        Me.LblIP.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblIP.ForeColor = System.Drawing.Color.Black
+        Me.LblIP.Location = New System.Drawing.Point(419, 175)
+        Me.LblIP.Name = "LblIP"
+        Me.LblIP.Size = New System.Drawing.Size(0, 21)
+        Me.LblIP.TabIndex = 13
+        '
         'Register
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(839, 370)
+        Me.Controls.Add(Me.LblIP)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel3)
@@ -213,7 +225,7 @@ Partial Class Register
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
-    Friend WithEvents cboJurusan As System.Windows.Forms.ComboBox
+    Friend WithEvents cboRuangLab As System.Windows.Forms.ComboBox
     Friend WithEvents txtRePass As System.Windows.Forms.TextBox
     Friend WithEvents txtPass As System.Windows.Forms.TextBox
     Friend WithEvents txtID As System.Windows.Forms.TextBox
@@ -221,6 +233,7 @@ Partial Class Register
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Submit As System.Windows.Forms.Button
     Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents LblIP As System.Windows.Forms.Label
 
     
 End Class

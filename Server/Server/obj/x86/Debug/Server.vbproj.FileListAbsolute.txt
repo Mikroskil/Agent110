@@ -105,10 +105,8 @@ F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server
 F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Server\obj\x86\Debug\Server.xml
 F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Server\obj\x86\Debug\Server.pdb
 F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Server\obj\x86\Debug\Server.vbprojResolveAssemblyReference.cache
-F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Server\obj\x86\Debug\Server.FormPercobaan.resources
 F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Server\obj\x86\Debug\Server.HOME.resources
 F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Server\obj\x86\Debug\Server.LoginAdmin.resources
-F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Server\obj\x86\Debug\Server.Monitoring.resources
 F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Server\obj\x86\Debug\Server.Resources.resources
 F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Server\obj\x86\Debug\Server.register.resources
 F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Server\obj\x86\Debug\Server.vbproj.GenerateResource.Cache
@@ -131,6 +129,5 @@ F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\TMP\Backup\Se
 F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\TMP\Backup\Server\Server\bin\Debug\Server.exe
 F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\TMP\Backup\Server\Server\bin\Debug\Server.pdb
 F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\TMP\Backup\Server\Server\bin\Debug\Server.xml
-F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Agent110\Server\Server\obj\x86\Debug\Server.FormPercobaan.resources
 F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Agent110\Server\Server\obj\x86\Debug\Server.register.resources
 F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Agent110\Server\Server\obj\x86\Debug\Server.Shutdown.resources

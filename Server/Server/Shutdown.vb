@@ -2,6 +2,8 @@
 Imports System.Net.Sockets
 Imports System.Threading
 Imports System.IO
+Imports System.Data.Sql
+Imports System.Data.SqlClient
 
 Public Class Shutdown
     Inherits System.Windows.Forms.Form

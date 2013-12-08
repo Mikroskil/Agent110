@@ -12,9 +12,10 @@ Public Class main
     Dim trShutdown As Thread
     Dim trReboot As Thread
     Dim trLogOff As Thread
+    Dim trKirimStatus As Thread
     Dim ipAddress As IPAddress = Dns.Resolve(Dns.GetHostName()).AddressList(0)
 
-    '============================================================
+#Region "Menerima Perintah dari Server"
     Sub shutdown()
         Dim t As Single
         Dim objWMIService, objComputer As Object
@@ -29,7 +30,7 @@ Public Class main
                 'Shutdown system
             End If
         Next
-    End Sub 'Bagian System Shutdown
+    End Sub
 
     Sub reboot()
         Dim t As Single
@@ -46,7 +47,7 @@ Public Class main
                 'Reboot  system
             End If
         Next
-    End Sub 'Bagian Reboot Windows
+    End Sub
 
     Sub logoff()
         Dim t As Single
@@ -63,7 +64,7 @@ Public Class main
                 'LogOff  system
             End If
         Next
-    End Sub 'Bagian LogOff System
+    End Sub
 
     Sub ListenToServer()
         'Try
@@ -89,12 +90,11 @@ Public Class main
                 If Not LISTENING Then Exit Do
 
                 Dim tcpCli As TcpClient = tcpList.AcceptTcpClient()
-                'ListBox1.Items.Add("Data from " & "128.10.20.63")
 
                 Dim ns As NetworkStream = tcpCli.GetStream
                 Dim sr As New StreamReader(ns)
 
-                ' Mengambil data dari client 
+                ' Menerima data dari server untuk di kerjakan client
                 Dim receivedData As String = sr.ReadLine()
                 If receivedData = "###SHUTDOWN###" Then
                     trShutdown = New Thread(AddressOf shutdown)
@@ -123,14 +123,58 @@ Public Class main
             'error
             LISTENING = False
         End Try
-    End Sub 'Bagian Koneksi terhadap server
-    '============================================================
+    End Sub
+#End Region
 
-#Region "Set Posisi Desain Dinamis Form"
+#Region "Kirim Status Client ke Server"
+    Sub KirimStatus()
+        'Mendapatkan alamat IP_Client dari database untuk di kirim ke Server
+        Dim Sql, IP_Address As String
+        Dim cmd As SqlCommand
+        Dim rdr As SqlDataReader
+        IP_Address = LblIP.Text
+
+        'Tahap pencocokan alamat IP di komputer client dengan IP yang tersimpan di database
+        Dim strKoneksi As String
+        strKoneksi = "Data Source=ASUS-1025C\SQLEXPRESS; Initial Catalog = Laboratorium; Integrated Security=True"
+        koneksi = New SqlConnection(strKoneksi)
+
+        Try
+            koneksi.Open()
+            Sql = "SELECT IP_Address FROM Client WHERE IP_Address='" + IP_Address + "'"
+            cmd = New SqlCommand(Sql, koneksi)
+            rdr = cmd.ExecuteReader()
+
+            If rdr.HasRows = True Then
+                Dim host As String = IP_Address
+                Dim port As Integer = 8000
+                Try
+                    Dim tcpCli As New TcpClient(host, port)
+                    Dim ns As NetworkStream = tcpCli.GetStream
+                    Dim sw As New StreamWriter(ns)
+                    sw.WriteLine(LblIP.Text.ToString)
+                    sw.Flush()
+                    sw.Close()
+                    ns.Close()
+                Catch ex As Exception
+                    MsgBox(ex.Message)
+                End Try
+            Else
+                MessageBox.Show("Alamat IP Client dengan Database Tidak Cocok ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End If
+        Catch ex As Exception
+            MessageBox.Show("Koneksi Gagal !!")
+        End Try
+
+    End Sub
+#End Region
+
+#Region "Set Posisi Desain Dinamis Form dan Membangun Koneksi Ke database"
     Private Sub main_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         setcontrols()
+
         Dim strKoneksi As String
-        strKoneksi = "Data Source=asus-2015c; Initial Catalog = Laboratorium; Integrated Security=True"
+        strKoneksi = "Data Source=ASUS-1025C\SQLEXPRESS; Initial Catalog = Laboratorium; Integrated Security=True"
         koneksi = New SqlConnection(strKoneksi)
 
         Try
@@ -139,9 +183,9 @@ Public Class main
             MessageBox.Show("Koneksi Gagal !!")
         End Try
 
-        txtUser.Text = ""
+        txtNoKomputer.Text = ""
         txtPass.Text = ""
-        txtUser.Focus()
+        txtNoKomputer.Focus()
 
     End Sub
 
@@ -156,25 +200,25 @@ Public Class main
         Panel1.Left = (Me.Width / 3 + (Panel1.Width / 3))
         Panel1.Top = (Me.Height - PictureBox1.Width - 50) / 2
 
-        Me.LblIP.Text = splash.LblIP.Text.ToString
+        LblIP.Text = (ipAddress.ToString)
+        LblIP.Visible = False
 
         'Sets the location for all of the controls on the form.
         pnlappbar.Width = Me.Width
         pnlappbar.Left = Me.Left
         pnlappbar.Height = 100
         pnlappbar.Top = Me.Height - pnlappbar.Height
-        btnCancel.Left = (pnlappbar.Width / 2) - 10
+        btnCancel.Left = (pnlappbar.Width / 2)
         btnLogin.Left = (btnCancel.Left - btnCancel.Width) - 30
         BtnSignUp.Left = (btnCancel.Left - btnCancel.Width) - 100 * 1.8
         Me.TopMost = True
     End Sub
-#End Region 'Set Form
+#End Region
 
-#Region "Cancel Button"
+#Region "Cancel Button & Kembali Ke Splash"
     Private Sub Cancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancel.Click
-        Me.Visible = False
-        splash.Visible = True
-
+        splash.Show()
+        Me.Close()
     End Sub
 
     Private Sub btnclose_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnCancel.MouseEnter
@@ -184,31 +228,34 @@ Public Class main
     Private Sub Cancel_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnCancel.MouseLeave
         btnCancel.BackColor = Color.DarkTurquoise
     End Sub
-#End Region 'Kembali Ke Tampilan Awal'
+#End Region
 
 #Region "Login"
     Private Sub Login_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnLogin.Click
-        Dim Sql, user, pass As String
+        Dim Sql, NoKomputer, password, IP_Address As String
         Dim cmd As SqlCommand
         Dim rdr As SqlDataReader
 
-        user = txtUser.Text
-        pass = txtPass.Text
+        NoKomputer = txtNoKomputer.Text
+        password = txtPass.Text
+        IP_Address = LblIP.Text
 
-        Sql = "SELECT Nim,Pass FROM Client WHERE Nim='" + user + "' AND Pass='" + pass + "'"
+        Sql = "SELECT NoKomputer,Password,IP_Address FROM Client WHERE NoKomputer='" + NoKomputer + "' AND Password='" + password + " 'AND IP_Address='" + IP_Address + "'"
         cmd = New SqlCommand(Sql, koneksi)
 
         rdr = cmd.ExecuteReader()
 
         If rdr.HasRows = True Then
-            splash.Show()
-            Me.Hide()
+            trKirimStatus = New Thread(AddressOf KirimStatus)
+            trKirimStatus.Start()
             NotifyIcon1.Visible = True
             NotifyIcon1.Text = LblIP.Text
+            Me.Hide()
         Else
-            MessageBox.Show("Kombinasi Username ,Password dan Hak Akses Salah", "Konfirmasi", MessageBoxButtons.OK, MessageBoxIcon.Error)
-            txtUser.Focus()
-
+            MessageBox.Show("Kombinasi Username dan Password atau Cek Alamat IP ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            txtNoKomputer.Clear()
+            txtPass.Clear()
+            txtNoKomputer.Focus()
         End If
 
         rdr.Close()
@@ -225,15 +272,18 @@ Public Class main
     End Sub
 
     Private Sub NotifyIcon1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles NotifyIcon1.Click
+        txtNoKomputer.Clear()
+        txtPass.Clear()
+        txtNoKomputer.Focus()
         Me.Show()
     End Sub
 
-#End Region 'Login Button'
+#End Region
 
-#Region "Registrasi"
+#Region "Sign UP"
     Private Sub BtnSignUp_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnSignUp.Click
-        Me.Hide()
         Register.Show()
+        Me.Close()
     End Sub
 
     Private Sub BtnSignUp_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles BtnSignUp.MouseEnter
@@ -244,6 +294,6 @@ Public Class main
         BtnSignUp.BackColor = Color.DarkTurquoise
     End Sub
 
-#End Region 'Button SignUp'
+#End Region
 
 End Class

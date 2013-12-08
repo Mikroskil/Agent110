@@ -10,7 +10,6 @@ Public Class Register
     Dim cb As SqlCommandBuilder
     Dim dc(0) As DataColumn
 
-
     Sub updateDB()
         cb = New SqlCommandBuilder(ad)
         ad = cb.DataAdapter
@@ -21,14 +20,13 @@ Public Class Register
         txtID.Clear()
         txtPass.Clear()
         txtRePass.Clear()
-
-
     End Sub
+
 #Region "Set Form"
     Private Sub Register_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         setcontrols()
 
-        con = New SqlConnection("Data Source = WULAN-4750; Initial Catalog = Laboratorium; Integrated Security = true")
+        con = New SqlConnection("Data Source =ASUS-1025C\SQLEXPRESS; Initial Catalog = Laboratorium; Integrated Security = true")
         cmd = New SqlCommand("select * from Client", con)
         ad = New SqlDataAdapter(cmd)
         ds = New DataSet
@@ -39,7 +37,8 @@ Public Class Register
         kosong()
         txtID.Focus()
 
-
+        LblIP.Text = main.LblIP.Text
+        LblIP.Visible = False
     End Sub
 
     Public Sub setcontrols()
@@ -67,9 +66,8 @@ Public Class Register
 
 #Region "Cancel Button"
     Private Sub Cancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
-        'Me.Visible = False
-        'splash.Visible = True
-        End
+        splash.Show()
+        Me.Close()
     End Sub
 
     Private Sub btnclose_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles Button2.MouseEnter
@@ -79,26 +77,23 @@ Public Class Register
     Private Sub Cancel_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles Button2.MouseLeave
         Button2.BackColor = Color.DarkTurquoise
     End Sub
-#End Region 'Close Button
+#End Region
 
-
-
-
+#Region "Submit Button"
     Private Sub Submit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Submit.Click
         dr = ds.Tables("Client").NewRow
-        dr("Nim") = txtID.Text
-        dr("Pass") = txtPass.Text
-        dr("Jurusan") = cboJurusan.SelectedItem
+        dr("NoKomputer") = txtID.Text
+        dr("Password") = txtPass.Text
+        dr("RuangLab") = cboRuangLab.SelectedItem
+        dr("IP_Address") = LblIP.Text
         ds.Tables("Client").Rows.Add(dr)
         Call updateDB()
         Submit.Enabled = False
 
         MsgBox("Data Telah Disimpan, Silahkan Login", vbOKOnly, "Pemberitahuan")
         kosong()
-        Me.Hide()
-        splash.Show()
-
-
+        main.Show()
+        Me.Close()
     End Sub
 
     Private Sub Submit_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles Submit.MouseEnter
@@ -109,5 +104,7 @@ Public Class Register
         Submit.BackColor = Color.DarkTurquoise
 
     End Sub
+
+#End Region
 
 End Class

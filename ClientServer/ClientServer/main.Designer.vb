@@ -30,7 +30,7 @@ Partial Class main
         Me.pnlappbar = New System.Windows.Forms.Panel()
         Me.BtnSignUp = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.txtUser = New System.Windows.Forms.TextBox()
+        Me.txtNoKomputer = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtPass = New System.Windows.Forms.TextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -85,7 +85,7 @@ Partial Class main
         Me.pnlappbar.Controls.Add(Me.BtnSignUp)
         Me.pnlappbar.Controls.Add(Me.btnLogin)
         Me.pnlappbar.Controls.Add(Me.btnCancel)
-        Me.pnlappbar.Location = New System.Drawing.Point(12, 396)
+        Me.pnlappbar.Location = New System.Drawing.Point(31, 421)
         Me.pnlappbar.Name = "pnlappbar"
         Me.pnlappbar.Size = New System.Drawing.Size(807, 100)
         Me.pnlappbar.TabIndex = 4
@@ -110,15 +110,15 @@ Partial Class main
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(130, 23)
         Me.Label1.TabIndex = 5
-        Me.Label1.Text = "Username :"
+        Me.Label1.Text = "No.Komputer :"
         '
-        'txtUser
+        'txtNoKomputer
         '
-        Me.txtUser.BackColor = System.Drawing.SystemColors.Window
-        Me.txtUser.Location = New System.Drawing.Point(40, 76)
-        Me.txtUser.Name = "txtUser"
-        Me.txtUser.Size = New System.Drawing.Size(247, 20)
-        Me.txtUser.TabIndex = 7
+        Me.txtNoKomputer.BackColor = System.Drawing.SystemColors.Window
+        Me.txtNoKomputer.Location = New System.Drawing.Point(40, 76)
+        Me.txtNoKomputer.Name = "txtNoKomputer"
+        Me.txtNoKomputer.Size = New System.Drawing.Size(247, 20)
+        Me.txtNoKomputer.TabIndex = 7
         '
         'Label2
         '
@@ -143,7 +143,7 @@ Partial Class main
         Me.Panel1.Controls.Add(Me.Label3)
         Me.Panel1.Controls.Add(Me.txtPass)
         Me.Panel1.Controls.Add(Me.Label2)
-        Me.Panel1.Controls.Add(Me.txtUser)
+        Me.Panel1.Controls.Add(Me.txtNoKomputer)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Location = New System.Drawing.Point(315, 112)
         Me.Panel1.Name = "Panel1"
@@ -192,7 +192,7 @@ Partial Class main
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(831, 508)
+        Me.ClientSize = New System.Drawing.Size(831, 596)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.PictureBox1)
@@ -214,7 +214,7 @@ Partial Class main
     Friend WithEvents btnLogin As System.Windows.Forms.Button
     Friend WithEvents pnlappbar As System.Windows.Forms.Panel
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents txtUser As System.Windows.Forms.TextBox
+    Friend WithEvents txtNoKomputer As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents txtPass As System.Windows.Forms.TextBox
     Friend WithEvents Panel1 As System.Windows.Forms.Panel

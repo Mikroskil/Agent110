@@ -22,14 +22,11 @@ Partial Class splash
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(splash))
         Me.lblcompany = New System.Windows.Forms.Label()
         Me.piclogo = New System.Windows.Forms.PictureBox()
         Me.pnllogo = New System.Windows.Forms.Panel()
         Me.lbllogo = New System.Windows.Forms.Label()
-        Me.tmrdisplay = New System.Windows.Forms.Timer(Me.components)
-        Me.LblIP = New System.Windows.Forms.Label()
         CType(Me.piclogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnllogo.SuspendLayout()
         Me.SuspendLayout()
@@ -58,7 +55,6 @@ Partial Class splash
         '
         'pnllogo
         '
-        Me.pnllogo.Controls.Add(Me.LblIP)
         Me.pnllogo.Controls.Add(Me.lblcompany)
         Me.pnllogo.Controls.Add(Me.lbllogo)
         Me.pnllogo.Controls.Add(Me.piclogo)
@@ -77,20 +73,6 @@ Partial Class splash
         Me.lbllogo.Size = New System.Drawing.Size(652, 89)
         Me.lbllogo.TabIndex = 1
         Me.lbllogo.Text = "STMIK - STIE Mikroskil"
-        '
-        'tmrdisplay
-        '
-        Me.tmrdisplay.Interval = 5000
-        '
-        'LblIP
-        '
-        Me.LblIP.AutoSize = True
-        Me.LblIP.BackColor = System.Drawing.Color.White
-        Me.LblIP.Location = New System.Drawing.Point(467, 180)
-        Me.LblIP.Name = "LblIP"
-        Me.LblIP.Size = New System.Drawing.Size(31, 13)
-        Me.LblIP.TabIndex = 3
-        Me.LblIP.Text = "LblIP"
         '
         'splash
         '
@@ -112,6 +94,4 @@ Partial Class splash
     Friend WithEvents piclogo As System.Windows.Forms.PictureBox
     Friend WithEvents pnllogo As System.Windows.Forms.Panel
     Friend WithEvents lbllogo As System.Windows.Forms.Label
-    Friend WithEvents tmrdisplay As System.Windows.Forms.Timer
-    Friend WithEvents LblIP As System.Windows.Forms.Label
 End Class
