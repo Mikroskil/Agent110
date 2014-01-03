@@ -29,14 +29,14 @@ Partial Class Register
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.cboRuangLab = New System.Windows.Forms.ComboBox()
-        Me.txtRePass = New System.Windows.Forms.TextBox()
-        Me.txtPass = New System.Windows.Forms.TextBox()
         Me.txtID = New System.Windows.Forms.TextBox()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Submit = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.LblIP = New System.Windows.Forms.Label()
+        Me.txtPass = New System.Windows.Forms.TextBox()
+        Me.txtRePass = New System.Windows.Forms.TextBox()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
@@ -99,9 +99,9 @@ Partial Class Register
         '
         'Panel2
         '
-        Me.Panel2.Controls.Add(Me.cboRuangLab)
         Me.Panel2.Controls.Add(Me.txtRePass)
         Me.Panel2.Controls.Add(Me.txtPass)
+        Me.Panel2.Controls.Add(Me.cboRuangLab)
         Me.Panel2.Controls.Add(Me.txtID)
         Me.Panel2.Location = New System.Drawing.Point(403, 69)
         Me.Panel2.Name = "Panel2"
@@ -116,22 +116,6 @@ Partial Class Register
         Me.cboRuangLab.Name = "cboRuangLab"
         Me.cboRuangLab.Size = New System.Drawing.Size(188, 21)
         Me.cboRuangLab.TabIndex = 3
-        '
-        'txtRePass
-        '
-        Me.txtRePass.Location = New System.Drawing.Point(78, 110)
-        Me.txtRePass.Name = "txtRePass"
-        Me.txtRePass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txtRePass.Size = New System.Drawing.Size(188, 20)
-        Me.txtRePass.TabIndex = 2
-        '
-        'txtPass
-        '
-        Me.txtPass.Location = New System.Drawing.Point(78, 65)
-        Me.txtPass.Name = "txtPass"
-        Me.txtPass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txtPass.Size = New System.Drawing.Size(188, 20)
-        Me.txtPass.TabIndex = 1
         '
         'txtID
         '
@@ -196,6 +180,20 @@ Partial Class Register
         Me.LblIP.Size = New System.Drawing.Size(0, 21)
         Me.LblIP.TabIndex = 13
         '
+        'txtPass
+        '
+        Me.txtPass.Location = New System.Drawing.Point(78, 63)
+        Me.txtPass.Name = "txtPass"
+        Me.txtPass.Size = New System.Drawing.Size(188, 20)
+        Me.txtPass.TabIndex = 14
+        '
+        'txtRePass
+        '
+        Me.txtRePass.Location = New System.Drawing.Point(78, 110)
+        Me.txtRePass.Name = "txtRePass"
+        Me.txtRePass.Size = New System.Drawing.Size(188, 20)
+        Me.txtRePass.TabIndex = 15
+        '
         'Register
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -226,14 +224,14 @@ Partial Class Register
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
     Friend WithEvents cboRuangLab As System.Windows.Forms.ComboBox
-    Friend WithEvents txtRePass As System.Windows.Forms.TextBox
-    Friend WithEvents txtPass As System.Windows.Forms.TextBox
     Friend WithEvents txtID As System.Windows.Forms.TextBox
     Friend WithEvents Panel3 As System.Windows.Forms.Panel
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Submit As System.Windows.Forms.Button
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents LblIP As System.Windows.Forms.Label
+    Friend WithEvents txtPass As System.Windows.Forms.TextBox
+    Friend WithEvents txtRePass As System.Windows.Forms.TextBox
 
     
 End Class

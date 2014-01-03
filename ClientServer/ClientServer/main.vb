@@ -1,19 +1,18 @@
 ﻿Imports System.Net
-Imports System.IO
 Imports System.Net.Sockets
 Imports System.Threading
-Imports System.Data.Sql
-Imports System.Data.SqlClient
+Imports System.IO
+Imports MySql.Data.MySqlClient
 
 Public Class main
     Inherits System.Windows.Forms.Form
-    Dim koneksi As SqlConnection
     Dim trlisten As Thread
     Dim trShutdown As Thread
     Dim trReboot As Thread
     Dim trLogOff As Thread
     Dim trKirimStatus As Thread
     Dim ipAddress As IPAddress = Dns.Resolve(Dns.GetHostName()).AddressList(0)
+    Dim mysqlconn As New MySqlConnection("Server=192.168.3.1; Port=3306; User Id=admin; Password=admin; Database=Laboratorium")
 
 #Region "Menerima Perintah dari Server"
     Sub shutdown()
@@ -73,7 +72,7 @@ Public Class main
         Dim localhostAddress As IPAddress = ipAddress.Parse(ipAddress.ToString)
 
         ' PORT 
-        Dim port As Integer = 8000
+        Dim port As Integer = 3306
 
         ' Membuat socket tcp
         Dim tcpList As New TcpListener(localhostAddress, port)
@@ -90,7 +89,6 @@ Public Class main
                 If Not LISTENING Then Exit Do
 
                 Dim tcpCli As TcpClient = tcpList.AcceptTcpClient()
-
                 Dim ns As NetworkStream = tcpCli.GetStream
                 Dim sr As New StreamReader(ns)
 
@@ -109,12 +107,12 @@ Public Class main
                     trLogOff.Start()
                 End If
 
-                Dim returnedData As String = "###OK###" '& " From Server"
-                Dim sw As New StreamWriter(ns)
-                sw.WriteLine(returnedData)
-                sw.Flush()
+                'Dim returnedData As String = "###OK###" '& " From Server"
+                'Dim sw As New StreamWriter(ns)
+                'sw.WriteLine(returnedData)
+                'sw.Flush()
                 sr.Close()
-                sw.Close()
+                'sw.Close()
                 ns.Close()
                 tcpCli.Close()
             Loop
@@ -128,68 +126,94 @@ Public Class main
 
 #Region "Kirim Status Client ke Server"
     Sub KirimStatus()
-        'Mendapatkan alamat IP_Client dari database untuk di kirim ke Server
-        Dim Sql, IP_Address As String
-        Dim cmd As SqlCommand
-        Dim rdr As SqlDataReader
-        IP_Address = LblIP.Text
-
-        'Tahap pencocokan alamat IP di komputer client dengan IP yang tersimpan di database
-        Dim strKoneksi As String
-        strKoneksi = "Data Source=ASUS-1025C\SQLEXPRESS; Initial Catalog = Laboratorium; Integrated Security=True"
-        koneksi = New SqlConnection(strKoneksi)
-
+        ''Mendapatkan alamat IP_Client dari database untuk di kirim ke Server
+        'Dim Sql As String
+        'Dim cmd As MySqlCommand
+        'Dim rdr As MySqlDataReader
         Try
-            koneksi.Open()
-            Sql = "SELECT IP_Address FROM Client WHERE IP_Address='" + IP_Address + "'"
-            cmd = New SqlCommand(Sql, koneksi)
-            rdr = cmd.ExecuteReader()
+            'host yang dipakai adalah host server'
+            Dim host As String = "192.168.3.2"
+            Dim port As Integer = 3306
+            Dim tcpCli As New TcpClient(host, port)
+            Dim ns As NetworkStream = tcpCli.GetStream
+            Dim sw As New StreamWriter(ns)
+            sw.WriteLine(ipAddress.ToString)
+            sw.Flush()
+            sw.Close()
+            ns.Close()
+            MessageBox.Show("Komputer Telah Terkoneksi ke Server")
 
-            If rdr.HasRows = True Then
-                Dim host As String = IP_Address
-                Dim port As Integer = 8000
-                Try
-                    Dim tcpCli As New TcpClient(host, port)
-                    Dim ns As NetworkStream = tcpCli.GetStream
-                    Dim sw As New StreamWriter(ns)
-                    sw.WriteLine(LblIP.Text.ToString)
-                    sw.Flush()
-                    sw.Close()
-                    ns.Close()
-                Catch ex As Exception
-                    MsgBox(ex.Message)
-                End Try
-            Else
-                MessageBox.Show("Alamat IP Client dengan Database Tidak Cocok ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-            End If
         Catch ex As Exception
-            MessageBox.Show("Koneksi Gagal !!")
+            MessageBox.Show("Gagal melempar ip ke server")
         End Try
+
+        ''Tahap pencocokan alamat IP di komputer client dengan IP yang tersimpan di database
+
+        'Try
+        '    Dim mysqlconn As New MySqlConnection("Server=192.168.3.1; Port=3306; User Id=admin; Password=admin; Database=Laboratorium")
+        '    mysqlconn.Open()
+        '    Sql = "SELECT * FROM client WHERE IP_Address='" + ipAddress.ToString + "'"
+        '    cmd = New MySqlCommand(Sql, mysqlconn)
+        '    rdr = cmd.ExecuteReader()
+
+        '    If rdr.HasRows = True Then
+        '        Dim host As String = "192.168.3.2"
+        '        Dim port As Integer = 3306
+
+        '        Dim tcpCli As New TcpClient(host, port)
+        '        Dim ns As NetworkStream = tcpCli.GetStream
+
+        '        Dim sw As New StreamWriter(ns)
+        '        sw.WriteLine(ipAddress.ToString)
+        '        sw.Flush()
+
+        '        MessageBox.Show("Komputer Telah Terkoneksi ke Server")
+
+        '        'Dim sr As New StreamReader(ns)
+        '        'Dim result As String = sr.ReadLine()
+        '        'If result = "###OK###" Then
+        '        'MsgBox("Operasi Sukses", MsgBoxStyle.Information)
+        '        'End If
+
+        '        'sw.Close()
+        '        'ns.Close()
+
+        '        'Try
+
+        '        'Catch ex As Exception
+        '        '    MsgBox(ex.Message)
+        '        'End Try
+        '    Else
+        '        MessageBox.Show("Alamat IP Client dengan Database Tidak Cocok ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        '    End If
+        'Catch ex As Exception
+        '    MessageBox.Show("Koneksi Gagal !!")
+        'End Try
 
     End Sub
 #End Region
 
-#Region "Set Posisi Desain Dinamis Form dan Membangun Koneksi Ke database"
+#Region "Load"
     Private Sub main_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         setcontrols()
-
-        Dim strKoneksi As String
-        strKoneksi = "Data Source=ASUS-1025C\SQLEXPRESS; Initial Catalog = Laboratorium; Integrated Security=True"
-        koneksi = New SqlConnection(strKoneksi)
-
         Try
-            koneksi.Open()
-        Catch ex As Exception
-            MessageBox.Show("Koneksi Gagal !!")
-        End Try
+            mysqlconn.Open()
+            trlisten = New Thread(AddressOf ListenToServer)
+            trlisten.Start()
 
-        txtNoKomputer.Text = ""
-        txtPass.Text = ""
-        txtNoKomputer.Focus()
+            txtNoKomputer.Text = ""
+            txtPass.Text = ""
+            txtNoKomputer.Focus()
+
+        Catch ex As Exception
+            MessageBox.Show("Koneksi Gagal...")
+        End Try
 
     End Sub
 
     Public Sub setcontrols()
+
+        NotifyIcon1.Visible = False
         PictureBox1.Top = (Me.Height - PictureBox1.Width - 50) / 2
         PictureBox1.Left = (Me.Width - PictureBox1.Width - 50) / 3
 
@@ -199,9 +223,6 @@ Public Class main
         Panel1.Width = Label1.Width * 3
         Panel1.Left = (Me.Width / 3 + (Panel1.Width / 3))
         Panel1.Top = (Me.Height - PictureBox1.Width - 50) / 2
-
-        LblIP.Text = (ipAddress.ToString)
-        LblIP.Visible = False
 
         'Sets the location for all of the controls on the form.
         pnlappbar.Width = Me.Width
@@ -232,25 +253,23 @@ Public Class main
 
 #Region "Login"
     Private Sub Login_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnLogin.Click
-        Dim Sql, NoKomputer, password, IP_Address As String
-        Dim cmd As SqlCommand
-        Dim rdr As SqlDataReader
+        Dim Sql, NoKomputer, Password As String
+        Dim cmd As MySqlCommand
+        Dim rdr As MySqlDataReader
 
         NoKomputer = txtNoKomputer.Text
-        password = txtPass.Text
-        IP_Address = LblIP.Text
+        Password = txtPass.Text
 
-        Sql = "SELECT NoKomputer,Password,IP_Address FROM Client WHERE NoKomputer='" + NoKomputer + "' AND Password='" + password + " 'AND IP_Address='" + IP_Address + "'"
-        cmd = New SqlCommand(Sql, koneksi)
+        Sql = "SELECT NoKomputer, Password, IP_Address FROM client WHERE NoKomputer='" + NoKomputer + "' AND Password='" + Password + " 'AND IP_Address='" + ipAddress.ToString + "'"
+        cmd = New MySqlCommand(Sql, mysqlconn)
 
         rdr = cmd.ExecuteReader()
 
         If rdr.HasRows = True Then
+            trlisten = New Thread(AddressOf ListenToServer)
+            trlisten.Start()
             trKirimStatus = New Thread(AddressOf KirimStatus)
             trKirimStatus.Start()
-            NotifyIcon1.Visible = True
-            NotifyIcon1.Text = LblIP.Text
-            Me.Hide()
         Else
             MessageBox.Show("Kombinasi Username dan Password atau Cek Alamat IP ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             txtNoKomputer.Clear()
@@ -261,6 +280,9 @@ Public Class main
         rdr.Close()
         cmd.Dispose()
 
+        NotifyIcon1.Visible = True
+        NotifyIcon1.Text = ipAddress.ToString
+        Me.Hide()
     End Sub
 
     Private Sub Login_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnLogin.MouseEnter

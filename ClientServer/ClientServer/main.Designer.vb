@@ -34,7 +34,6 @@ Partial Class main
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtPass = New System.Windows.Forms.TextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.LblIP = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
@@ -139,7 +138,6 @@ Partial Class main
         '
         'Panel1
         '
-        Me.Panel1.Controls.Add(Me.LblIP)
         Me.Panel1.Controls.Add(Me.Label3)
         Me.Panel1.Controls.Add(Me.txtPass)
         Me.Panel1.Controls.Add(Me.Label2)
@@ -149,16 +147,6 @@ Partial Class main
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(348, 235)
         Me.Panel1.TabIndex = 10
-        '
-        'LblIP
-        '
-        Me.LblIP.AutoSize = True
-        Me.LblIP.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblIP.ForeColor = System.Drawing.Color.Black
-        Me.LblIP.Location = New System.Drawing.Point(43, 188)
-        Me.LblIP.Name = "LblIP"
-        Me.LblIP.Size = New System.Drawing.Size(0, 21)
-        Me.LblIP.TabIndex = 12
         '
         'Label3
         '
@@ -220,7 +208,6 @@ Partial Class main
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents LblIP As System.Windows.Forms.Label
     Friend WithEvents BtnSignUp As System.Windows.Forms.Button
     Friend WithEvents NotifyIcon1 As System.Windows.Forms.NotifyIcon
 End Class

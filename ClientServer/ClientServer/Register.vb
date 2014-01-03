@@ -1,17 +1,18 @@
-﻿Imports System.Data
-Imports System.Data.SqlClient
+﻿Imports MySql.Data.MySqlClient
+Imports System.Net
 
 Public Class Register
-    Dim con As SqlConnection
-    Dim cmd As SqlCommand
-    Dim ad As SqlDataAdapter
+    Dim con As MySqlConnection
+    Dim cmd As MySqlCommand
+    Dim ad As MySqlDataAdapter
     Dim dr As DataRow
     Public ds As DataSet
-    Dim cb As SqlCommandBuilder
+    Dim cb As MySqlCommandBuilder
     Dim dc(0) As DataColumn
+    Dim ipAddress As IPAddress = Dns.Resolve(Dns.GetHostName()).AddressList(0)
 
     Sub updateDB()
-        cb = New SqlCommandBuilder(ad)
+        cb = New MySqlCommandBuilder(ad)
         ad = cb.DataAdapter
         ad.Update(ds, "Client")
     End Sub
@@ -22,23 +23,19 @@ Public Class Register
         txtRePass.Clear()
     End Sub
 
-#Region "Set Form"
+#Region "Form Load"
     Private Sub Register_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         setcontrols()
 
-        con = New SqlConnection("Data Source =ASUS-1025C\SQLEXPRESS; Initial Catalog = Laboratorium; Integrated Security = true")
-        cmd = New SqlCommand("select * from Client", con)
-        ad = New SqlDataAdapter(cmd)
+        con = New MySqlConnection("Server=192.168.3.1; Port=3306; User Id=admin; Password=admin; Database=Laboratorium")
+        cmd = New MySqlCommand("select * from Client", con)
+        ad = New MySqlDataAdapter(cmd)
         ds = New DataSet
         ad.Fill(ds, "Client")
-        dc(0) = ds.Tables("Client").Columns("Nim")
+        dc(0) = ds.Tables("Client").Columns("NoKomputer")
         ds.Tables("Client").PrimaryKey = dc
-
-        kosong()
         txtID.Focus()
 
-        LblIP.Text = main.LblIP.Text
-        LblIP.Visible = False
     End Sub
 
     Public Sub setcontrols()
@@ -81,19 +78,25 @@ Public Class Register
 
 #Region "Submit Button"
     Private Sub Submit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Submit.Click
-        dr = ds.Tables("Client").NewRow
-        dr("NoKomputer") = txtID.Text
-        dr("Password") = txtPass.Text
-        dr("RuangLab") = cboRuangLab.SelectedItem
-        dr("IP_Address") = LblIP.Text
-        ds.Tables("Client").Rows.Add(dr)
-        Call updateDB()
-        Submit.Enabled = False
+        If txtID.Text = " " Or txtPass.Text = " " Or txtRePass.Text = " " Then
+            MsgBox("Tidak boleh ada data yang kosong", vbOKOnly, "Peringatan")
+            kosong()
+            txtID.Focus()
+        Else
+            dr = ds.Tables("Client").NewRow
+            dr("NoKomputer") = txtID.Text
+            dr("Password") = txtPass.Text
+            dr("RuangLab") = cboRuangLab.SelectedItem
+            dr("IP_Address") = ipAddress.ToString
+            ds.Tables("Client").Rows.Add(dr)
+            Call updateDB()
+            Submit.Enabled = False
 
-        MsgBox("Data Telah Disimpan, Silahkan Login", vbOKOnly, "Pemberitahuan")
-        kosong()
-        main.Show()
-        Me.Close()
+            MsgBox("Data Telah Disimpan, Silahkan Login", vbOKOnly, "Pemberitahuan")
+            kosong()
+            main.Show()
+            Me.Close()
+        End If
     End Sub
 
     Private Sub Submit_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles Submit.MouseEnter
