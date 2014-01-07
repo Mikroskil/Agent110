@@ -27,7 +27,7 @@ Public Class Register
     Private Sub Register_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         setcontrols()
 
-        con = New MySqlConnection("Server=192.168.3.1; Port=3306; User Id=admin; Password=admin; Database=Laboratorium")
+        con = New MySqlConnection("Server=192.168.3.254; Port=3306; User Id=admin; Password=admin; Database=Laboratorium")
         cmd = New MySqlCommand("select * from Client", con)
         ad = New MySqlDataAdapter(cmd)
         ds = New DataSet

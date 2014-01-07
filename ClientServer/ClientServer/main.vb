@@ -12,7 +12,7 @@ Public Class main
     Dim trLogOff As Thread
     Dim trKirimStatus As Thread
     Dim ipAddress As IPAddress = Dns.Resolve(Dns.GetHostName()).AddressList(0)
-    Dim mysqlconn As New MySqlConnection("Server=192.168.3.1; Port=3306; User Id=admin; Password=admin; Database=Laboratorium")
+    Dim mysqlconn As New MySqlConnection("Server=192.168.3.254; Port=3306; User Id=admin; Password=admin; Database=Laboratorium")
 
 #Region "Menerima Perintah dari Server"
     Sub shutdown()
@@ -72,7 +72,7 @@ Public Class main
         Dim localhostAddress As IPAddress = ipAddress.Parse(ipAddress.ToString)
 
         ' PORT 
-        Dim port As Integer = 3306
+        Dim port As Integer = 8000
 
         ' Membuat socket tcp
         Dim tcpList As New TcpListener(localhostAddress, port)
@@ -132,8 +132,8 @@ Public Class main
         'Dim rdr As MySqlDataReader
         Try
             'host yang dipakai adalah host server'
-            Dim host As String = "192.168.3.2"
-            Dim port As Integer = 3306
+            Dim host As String = "192.168.3.254"
+            Dim port As Integer = 8000
             Dim tcpCli As New TcpClient(host, port)
             Dim ns As NetworkStream = tcpCli.GetStream
             Dim sw As New StreamWriter(ns)

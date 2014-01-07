@@ -1,0 +1,56 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+NetLib
+</name>
+</assembly>
+<members>
+<member name="P:NetLib.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:NetLib.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:NetLib.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:NetLib.NetScan.#ctor">
+	<summary>
+ Constructor
+ </summary>
+</member><member name="M:NetLib.NetScan.Start(NetLib.PingRange)">
+	<summary>
+ Starts ping operations on a background thread.
+ </summary>
+	<param name="pr">Contains the starting and ending IP address for the pings.</param>
+</member><member name="M:NetLib.NetScan.pingWorker_DoWork(System.Object)">
+	<summary>
+ Loops through the IP address and does the pings.
+ </summary>
+	<remarks></remarks>
+	<param name="o">Start and end IP addresses to ping.</param>
+</member><member name="M:NetLib.NetScan.RaiseNetScanComplete">
+	<summary>
+ Fire an event to the client on the same thread that they invoked this  
+ object on so that the UI can be safely updated.
+ </summary>
+</member><member name="M:NetLib.NetScan.DoPing(System.Object)">
+	<summary>
+ Perform the actual ping, and release the semaphore so that another thread
+ can go.
+ </summary>
+	<param name="o">IP address to ping</param>
+</member><member name="M:NetLib.NetScan.Results(System.Net.NetworkInformation.PingReply)">
+	<summary>
+ Fire an event when each ping completes so that the client can show
+ progress
+ </summary>
+	<param name="pr">Ping Results</param>
+</member>
+</members>
+</doc>

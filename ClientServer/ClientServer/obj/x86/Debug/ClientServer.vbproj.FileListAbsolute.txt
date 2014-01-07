@@ -127,3 +127,40 @@ E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Client
 E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\ClientServer\ClientServer\obj\x86\Debug\ClientServer.exe
 E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\ClientServer\ClientServer\obj\x86\Debug\ClientServer.xml
 E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\ClientServer\ClientServer\obj\x86\Debug\ClientServer.pdb
+D:\KuliAh\PKTI\ClientServer\ClientServer\bin\Debug\ClientServer.exe.manifest
+D:\KuliAh\PKTI\ClientServer\ClientServer\bin\Debug\ClientServer.application
+D:\KuliAh\PKTI\ClientServer\ClientServer\bin\Debug\ClientServer.exe
+D:\KuliAh\PKTI\ClientServer\ClientServer\bin\Debug\ClientServer.pdb
+D:\KuliAh\PKTI\ClientServer\ClientServer\bin\Debug\ClientServer.xml
+D:\KuliAh\PKTI\ClientServer\ClientServer\bin\Debug\DevComponents.DotNetBar2.dll
+D:\KuliAh\PKTI\ClientServer\ClientServer\bin\Debug\DevComponents.DotNetBar2.xml
+D:\KuliAh\PKTI\ClientServer\ClientServer\obj\x86\Debug\ClientServer.vbprojResolveAssemblyReference.cache
+D:\KuliAh\PKTI\ClientServer\ClientServer\obj\x86\Debug\ClientServer.Register.resources
+D:\KuliAh\PKTI\ClientServer\ClientServer\obj\x86\Debug\ClientServer.main.resources
+D:\KuliAh\PKTI\ClientServer\ClientServer\obj\x86\Debug\ClientServer.splash.resources
+D:\KuliAh\PKTI\ClientServer\ClientServer\obj\x86\Debug\ClientServer.Resources.resources
+D:\KuliAh\PKTI\ClientServer\ClientServer\obj\x86\Debug\ClientServer.vbproj.GenerateResource.Cache
+D:\KuliAh\PKTI\ClientServer\ClientServer\obj\x86\Debug\ClientServer.exe.manifest
+D:\KuliAh\PKTI\ClientServer\ClientServer\obj\x86\Debug\ClientServer.application
+D:\KuliAh\PKTI\ClientServer\ClientServer\obj\x86\Debug\ClientServer.exe
+D:\KuliAh\PKTI\ClientServer\ClientServer\obj\x86\Debug\ClientServer.xml
+D:\KuliAh\PKTI\ClientServer\ClientServer\obj\x86\Debug\ClientServer.pdb
+E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\AGENT110\ClientServer\ClientServer\bin\Debug\ClientServer.exe.manifest
+E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\AGENT110\ClientServer\ClientServer\bin\Debug\ClientServer.application
+E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\AGENT110\ClientServer\ClientServer\bin\Debug\ClientServer.exe
+E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\AGENT110\ClientServer\ClientServer\bin\Debug\ClientServer.pdb
+E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\AGENT110\ClientServer\ClientServer\bin\Debug\ClientServer.xml
+E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\AGENT110\ClientServer\ClientServer\bin\Debug\DevComponents.DotNetBar2.dll
+E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\AGENT110\ClientServer\ClientServer\bin\Debug\MySql.Data.dll
+E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\AGENT110\ClientServer\ClientServer\bin\Debug\DevComponents.DotNetBar2.xml
+E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\AGENT110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.vbprojResolveAssemblyReference.cache
+E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\AGENT110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.Register.resources
+E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\AGENT110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.main.resources
+E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\AGENT110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.splash.resources
+E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\AGENT110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.Resources.resources
+E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\AGENT110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.vbproj.GenerateResource.Cache
+E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\AGENT110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.exe.manifest
+E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\AGENT110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.application
+E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\AGENT110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.exe
+E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\AGENT110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.xml
+E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\AGENT110\ClientServer\ClientServer\obj\x86\Debug\ClientServer.pdb

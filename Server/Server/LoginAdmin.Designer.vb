@@ -26,6 +26,7 @@ Partial Class LoginAdmin
         Me.LblAdmin = New System.Windows.Forms.Label()
         Me.btnCancel = New System.Windows.Forms.Button()
         Me.pnlappbar = New System.Windows.Forms.Panel()
+        Me.BtnRegistrasi = New System.Windows.Forms.Button()
         Me.btnLogin = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.LblPass = New System.Windows.Forms.Label()
@@ -72,12 +73,26 @@ Partial Class LoginAdmin
         'pnlappbar
         '
         Me.pnlappbar.BackColor = System.Drawing.Color.Teal
+        Me.pnlappbar.Controls.Add(Me.BtnRegistrasi)
         Me.pnlappbar.Controls.Add(Me.btnLogin)
         Me.pnlappbar.Controls.Add(Me.btnCancel)
         Me.pnlappbar.Location = New System.Drawing.Point(86, 457)
         Me.pnlappbar.Name = "pnlappbar"
         Me.pnlappbar.Size = New System.Drawing.Size(766, 100)
         Me.pnlappbar.TabIndex = 5
+        '
+        'BtnRegistrasi
+        '
+        Me.BtnRegistrasi.BackColor = System.Drawing.Color.LightSeaGreen
+        Me.BtnRegistrasi.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnRegistrasi.Font = New System.Drawing.Font("Segoe UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnRegistrasi.ForeColor = System.Drawing.Color.White
+        Me.BtnRegistrasi.Location = New System.Drawing.Point(575, 31)
+        Me.BtnRegistrasi.Name = "BtnRegistrasi"
+        Me.BtnRegistrasi.Size = New System.Drawing.Size(120, 45)
+        Me.BtnRegistrasi.TabIndex = 6
+        Me.BtnRegistrasi.Text = "Registrasi"
+        Me.BtnRegistrasi.UseVisualStyleBackColor = False
         '
         'btnLogin
         '
@@ -152,38 +167,28 @@ Partial Class LoginAdmin
         '
         'TxtPassword
         '
-        Me.TxtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TxtPassword.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtPassword.Location = New System.Drawing.Point(61, 187)
-        Me.TxtPassword.Multiline = True
         Me.TxtPassword.Name = "TxtPassword"
-        Me.TxtPassword.Size = New System.Drawing.Size(342, 25)
+        Me.TxtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.TxtPassword.Size = New System.Drawing.Size(342, 27)
         Me.TxtPassword.TabIndex = 2
-        Me.TxtPassword.Text = "asdasd"
-        Me.TxtPassword.UseSystemPasswordChar = True
-        Me.TxtPassword.WordWrap = False
         '
         'TxtNama
         '
-        Me.TxtNama.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TxtNama.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtNama.Location = New System.Drawing.Point(61, 109)
-        Me.TxtNama.Multiline = True
         Me.TxtNama.Name = "TxtNama"
-        Me.TxtNama.Size = New System.Drawing.Size(342, 25)
+        Me.TxtNama.Size = New System.Drawing.Size(342, 27)
         Me.TxtNama.TabIndex = 1
-        Me.TxtNama.Text = "asdasd"
         '
         'TxtID
         '
-        Me.TxtID.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TxtID.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtID.Location = New System.Drawing.Point(61, 25)
-        Me.TxtID.Multiline = True
         Me.TxtID.Name = "TxtID"
-        Me.TxtID.Size = New System.Drawing.Size(342, 25)
+        Me.TxtID.Size = New System.Drawing.Size(342, 27)
         Me.TxtID.TabIndex = 0
-        Me.TxtID.Text = "asdasd"
         '
         'PictureBox1
         '
@@ -243,5 +248,6 @@ Partial Class LoginAdmin
     Friend WithEvents LblID As System.Windows.Forms.Label
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Panel3 As System.Windows.Forms.Panel
+    Friend WithEvents BtnRegistrasi As System.Windows.Forms.Button
 
 End Class

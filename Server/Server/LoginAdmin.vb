@@ -1,43 +1,38 @@
-﻿'Imports System.Data
-'Imports System.Data.SqlClient
+﻿'Imports System.Net
+'Imports System.Net.Sockets
+'Imports System.Threading
+'Imports System.IO
+'Imports MySql.Data.MySqlClient
 
 Public Class LoginAdmin
 
-    '======== untuk koneksi ==============
-    'Dim con As SqlConnection
-    'Dim cmd As SqlCommand
-    'Dim ad As SqlDataAdapter
-    'Dim dr As DataRow
-    'Public ds As DataSet
-    'Dim cb As SqlCommandBuilder
-    'Dim dc(0) As DataColumn
-    'Dim koneksi As SqlConnection
-    '=====================================
+#Region "Deklarasi Variabel"
+    '    '======== untuk koneksi ==============
+    '    Dim con As MySqlConnection
+    '    Dim cmd As MySqlCommand
+    '    Dim ad As MySqlDataAdapter
+    '    Dim dr As DataRow
+    '    Public ds As DataSet
+    '    Dim cb As MySqlCommandBuilder
+    '    Dim dc(0) As DataColumn
+    '    Dim koneksi As New MySqlConnection("Server=192.168.3.1; Port=3306; User Id=admin; Password=admin; Database=Laboratorium")
+    '    '=====================================
+#End Region
 
-#Region "Set Form"
+#Region "Form Load"
     Private Sub LoginAdmin_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         setcontrols()
-        
-        'Dim strKoneksi As String
-        'strKoneksi = "Data Source=ASUS-1025C\SQLEXPRESS; Initial Catalog = Laboratorium; Integrated Security=True"
-        'koneksi = (New SqlConnection(strKoneksi))
         'Try
         '    koneksi.Open()
         'Catch ex As Exception
         '    MessageBox.Show("Koneksi Gagal")
         'End Try
 
-        TxtID.Text = ""
-        TxtNama.Text = ""
-        TxtPassword.Text = ""
-        TxtID.Focus()
     End Sub
 
     Private Sub setcontrols()
 
         'Panel 3 Label Administrator
-        'BtnSignUp.Left = (Me.Width - BtnSignUp.Width - 10)
-        'BtnSignUp.Left = Me.Width / 1.1
         Panel3.Top = Panel3.Height * 1.8
         Panel3.Left = (Me.Width - Panel3.Width - 50) / 1.75
 
@@ -51,7 +46,6 @@ Public Class LoginAdmin
         LblPass.Left = LblPass.Width / 2
 
         'Panel Textbox'
-
         Panel2.Left = (Me.Width / 3) + Panel1.Left / 3
         Panel2.Top = Me.Height / 3
         Panel2.Height = Panel1.Height
@@ -65,11 +59,35 @@ Public Class LoginAdmin
         btnLogin.Left = (btnCancel.Left - btnCancel.Width) - 30
 
         Me.TopMost = True
+
+        BtnRegistrasi.Visible = False
+        TxtID.Text = ""
+        TxtNama.Text = ""
+        TxtPassword.Text = ""
+        TxtID.Focus()
     End Sub
+
 #End Region 'Set Form'
 
+#Region "Login"
     Private Sub btnLogin_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnLogin.Click
-        If TxtID.Text = "Admin" And TxtPassword.Text = "admin" Then
+        'Dim Sql As String
+        'Dim rdr As MySqlDataReader
+        'Sql = "SELECT NO_ID, Password FROM Admin WHERE NO_ID='" + TxtID.Text + "' AND Password='" + TxtPassword.Text + "'"
+        'cmd = New MySqlCommand(Sql, koneksi)
+        'rdr = cmd.ExecuteReader()
+        'If rdr.HasRows = True Then
+        '    HOME.Show()
+        '    Me.Hide()
+        'Else
+        '    MessageBox.Show("ID dan Password yang anda masukkan salah")
+        '    TxtID.Clear()
+        '    TxtPassword.Clear()
+        '    TxtID.Focus()
+        'End If
+
+
+        If TxtID.Text = "admin" And TxtPassword.Text = "admin" Then
             HOME.Show()
             Me.Hide()
         Else
@@ -78,13 +96,21 @@ Public Class LoginAdmin
             TxtPassword.Clear()
             TxtID.Focus()
         End If
-    End Sub
 
+    End Sub
+#End Region
+
+#Region "Cancel"
     Private Sub btnCancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancel.Click
         TxtID.Clear()
         TxtNama.Clear()
         TxtPassword.Clear()
         TxtID.Focus()
     End Sub
+#End Region
 
+    'Private Sub BtnRegistrasi_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnRegistrasi.Click
+    '    register.Show()
+    '    Me.Hide()
+    'End Sub
 End Class

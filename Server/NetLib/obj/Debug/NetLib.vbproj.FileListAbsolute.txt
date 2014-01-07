@@ -1,0 +1,24 @@
+F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Cek IP\NetLib\bin\Debug\NetLib.dll
+F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Cek IP\NetLib\bin\Debug\NetLib.pdb
+F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Cek IP\NetLib\bin\Debug\NetLib.xml
+F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Cek IP\NetLib\obj\Debug\NetLib.Resources.resources
+F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Cek IP\NetLib\obj\Debug\NetLib.vbproj.GenerateResource.Cache
+F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Cek IP\NetLib\obj\Debug\NetLib.dll
+F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Cek IP\NetLib\obj\Debug\NetLib.xml
+F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Cek IP\NetLib\obj\Debug\NetLib.pdb
+E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Cek IP\NetLib\bin\Debug\NetLib.dll
+E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Cek IP\NetLib\bin\Debug\NetLib.pdb
+E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Cek IP\NetLib\bin\Debug\NetLib.xml
+E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Cek IP\NetLib\obj\Debug\NetLib.Resources.resources
+E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Cek IP\NetLib\obj\Debug\NetLib.vbproj.GenerateResource.Cache
+E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Cek IP\NetLib\obj\Debug\NetLib.dll
+E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Cek IP\NetLib\obj\Debug\NetLib.xml
+E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Cek IP\NetLib\obj\Debug\NetLib.pdb
+E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\NetLib\bin\Debug\NetLib.dll
+E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\NetLib\bin\Debug\NetLib.pdb
+E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\NetLib\bin\Debug\NetLib.xml
+E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\NetLib\obj\Debug\NetLib.Resources.resources
+E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\NetLib\obj\Debug\NetLib.vbproj.GenerateResource.Cache
+E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\NetLib\obj\Debug\NetLib.dll
+E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\NetLib\obj\Debug\NetLib.xml
+E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\NetLib\obj\Debug\NetLib.pdb

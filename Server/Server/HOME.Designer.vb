@@ -29,72 +29,76 @@ Partial Class HOME
         Me.PanelHome = New System.Windows.Forms.Panel()
         Me.LblHome = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Kom60 = New System.Windows.Forms.CheckBox()
-        Me.Kom59 = New System.Windows.Forms.CheckBox()
-        Me.Kom58 = New System.Windows.Forms.CheckBox()
-        Me.Kom57 = New System.Windows.Forms.CheckBox()
-        Me.Kom56 = New System.Windows.Forms.CheckBox()
-        Me.Kom55 = New System.Windows.Forms.CheckBox()
-        Me.Kom54 = New System.Windows.Forms.CheckBox()
-        Me.Kom53 = New System.Windows.Forms.CheckBox()
-        Me.Kom52 = New System.Windows.Forms.CheckBox()
-        Me.Kom51 = New System.Windows.Forms.CheckBox()
-        Me.Kom40 = New System.Windows.Forms.CheckBox()
-        Me.Kom39 = New System.Windows.Forms.CheckBox()
-        Me.Kom38 = New System.Windows.Forms.CheckBox()
-        Me.Kom37 = New System.Windows.Forms.CheckBox()
-        Me.Kom36 = New System.Windows.Forms.CheckBox()
-        Me.Kom35 = New System.Windows.Forms.CheckBox()
-        Me.Kom34 = New System.Windows.Forms.CheckBox()
-        Me.Kom33 = New System.Windows.Forms.CheckBox()
-        Me.Kom32 = New System.Windows.Forms.CheckBox()
-        Me.Kom50 = New System.Windows.Forms.CheckBox()
-        Me.Kom49 = New System.Windows.Forms.CheckBox()
-        Me.Kom48 = New System.Windows.Forms.CheckBox()
-        Me.Kom47 = New System.Windows.Forms.CheckBox()
-        Me.Kom46 = New System.Windows.Forms.CheckBox()
-        Me.Kom45 = New System.Windows.Forms.CheckBox()
-        Me.Kom44 = New System.Windows.Forms.CheckBox()
-        Me.Kom43 = New System.Windows.Forms.CheckBox()
-        Me.Kom42 = New System.Windows.Forms.CheckBox()
-        Me.Kom41 = New System.Windows.Forms.CheckBox()
-        Me.Kom31 = New System.Windows.Forms.CheckBox()
-        Me.Kom30 = New System.Windows.Forms.CheckBox()
-        Me.Kom29 = New System.Windows.Forms.CheckBox()
-        Me.Kom28 = New System.Windows.Forms.CheckBox()
-        Me.Kom27 = New System.Windows.Forms.CheckBox()
-        Me.Kom26 = New System.Windows.Forms.CheckBox()
-        Me.Kom25 = New System.Windows.Forms.CheckBox()
-        Me.Kom24 = New System.Windows.Forms.CheckBox()
-        Me.Kom23 = New System.Windows.Forms.CheckBox()
-        Me.Kom22 = New System.Windows.Forms.CheckBox()
-        Me.Kom21 = New System.Windows.Forms.CheckBox()
-        Me.Kom20 = New System.Windows.Forms.CheckBox()
-        Me.Kom19 = New System.Windows.Forms.CheckBox()
-        Me.Kom18 = New System.Windows.Forms.CheckBox()
-        Me.Kom17 = New System.Windows.Forms.CheckBox()
-        Me.Kom16 = New System.Windows.Forms.CheckBox()
-        Me.Kom15 = New System.Windows.Forms.CheckBox()
-        Me.Kom14 = New System.Windows.Forms.CheckBox()
-        Me.Kom13 = New System.Windows.Forms.CheckBox()
-        Me.Kom12 = New System.Windows.Forms.CheckBox()
-        Me.Kom11 = New System.Windows.Forms.CheckBox()
-        Me.Kom10 = New System.Windows.Forms.CheckBox()
-        Me.Kom9 = New System.Windows.Forms.CheckBox()
-        Me.Kom8 = New System.Windows.Forms.CheckBox()
-        Me.Kom7 = New System.Windows.Forms.CheckBox()
-        Me.Kom6 = New System.Windows.Forms.CheckBox()
-        Me.Kom5 = New System.Windows.Forms.CheckBox()
-        Me.Kom4 = New System.Windows.Forms.CheckBox()
-        Me.Kom3 = New System.Windows.Forms.CheckBox()
-        Me.Kom2 = New System.Windows.Forms.CheckBox()
-        Me.Kom1 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox60 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox59 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox58 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox57 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox56 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox55 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox54 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox53 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox52 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox51 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox40 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox39 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox38 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox37 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox36 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox35 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox34 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox33 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox32 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox50 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox49 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox48 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox47 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox46 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox45 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox44 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox43 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox42 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox41 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox31 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox30 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox29 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox28 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox27 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox26 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox25 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox24 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox23 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox22 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox21 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox20 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox19 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox18 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox17 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox16 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox15 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox14 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox13 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox12 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox11 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox10 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox9 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox8 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox7 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox6 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox5 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox4 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox3 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
         Me.BtnShutdown = New System.Windows.Forms.Button()
         Me.BtnRestart = New System.Windows.Forms.Button()
-        Me.BtnPing = New System.Windows.Forms.Button()
+        Me.SignOut = New System.Windows.Forms.Button()
         Me.MetroLogout = New DevComponents.DotNetBar.Metro.MetroTileItem()
         Me.BtnLogOff = New System.Windows.Forms.Button()
         Me.PanelPerintah = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelHome.SuspendLayout()
@@ -115,11 +119,11 @@ Partial Class HOME
         'LblAdmin
         '
         Me.LblAdmin.AutoSize = True
-        Me.LblAdmin.Font = New System.Drawing.Font("Rockwell Condensed", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblAdmin.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblAdmin.ForeColor = System.Drawing.Color.White
         Me.LblAdmin.Location = New System.Drawing.Point(6, 26)
         Me.LblAdmin.Name = "LblAdmin"
-        Me.LblAdmin.Size = New System.Drawing.Size(76, 31)
+        Me.LblAdmin.Size = New System.Drawing.Size(90, 31)
         Me.LblAdmin.TabIndex = 18
         Me.LblAdmin.Text = "Nama"
         '
@@ -145,7 +149,7 @@ Partial Class HOME
         '
         Me.LblHome.BackColor = System.Drawing.Color.Transparent
         Me.LblHome.Cursor = System.Windows.Forms.Cursors.Default
-        Me.LblHome.Font = New System.Drawing.Font("Rockwell", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblHome.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblHome.ForeColor = System.Drawing.Color.White
         Me.LblHome.Location = New System.Drawing.Point(2, 3)
         Me.LblHome.Name = "LblHome"
@@ -156,737 +160,736 @@ Partial Class HOME
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.Kom60)
-        Me.GroupBox1.Controls.Add(Me.Kom59)
-        Me.GroupBox1.Controls.Add(Me.Kom58)
-        Me.GroupBox1.Controls.Add(Me.Kom57)
-        Me.GroupBox1.Controls.Add(Me.Kom56)
-        Me.GroupBox1.Controls.Add(Me.Kom55)
-        Me.GroupBox1.Controls.Add(Me.Kom54)
-        Me.GroupBox1.Controls.Add(Me.Kom53)
-        Me.GroupBox1.Controls.Add(Me.Kom52)
-        Me.GroupBox1.Controls.Add(Me.Kom51)
-        Me.GroupBox1.Controls.Add(Me.Kom40)
-        Me.GroupBox1.Controls.Add(Me.Kom39)
-        Me.GroupBox1.Controls.Add(Me.Kom38)
-        Me.GroupBox1.Controls.Add(Me.Kom37)
-        Me.GroupBox1.Controls.Add(Me.Kom36)
-        Me.GroupBox1.Controls.Add(Me.Kom35)
-        Me.GroupBox1.Controls.Add(Me.Kom34)
-        Me.GroupBox1.Controls.Add(Me.Kom33)
-        Me.GroupBox1.Controls.Add(Me.Kom32)
-        Me.GroupBox1.Controls.Add(Me.Kom50)
-        Me.GroupBox1.Controls.Add(Me.Kom49)
-        Me.GroupBox1.Controls.Add(Me.Kom48)
-        Me.GroupBox1.Controls.Add(Me.Kom47)
-        Me.GroupBox1.Controls.Add(Me.Kom46)
-        Me.GroupBox1.Controls.Add(Me.Kom45)
-        Me.GroupBox1.Controls.Add(Me.Kom44)
-        Me.GroupBox1.Controls.Add(Me.Kom43)
-        Me.GroupBox1.Controls.Add(Me.Kom42)
-        Me.GroupBox1.Controls.Add(Me.Kom41)
-        Me.GroupBox1.Controls.Add(Me.Kom31)
-        Me.GroupBox1.Controls.Add(Me.Kom30)
-        Me.GroupBox1.Controls.Add(Me.Kom29)
-        Me.GroupBox1.Controls.Add(Me.Kom28)
-        Me.GroupBox1.Controls.Add(Me.Kom27)
-        Me.GroupBox1.Controls.Add(Me.Kom26)
-        Me.GroupBox1.Controls.Add(Me.Kom25)
-        Me.GroupBox1.Controls.Add(Me.Kom24)
-        Me.GroupBox1.Controls.Add(Me.Kom23)
-        Me.GroupBox1.Controls.Add(Me.Kom22)
-        Me.GroupBox1.Controls.Add(Me.Kom21)
-        Me.GroupBox1.Controls.Add(Me.Kom20)
-        Me.GroupBox1.Controls.Add(Me.Kom19)
-        Me.GroupBox1.Controls.Add(Me.Kom18)
-        Me.GroupBox1.Controls.Add(Me.Kom17)
-        Me.GroupBox1.Controls.Add(Me.Kom16)
-        Me.GroupBox1.Controls.Add(Me.Kom15)
-        Me.GroupBox1.Controls.Add(Me.Kom14)
-        Me.GroupBox1.Controls.Add(Me.Kom13)
-        Me.GroupBox1.Controls.Add(Me.Kom12)
-        Me.GroupBox1.Controls.Add(Me.Kom11)
-        Me.GroupBox1.Controls.Add(Me.Kom10)
-        Me.GroupBox1.Controls.Add(Me.Kom9)
-        Me.GroupBox1.Controls.Add(Me.Kom8)
-        Me.GroupBox1.Controls.Add(Me.Kom7)
-        Me.GroupBox1.Controls.Add(Me.Kom6)
-        Me.GroupBox1.Controls.Add(Me.Kom5)
-        Me.GroupBox1.Controls.Add(Me.Kom4)
-        Me.GroupBox1.Controls.Add(Me.Kom3)
-        Me.GroupBox1.Controls.Add(Me.Kom2)
-        Me.GroupBox1.Controls.Add(Me.Kom1)
-        Me.GroupBox1.Location = New System.Drawing.Point(103, 120)
+        Me.GroupBox1.BackColor = System.Drawing.Color.DimGray
+        Me.GroupBox1.Controls.Add(Me.CheckBox1)
+        Me.GroupBox1.Controls.Add(Me.CheckBox60)
+        Me.GroupBox1.Controls.Add(Me.CheckBox59)
+        Me.GroupBox1.Controls.Add(Me.CheckBox58)
+        Me.GroupBox1.Controls.Add(Me.CheckBox57)
+        Me.GroupBox1.Controls.Add(Me.CheckBox56)
+        Me.GroupBox1.Controls.Add(Me.CheckBox55)
+        Me.GroupBox1.Controls.Add(Me.CheckBox54)
+        Me.GroupBox1.Controls.Add(Me.CheckBox53)
+        Me.GroupBox1.Controls.Add(Me.CheckBox52)
+        Me.GroupBox1.Controls.Add(Me.CheckBox51)
+        Me.GroupBox1.Controls.Add(Me.CheckBox40)
+        Me.GroupBox1.Controls.Add(Me.CheckBox39)
+        Me.GroupBox1.Controls.Add(Me.CheckBox38)
+        Me.GroupBox1.Controls.Add(Me.CheckBox37)
+        Me.GroupBox1.Controls.Add(Me.CheckBox36)
+        Me.GroupBox1.Controls.Add(Me.CheckBox35)
+        Me.GroupBox1.Controls.Add(Me.CheckBox34)
+        Me.GroupBox1.Controls.Add(Me.CheckBox33)
+        Me.GroupBox1.Controls.Add(Me.CheckBox32)
+        Me.GroupBox1.Controls.Add(Me.CheckBox50)
+        Me.GroupBox1.Controls.Add(Me.CheckBox49)
+        Me.GroupBox1.Controls.Add(Me.CheckBox48)
+        Me.GroupBox1.Controls.Add(Me.CheckBox47)
+        Me.GroupBox1.Controls.Add(Me.CheckBox46)
+        Me.GroupBox1.Controls.Add(Me.CheckBox45)
+        Me.GroupBox1.Controls.Add(Me.CheckBox44)
+        Me.GroupBox1.Controls.Add(Me.CheckBox43)
+        Me.GroupBox1.Controls.Add(Me.CheckBox42)
+        Me.GroupBox1.Controls.Add(Me.CheckBox41)
+        Me.GroupBox1.Controls.Add(Me.CheckBox31)
+        Me.GroupBox1.Controls.Add(Me.CheckBox30)
+        Me.GroupBox1.Controls.Add(Me.CheckBox29)
+        Me.GroupBox1.Controls.Add(Me.CheckBox28)
+        Me.GroupBox1.Controls.Add(Me.CheckBox27)
+        Me.GroupBox1.Controls.Add(Me.CheckBox26)
+        Me.GroupBox1.Controls.Add(Me.CheckBox25)
+        Me.GroupBox1.Controls.Add(Me.CheckBox24)
+        Me.GroupBox1.Controls.Add(Me.CheckBox23)
+        Me.GroupBox1.Controls.Add(Me.CheckBox22)
+        Me.GroupBox1.Controls.Add(Me.CheckBox21)
+        Me.GroupBox1.Controls.Add(Me.CheckBox20)
+        Me.GroupBox1.Controls.Add(Me.CheckBox19)
+        Me.GroupBox1.Controls.Add(Me.CheckBox18)
+        Me.GroupBox1.Controls.Add(Me.CheckBox17)
+        Me.GroupBox1.Controls.Add(Me.CheckBox16)
+        Me.GroupBox1.Controls.Add(Me.CheckBox15)
+        Me.GroupBox1.Controls.Add(Me.CheckBox14)
+        Me.GroupBox1.Controls.Add(Me.CheckBox13)
+        Me.GroupBox1.Controls.Add(Me.CheckBox12)
+        Me.GroupBox1.Controls.Add(Me.CheckBox11)
+        Me.GroupBox1.Controls.Add(Me.CheckBox10)
+        Me.GroupBox1.Controls.Add(Me.CheckBox9)
+        Me.GroupBox1.Controls.Add(Me.CheckBox8)
+        Me.GroupBox1.Controls.Add(Me.CheckBox7)
+        Me.GroupBox1.Controls.Add(Me.CheckBox6)
+        Me.GroupBox1.Controls.Add(Me.CheckBox5)
+        Me.GroupBox1.Controls.Add(Me.CheckBox4)
+        Me.GroupBox1.Controls.Add(Me.CheckBox3)
+        Me.GroupBox1.Controls.Add(Me.CheckBox2)
+        Me.GroupBox1.Location = New System.Drawing.Point(122, 119)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(778, 386)
         Me.GroupBox1.TabIndex = 68
         Me.GroupBox1.TabStop = False
         '
-        'Kom60
-        '
-        Me.Kom60.AutoSize = True
-        Me.Kom60.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom60.Location = New System.Drawing.Point(654, 340)
-        Me.Kom60.Name = "Kom60"
-        Me.Kom60.Size = New System.Drawing.Size(117, 22)
-        Me.Kom60.TabIndex = 123
-        Me.Kom60.Text = "Komputer 60"
-        Me.Kom60.UseVisualStyleBackColor = True
-        '
-        'Kom59
-        '
-        Me.Kom59.AutoSize = True
-        Me.Kom59.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom59.Location = New System.Drawing.Point(654, 306)
-        Me.Kom59.Name = "Kom59"
-        Me.Kom59.Size = New System.Drawing.Size(117, 22)
-        Me.Kom59.TabIndex = 122
-        Me.Kom59.Text = "Komputer 59"
-        Me.Kom59.UseVisualStyleBackColor = True
-        '
-        'Kom58
-        '
-        Me.Kom58.AutoSize = True
-        Me.Kom58.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom58.Location = New System.Drawing.Point(654, 271)
-        Me.Kom58.Name = "Kom58"
-        Me.Kom58.Size = New System.Drawing.Size(117, 22)
-        Me.Kom58.TabIndex = 121
-        Me.Kom58.Text = "Komputer 58"
-        Me.Kom58.UseVisualStyleBackColor = True
-        '
-        'Kom57
-        '
-        Me.Kom57.AutoSize = True
-        Me.Kom57.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom57.Location = New System.Drawing.Point(654, 239)
-        Me.Kom57.Name = "Kom57"
-        Me.Kom57.Size = New System.Drawing.Size(117, 22)
-        Me.Kom57.TabIndex = 120
-        Me.Kom57.Text = "Komputer 57"
-        Me.Kom57.UseVisualStyleBackColor = True
-        '
-        'Kom56
-        '
-        Me.Kom56.AutoSize = True
-        Me.Kom56.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom56.Location = New System.Drawing.Point(654, 207)
-        Me.Kom56.Name = "Kom56"
-        Me.Kom56.Size = New System.Drawing.Size(117, 22)
-        Me.Kom56.TabIndex = 119
-        Me.Kom56.Text = "Komputer 56"
-        Me.Kom56.UseVisualStyleBackColor = True
-        '
-        'Kom55
-        '
-        Me.Kom55.AutoSize = True
-        Me.Kom55.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom55.Location = New System.Drawing.Point(654, 175)
-        Me.Kom55.Name = "Kom55"
-        Me.Kom55.Size = New System.Drawing.Size(117, 22)
-        Me.Kom55.TabIndex = 118
-        Me.Kom55.Text = "Komputer 55"
-        Me.Kom55.UseVisualStyleBackColor = True
-        '
-        'Kom54
-        '
-        Me.Kom54.AutoSize = True
-        Me.Kom54.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom54.Location = New System.Drawing.Point(654, 138)
-        Me.Kom54.Name = "Kom54"
-        Me.Kom54.Size = New System.Drawing.Size(117, 22)
-        Me.Kom54.TabIndex = 117
-        Me.Kom54.Text = "Komputer 54"
-        Me.Kom54.UseVisualStyleBackColor = True
-        '
-        'Kom53
-        '
-        Me.Kom53.AutoSize = True
-        Me.Kom53.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom53.Location = New System.Drawing.Point(654, 100)
-        Me.Kom53.Name = "Kom53"
-        Me.Kom53.Size = New System.Drawing.Size(117, 22)
-        Me.Kom53.TabIndex = 116
-        Me.Kom53.Text = "Komputer 53"
-        Me.Kom53.UseVisualStyleBackColor = True
-        '
-        'Kom52
-        '
-        Me.Kom52.AutoSize = True
-        Me.Kom52.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom52.Location = New System.Drawing.Point(654, 64)
-        Me.Kom52.Name = "Kom52"
-        Me.Kom52.Size = New System.Drawing.Size(117, 22)
-        Me.Kom52.TabIndex = 115
-        Me.Kom52.Text = "Komputer 52"
-        Me.Kom52.UseVisualStyleBackColor = True
-        '
-        'Kom51
-        '
-        Me.Kom51.AutoSize = True
-        Me.Kom51.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom51.Location = New System.Drawing.Point(654, 25)
-        Me.Kom51.Name = "Kom51"
-        Me.Kom51.Size = New System.Drawing.Size(117, 22)
-        Me.Kom51.TabIndex = 114
-        Me.Kom51.Text = "Komputer 51"
-        Me.Kom51.UseVisualStyleBackColor = True
-        '
-        'Kom40
-        '
-        Me.Kom40.AutoSize = True
-        Me.Kom40.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom40.Location = New System.Drawing.Point(398, 340)
-        Me.Kom40.Name = "Kom40"
-        Me.Kom40.Size = New System.Drawing.Size(117, 22)
-        Me.Kom40.TabIndex = 113
-        Me.Kom40.Text = "Komputer 40"
-        Me.Kom40.UseVisualStyleBackColor = True
-        '
-        'Kom39
-        '
-        Me.Kom39.AutoSize = True
-        Me.Kom39.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom39.Location = New System.Drawing.Point(398, 306)
-        Me.Kom39.Name = "Kom39"
-        Me.Kom39.Size = New System.Drawing.Size(117, 22)
-        Me.Kom39.TabIndex = 112
-        Me.Kom39.Text = "Komputer 39"
-        Me.Kom39.UseVisualStyleBackColor = True
-        '
-        'Kom38
-        '
-        Me.Kom38.AutoSize = True
-        Me.Kom38.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom38.Location = New System.Drawing.Point(398, 271)
-        Me.Kom38.Name = "Kom38"
-        Me.Kom38.Size = New System.Drawing.Size(117, 22)
-        Me.Kom38.TabIndex = 111
-        Me.Kom38.Text = "Komputer 38"
-        Me.Kom38.UseVisualStyleBackColor = True
-        '
-        'Kom37
-        '
-        Me.Kom37.AutoSize = True
-        Me.Kom37.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom37.Location = New System.Drawing.Point(398, 239)
-        Me.Kom37.Name = "Kom37"
-        Me.Kom37.Size = New System.Drawing.Size(117, 22)
-        Me.Kom37.TabIndex = 110
-        Me.Kom37.Text = "Komputer 37"
-        Me.Kom37.UseVisualStyleBackColor = True
-        '
-        'Kom36
-        '
-        Me.Kom36.AutoSize = True
-        Me.Kom36.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom36.Location = New System.Drawing.Point(398, 207)
-        Me.Kom36.Name = "Kom36"
-        Me.Kom36.Size = New System.Drawing.Size(117, 22)
-        Me.Kom36.TabIndex = 109
-        Me.Kom36.Text = "Komputer 36"
-        Me.Kom36.UseVisualStyleBackColor = True
-        '
-        'Kom35
-        '
-        Me.Kom35.AutoSize = True
-        Me.Kom35.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom35.Location = New System.Drawing.Point(398, 175)
-        Me.Kom35.Name = "Kom35"
-        Me.Kom35.Size = New System.Drawing.Size(117, 22)
-        Me.Kom35.TabIndex = 108
-        Me.Kom35.Text = "Komputer 35"
-        Me.Kom35.UseVisualStyleBackColor = True
-        '
-        'Kom34
-        '
-        Me.Kom34.AutoSize = True
-        Me.Kom34.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom34.Location = New System.Drawing.Point(398, 138)
-        Me.Kom34.Name = "Kom34"
-        Me.Kom34.Size = New System.Drawing.Size(117, 22)
-        Me.Kom34.TabIndex = 107
-        Me.Kom34.Text = "Komputer 34"
-        Me.Kom34.UseVisualStyleBackColor = True
-        '
-        'Kom33
-        '
-        Me.Kom33.AutoSize = True
-        Me.Kom33.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom33.Location = New System.Drawing.Point(398, 100)
-        Me.Kom33.Name = "Kom33"
-        Me.Kom33.Size = New System.Drawing.Size(117, 22)
-        Me.Kom33.TabIndex = 106
-        Me.Kom33.Text = "Komputer 33"
-        Me.Kom33.UseVisualStyleBackColor = True
-        '
-        'Kom32
-        '
-        Me.Kom32.AutoSize = True
-        Me.Kom32.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom32.Location = New System.Drawing.Point(398, 64)
-        Me.Kom32.Name = "Kom32"
-        Me.Kom32.Size = New System.Drawing.Size(117, 22)
-        Me.Kom32.TabIndex = 105
-        Me.Kom32.Text = "Komputer 32"
-        Me.Kom32.UseVisualStyleBackColor = True
-        '
-        'Kom50
-        '
-        Me.Kom50.AutoSize = True
-        Me.Kom50.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom50.Location = New System.Drawing.Point(525, 340)
-        Me.Kom50.Name = "Kom50"
-        Me.Kom50.Size = New System.Drawing.Size(117, 22)
-        Me.Kom50.TabIndex = 104
-        Me.Kom50.Text = "Komputer 50"
-        Me.Kom50.UseVisualStyleBackColor = True
-        '
-        'Kom49
-        '
-        Me.Kom49.AutoSize = True
-        Me.Kom49.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom49.Location = New System.Drawing.Point(525, 306)
-        Me.Kom49.Name = "Kom49"
-        Me.Kom49.Size = New System.Drawing.Size(117, 22)
-        Me.Kom49.TabIndex = 103
-        Me.Kom49.Text = "Komputer 49"
-        Me.Kom49.UseVisualStyleBackColor = True
-        '
-        'Kom48
-        '
-        Me.Kom48.AutoSize = True
-        Me.Kom48.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom48.Location = New System.Drawing.Point(525, 271)
-        Me.Kom48.Name = "Kom48"
-        Me.Kom48.Size = New System.Drawing.Size(117, 22)
-        Me.Kom48.TabIndex = 102
-        Me.Kom48.Text = "Komputer 48"
-        Me.Kom48.UseVisualStyleBackColor = True
-        '
-        'Kom47
-        '
-        Me.Kom47.AutoSize = True
-        Me.Kom47.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom47.Location = New System.Drawing.Point(525, 239)
-        Me.Kom47.Name = "Kom47"
-        Me.Kom47.Size = New System.Drawing.Size(117, 22)
-        Me.Kom47.TabIndex = 101
-        Me.Kom47.Text = "Komputer 47"
-        Me.Kom47.UseVisualStyleBackColor = True
-        '
-        'Kom46
-        '
-        Me.Kom46.AutoSize = True
-        Me.Kom46.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom46.Location = New System.Drawing.Point(525, 207)
-        Me.Kom46.Name = "Kom46"
-        Me.Kom46.Size = New System.Drawing.Size(117, 22)
-        Me.Kom46.TabIndex = 100
-        Me.Kom46.Text = "Komputer 46"
-        Me.Kom46.UseVisualStyleBackColor = True
-        '
-        'Kom45
-        '
-        Me.Kom45.AutoSize = True
-        Me.Kom45.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom45.Location = New System.Drawing.Point(525, 175)
-        Me.Kom45.Name = "Kom45"
-        Me.Kom45.Size = New System.Drawing.Size(117, 22)
-        Me.Kom45.TabIndex = 99
-        Me.Kom45.Text = "Komputer 45"
-        Me.Kom45.UseVisualStyleBackColor = True
-        '
-        'Kom44
-        '
-        Me.Kom44.AutoSize = True
-        Me.Kom44.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom44.Location = New System.Drawing.Point(525, 138)
-        Me.Kom44.Name = "Kom44"
-        Me.Kom44.Size = New System.Drawing.Size(117, 22)
-        Me.Kom44.TabIndex = 98
-        Me.Kom44.Text = "Komputer 44"
-        Me.Kom44.UseVisualStyleBackColor = True
-        '
-        'Kom43
-        '
-        Me.Kom43.AutoSize = True
-        Me.Kom43.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom43.Location = New System.Drawing.Point(525, 100)
-        Me.Kom43.Name = "Kom43"
-        Me.Kom43.Size = New System.Drawing.Size(117, 22)
-        Me.Kom43.TabIndex = 97
-        Me.Kom43.Text = "Komputer 43"
-        Me.Kom43.UseVisualStyleBackColor = True
-        '
-        'Kom42
-        '
-        Me.Kom42.AutoSize = True
-        Me.Kom42.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom42.Location = New System.Drawing.Point(525, 64)
-        Me.Kom42.Name = "Kom42"
-        Me.Kom42.Size = New System.Drawing.Size(117, 22)
-        Me.Kom42.TabIndex = 96
-        Me.Kom42.Text = "Komputer 42"
-        Me.Kom42.UseVisualStyleBackColor = True
-        '
-        'Kom41
-        '
-        Me.Kom41.AutoSize = True
-        Me.Kom41.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom41.Location = New System.Drawing.Point(525, 25)
-        Me.Kom41.Name = "Kom41"
-        Me.Kom41.Size = New System.Drawing.Size(117, 22)
-        Me.Kom41.TabIndex = 95
-        Me.Kom41.Text = "Komputer 41"
-        Me.Kom41.UseVisualStyleBackColor = True
-        '
-        'Kom31
-        '
-        Me.Kom31.AutoSize = True
-        Me.Kom31.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom31.Location = New System.Drawing.Point(398, 25)
-        Me.Kom31.Name = "Kom31"
-        Me.Kom31.Size = New System.Drawing.Size(117, 22)
-        Me.Kom31.TabIndex = 94
-        Me.Kom31.Text = "Komputer 31"
-        Me.Kom31.UseVisualStyleBackColor = True
-        '
-        'Kom30
-        '
-        Me.Kom30.AutoSize = True
-        Me.Kom30.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom30.Location = New System.Drawing.Point(267, 340)
-        Me.Kom30.Name = "Kom30"
-        Me.Kom30.Size = New System.Drawing.Size(117, 22)
-        Me.Kom30.TabIndex = 93
-        Me.Kom30.Text = "Komputer 30"
-        Me.Kom30.UseVisualStyleBackColor = True
-        '
-        'Kom29
-        '
-        Me.Kom29.AutoSize = True
-        Me.Kom29.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom29.Location = New System.Drawing.Point(267, 306)
-        Me.Kom29.Name = "Kom29"
-        Me.Kom29.Size = New System.Drawing.Size(117, 22)
-        Me.Kom29.TabIndex = 92
-        Me.Kom29.Text = "Komputer 29"
-        Me.Kom29.UseVisualStyleBackColor = True
-        '
-        'Kom28
-        '
-        Me.Kom28.AutoSize = True
-        Me.Kom28.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom28.Location = New System.Drawing.Point(267, 271)
-        Me.Kom28.Name = "Kom28"
-        Me.Kom28.Size = New System.Drawing.Size(117, 22)
-        Me.Kom28.TabIndex = 91
-        Me.Kom28.Text = "Komputer 28"
-        Me.Kom28.UseVisualStyleBackColor = True
-        '
-        'Kom27
-        '
-        Me.Kom27.AutoSize = True
-        Me.Kom27.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom27.Location = New System.Drawing.Point(267, 239)
-        Me.Kom27.Name = "Kom27"
-        Me.Kom27.Size = New System.Drawing.Size(117, 22)
-        Me.Kom27.TabIndex = 90
-        Me.Kom27.Text = "Komputer 27"
-        Me.Kom27.UseVisualStyleBackColor = True
-        '
-        'Kom26
-        '
-        Me.Kom26.AutoSize = True
-        Me.Kom26.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom26.Location = New System.Drawing.Point(267, 207)
-        Me.Kom26.Name = "Kom26"
-        Me.Kom26.Size = New System.Drawing.Size(117, 22)
-        Me.Kom26.TabIndex = 89
-        Me.Kom26.Text = "Komputer 26"
-        Me.Kom26.UseVisualStyleBackColor = True
-        '
-        'Kom25
-        '
-        Me.Kom25.AutoSize = True
-        Me.Kom25.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom25.Location = New System.Drawing.Point(267, 175)
-        Me.Kom25.Name = "Kom25"
-        Me.Kom25.Size = New System.Drawing.Size(117, 22)
-        Me.Kom25.TabIndex = 88
-        Me.Kom25.Text = "Komputer 25"
-        Me.Kom25.UseVisualStyleBackColor = True
-        '
-        'Kom24
-        '
-        Me.Kom24.AutoSize = True
-        Me.Kom24.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom24.Location = New System.Drawing.Point(267, 138)
-        Me.Kom24.Name = "Kom24"
-        Me.Kom24.Size = New System.Drawing.Size(117, 22)
-        Me.Kom24.TabIndex = 87
-        Me.Kom24.Text = "Komputer 24"
-        Me.Kom24.UseVisualStyleBackColor = True
-        '
-        'Kom23
-        '
-        Me.Kom23.AutoSize = True
-        Me.Kom23.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom23.Location = New System.Drawing.Point(267, 100)
-        Me.Kom23.Name = "Kom23"
-        Me.Kom23.Size = New System.Drawing.Size(117, 22)
-        Me.Kom23.TabIndex = 86
-        Me.Kom23.Text = "Komputer 23"
-        Me.Kom23.UseVisualStyleBackColor = True
-        '
-        'Kom22
-        '
-        Me.Kom22.AutoSize = True
-        Me.Kom22.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom22.Location = New System.Drawing.Point(267, 64)
-        Me.Kom22.Name = "Kom22"
-        Me.Kom22.Size = New System.Drawing.Size(117, 22)
-        Me.Kom22.TabIndex = 85
-        Me.Kom22.Text = "Komputer 22"
-        Me.Kom22.UseVisualStyleBackColor = True
-        '
-        'Kom21
-        '
-        Me.Kom21.AutoSize = True
-        Me.Kom21.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom21.Location = New System.Drawing.Point(267, 25)
-        Me.Kom21.Name = "Kom21"
-        Me.Kom21.Size = New System.Drawing.Size(117, 22)
-        Me.Kom21.TabIndex = 84
-        Me.Kom21.Text = "Komputer 21"
-        Me.Kom21.UseVisualStyleBackColor = True
-        '
-        'Kom20
-        '
-        Me.Kom20.AutoSize = True
-        Me.Kom20.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom20.Location = New System.Drawing.Point(134, 340)
-        Me.Kom20.Name = "Kom20"
-        Me.Kom20.Size = New System.Drawing.Size(117, 22)
-        Me.Kom20.TabIndex = 83
-        Me.Kom20.Text = "Komputer 20"
-        Me.Kom20.UseVisualStyleBackColor = True
-        '
-        'Kom19
-        '
-        Me.Kom19.AutoSize = True
-        Me.Kom19.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom19.Location = New System.Drawing.Point(134, 306)
-        Me.Kom19.Name = "Kom19"
-        Me.Kom19.Size = New System.Drawing.Size(117, 22)
-        Me.Kom19.TabIndex = 82
-        Me.Kom19.Text = "Komputer 19"
-        Me.Kom19.UseVisualStyleBackColor = True
-        '
-        'Kom18
-        '
-        Me.Kom18.AutoSize = True
-        Me.Kom18.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom18.Location = New System.Drawing.Point(134, 271)
-        Me.Kom18.Name = "Kom18"
-        Me.Kom18.Size = New System.Drawing.Size(117, 22)
-        Me.Kom18.TabIndex = 81
-        Me.Kom18.Text = "Komputer 18"
-        Me.Kom18.UseVisualStyleBackColor = True
-        '
-        'Kom17
-        '
-        Me.Kom17.AutoSize = True
-        Me.Kom17.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom17.Location = New System.Drawing.Point(134, 239)
-        Me.Kom17.Name = "Kom17"
-        Me.Kom17.Size = New System.Drawing.Size(117, 22)
-        Me.Kom17.TabIndex = 80
-        Me.Kom17.Text = "Komputer 17"
-        Me.Kom17.UseVisualStyleBackColor = True
-        '
-        'Kom16
-        '
-        Me.Kom16.AutoSize = True
-        Me.Kom16.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom16.Location = New System.Drawing.Point(134, 207)
-        Me.Kom16.Name = "Kom16"
-        Me.Kom16.Size = New System.Drawing.Size(117, 22)
-        Me.Kom16.TabIndex = 79
-        Me.Kom16.Text = "Komputer 16"
-        Me.Kom16.UseVisualStyleBackColor = True
-        '
-        'Kom15
-        '
-        Me.Kom15.AutoSize = True
-        Me.Kom15.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom15.Location = New System.Drawing.Point(134, 175)
-        Me.Kom15.Name = "Kom15"
-        Me.Kom15.Size = New System.Drawing.Size(117, 22)
-        Me.Kom15.TabIndex = 78
-        Me.Kom15.Text = "Komputer 15"
-        Me.Kom15.UseVisualStyleBackColor = True
-        '
-        'Kom14
-        '
-        Me.Kom14.AutoSize = True
-        Me.Kom14.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom14.Location = New System.Drawing.Point(134, 138)
-        Me.Kom14.Name = "Kom14"
-        Me.Kom14.Size = New System.Drawing.Size(117, 22)
-        Me.Kom14.TabIndex = 77
-        Me.Kom14.Text = "Komputer 14"
-        Me.Kom14.UseVisualStyleBackColor = True
-        '
-        'Kom13
-        '
-        Me.Kom13.AutoSize = True
-        Me.Kom13.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom13.Location = New System.Drawing.Point(134, 100)
-        Me.Kom13.Name = "Kom13"
-        Me.Kom13.Size = New System.Drawing.Size(117, 22)
-        Me.Kom13.TabIndex = 76
-        Me.Kom13.Text = "Komputer 13"
-        Me.Kom13.UseVisualStyleBackColor = True
-        '
-        'Kom12
-        '
-        Me.Kom12.AutoSize = True
-        Me.Kom12.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom12.Location = New System.Drawing.Point(134, 64)
-        Me.Kom12.Name = "Kom12"
-        Me.Kom12.Size = New System.Drawing.Size(117, 22)
-        Me.Kom12.TabIndex = 75
-        Me.Kom12.Text = "Komputer 12"
-        Me.Kom12.UseVisualStyleBackColor = True
-        '
-        'Kom11
-        '
-        Me.Kom11.AutoSize = True
-        Me.Kom11.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom11.Location = New System.Drawing.Point(134, 25)
-        Me.Kom11.Name = "Kom11"
-        Me.Kom11.Size = New System.Drawing.Size(116, 22)
-        Me.Kom11.TabIndex = 74
-        Me.Kom11.Text = "Komputer 11"
-        Me.Kom11.UseVisualStyleBackColor = True
-        '
-        'Kom10
-        '
-        Me.Kom10.AutoSize = True
-        Me.Kom10.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom10.Location = New System.Drawing.Point(8, 340)
-        Me.Kom10.Name = "Kom10"
-        Me.Kom10.Size = New System.Drawing.Size(117, 22)
-        Me.Kom10.TabIndex = 73
-        Me.Kom10.Text = "Komputer 10"
-        Me.Kom10.UseVisualStyleBackColor = True
-        '
-        'Kom9
-        '
-        Me.Kom9.AutoSize = True
-        Me.Kom9.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom9.Location = New System.Drawing.Point(8, 306)
-        Me.Kom9.Name = "Kom9"
-        Me.Kom9.Size = New System.Drawing.Size(109, 22)
-        Me.Kom9.TabIndex = 72
-        Me.Kom9.Text = "Komputer 9"
-        Me.Kom9.UseVisualStyleBackColor = True
-        '
-        'Kom8
-        '
-        Me.Kom8.AutoSize = True
-        Me.Kom8.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom8.Location = New System.Drawing.Point(8, 271)
-        Me.Kom8.Name = "Kom8"
-        Me.Kom8.Size = New System.Drawing.Size(109, 22)
-        Me.Kom8.TabIndex = 71
-        Me.Kom8.Text = "Komputer 8"
-        Me.Kom8.UseVisualStyleBackColor = True
-        '
-        'Kom7
-        '
-        Me.Kom7.AutoSize = True
-        Me.Kom7.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom7.Location = New System.Drawing.Point(8, 239)
-        Me.Kom7.Name = "Kom7"
-        Me.Kom7.Size = New System.Drawing.Size(109, 22)
-        Me.Kom7.TabIndex = 70
-        Me.Kom7.Text = "Komputer 7"
-        Me.Kom7.UseVisualStyleBackColor = True
-        '
-        'Kom6
-        '
-        Me.Kom6.AutoSize = True
-        Me.Kom6.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom6.Location = New System.Drawing.Point(8, 207)
-        Me.Kom6.Name = "Kom6"
-        Me.Kom6.Size = New System.Drawing.Size(109, 22)
-        Me.Kom6.TabIndex = 69
-        Me.Kom6.Text = "Komputer 6"
-        Me.Kom6.UseVisualStyleBackColor = True
-        '
-        'Kom5
-        '
-        Me.Kom5.AutoSize = True
-        Me.Kom5.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom5.Location = New System.Drawing.Point(8, 175)
-        Me.Kom5.Name = "Kom5"
-        Me.Kom5.Size = New System.Drawing.Size(109, 22)
-        Me.Kom5.TabIndex = 68
-        Me.Kom5.Text = "Komputer 5"
-        Me.Kom5.UseVisualStyleBackColor = True
-        '
-        'Kom4
-        '
-        Me.Kom4.AutoSize = True
-        Me.Kom4.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom4.Location = New System.Drawing.Point(8, 138)
-        Me.Kom4.Name = "Kom4"
-        Me.Kom4.Size = New System.Drawing.Size(109, 22)
-        Me.Kom4.TabIndex = 67
-        Me.Kom4.Text = "Komputer 4"
-        Me.Kom4.UseVisualStyleBackColor = True
-        '
-        'Kom3
-        '
-        Me.Kom3.AutoSize = True
-        Me.Kom3.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom3.Location = New System.Drawing.Point(8, 100)
-        Me.Kom3.Name = "Kom3"
-        Me.Kom3.Size = New System.Drawing.Size(109, 22)
-        Me.Kom3.TabIndex = 66
-        Me.Kom3.Text = "Komputer 3"
-        Me.Kom3.UseVisualStyleBackColor = True
-        '
-        'Kom2
-        '
-        Me.Kom2.AutoSize = True
-        Me.Kom2.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom2.Location = New System.Drawing.Point(8, 64)
-        Me.Kom2.Name = "Kom2"
-        Me.Kom2.Size = New System.Drawing.Size(109, 22)
-        Me.Kom2.TabIndex = 65
-        Me.Kom2.Text = "Komputer 2"
-        Me.Kom2.UseVisualStyleBackColor = True
-        '
-        'Kom1
-        '
-        Me.Kom1.AutoSize = True
-        Me.Kom1.BackColor = System.Drawing.Color.DimGray
-        Me.Kom1.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Kom1.ForeColor = System.Drawing.Color.Black
-        Me.Kom1.Location = New System.Drawing.Point(8, 25)
-        Me.Kom1.Name = "Kom1"
-        Me.Kom1.Size = New System.Drawing.Size(109, 22)
-        Me.Kom1.TabIndex = 64
-        Me.Kom1.Text = "Komputer 1"
-        Me.Kom1.UseVisualStyleBackColor = False
+        'CheckBox1
+        '
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox1.Location = New System.Drawing.Point(8, 25)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(109, 22)
+        Me.CheckBox1.TabIndex = 124
+        Me.CheckBox1.Text = "Komputer 1"
+        Me.CheckBox1.UseVisualStyleBackColor = True
+        '
+        'CheckBox60
+        '
+        Me.CheckBox60.AutoSize = True
+        Me.CheckBox60.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox60.Location = New System.Drawing.Point(654, 340)
+        Me.CheckBox60.Name = "CheckBox60"
+        Me.CheckBox60.Size = New System.Drawing.Size(117, 22)
+        Me.CheckBox60.TabIndex = 123
+        Me.CheckBox60.Text = "Komputer 60"
+        Me.CheckBox60.UseVisualStyleBackColor = True
+        '
+        'CheckBox59
+        '
+        Me.CheckBox59.AutoSize = True
+        Me.CheckBox59.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox59.Location = New System.Drawing.Point(654, 306)
+        Me.CheckBox59.Name = "CheckBox59"
+        Me.CheckBox59.Size = New System.Drawing.Size(117, 22)
+        Me.CheckBox59.TabIndex = 122
+        Me.CheckBox59.Text = "Komputer 59"
+        Me.CheckBox59.UseVisualStyleBackColor = True
+        '
+        'CheckBox58
+        '
+        Me.CheckBox58.AutoSize = True
+        Me.CheckBox58.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox58.Location = New System.Drawing.Point(654, 271)
+        Me.CheckBox58.Name = "CheckBox58"
+        Me.CheckBox58.Size = New System.Drawing.Size(117, 22)
+        Me.CheckBox58.TabIndex = 121
+        Me.CheckBox58.Text = "Komputer 58"
+        Me.CheckBox58.UseVisualStyleBackColor = True
+        '
+        'CheckBox57
+        '
+        Me.CheckBox57.AutoSize = True
+        Me.CheckBox57.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox57.Location = New System.Drawing.Point(654, 239)
+        Me.CheckBox57.Name = "CheckBox57"
+        Me.CheckBox57.Size = New System.Drawing.Size(117, 22)
+        Me.CheckBox57.TabIndex = 120
+        Me.CheckBox57.Text = "Komputer 57"
+        Me.CheckBox57.UseVisualStyleBackColor = True
+        '
+        'CheckBox56
+        '
+        Me.CheckBox56.AutoSize = True
+        Me.CheckBox56.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox56.Location = New System.Drawing.Point(654, 207)
+        Me.CheckBox56.Name = "CheckBox56"
+        Me.CheckBox56.Size = New System.Drawing.Size(117, 22)
+        Me.CheckBox56.TabIndex = 119
+        Me.CheckBox56.Text = "Komputer 56"
+        Me.CheckBox56.UseVisualStyleBackColor = True
+        '
+        'CheckBox55
+        '
+        Me.CheckBox55.AutoSize = True
+        Me.CheckBox55.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox55.Location = New System.Drawing.Point(654, 175)
+        Me.CheckBox55.Name = "CheckBox55"
+        Me.CheckBox55.Size = New System.Drawing.Size(117, 22)
+        Me.CheckBox55.TabIndex = 118
+        Me.CheckBox55.Text = "Komputer 55"
+        Me.CheckBox55.UseVisualStyleBackColor = True
+        '
+        'CheckBox54
+        '
+        Me.CheckBox54.AutoSize = True
+        Me.CheckBox54.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox54.Location = New System.Drawing.Point(654, 138)
+        Me.CheckBox54.Name = "CheckBox54"
+        Me.CheckBox54.Size = New System.Drawing.Size(117, 22)
+        Me.CheckBox54.TabIndex = 117
+        Me.CheckBox54.Text = "Komputer 54"
+        Me.CheckBox54.UseVisualStyleBackColor = True
+        '
+        'CheckBox53
+        '
+        Me.CheckBox53.AutoSize = True
+        Me.CheckBox53.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox53.Location = New System.Drawing.Point(654, 100)
+        Me.CheckBox53.Name = "CheckBox53"
+        Me.CheckBox53.Size = New System.Drawing.Size(117, 22)
+        Me.CheckBox53.TabIndex = 116
+        Me.CheckBox53.Text = "Komputer 53"
+        Me.CheckBox53.UseVisualStyleBackColor = True
+        '
+        'CheckBox52
+        '
+        Me.CheckBox52.AutoSize = True
+        Me.CheckBox52.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox52.Location = New System.Drawing.Point(654, 64)
+        Me.CheckBox52.Name = "CheckBox52"
+        Me.CheckBox52.Size = New System.Drawing.Size(117, 22)
+        Me.CheckBox52.TabIndex = 115
+        Me.CheckBox52.Text = "Komputer 52"
+        Me.CheckBox52.UseVisualStyleBackColor = True
+        '
+        'CheckBox51
+        '
+        Me.CheckBox51.AutoSize = True
+        Me.CheckBox51.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox51.Location = New System.Drawing.Point(654, 25)
+        Me.CheckBox51.Name = "CheckBox51"
+        Me.CheckBox51.Size = New System.Drawing.Size(117, 22)
+        Me.CheckBox51.TabIndex = 114
+        Me.CheckBox51.Text = "Komputer 51"
+        Me.CheckBox51.UseVisualStyleBackColor = True
+        '
+        'CheckBox40
+        '
+        Me.CheckBox40.AutoSize = True
+        Me.CheckBox40.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox40.Location = New System.Drawing.Point(398, 340)
+        Me.CheckBox40.Name = "CheckBox40"
+        Me.CheckBox40.Size = New System.Drawing.Size(117, 22)
+        Me.CheckBox40.TabIndex = 113
+        Me.CheckBox40.Text = "Komputer 40"
+        Me.CheckBox40.UseVisualStyleBackColor = True
+        '
+        'CheckBox39
+        '
+        Me.CheckBox39.AutoSize = True
+        Me.CheckBox39.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox39.Location = New System.Drawing.Point(398, 306)
+        Me.CheckBox39.Name = "CheckBox39"
+        Me.CheckBox39.Size = New System.Drawing.Size(117, 22)
+        Me.CheckBox39.TabIndex = 112
+        Me.CheckBox39.Text = "Komputer 39"
+        Me.CheckBox39.UseVisualStyleBackColor = True
+        '
+        'CheckBox38
+        '
+        Me.CheckBox38.AutoSize = True
+        Me.CheckBox38.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox38.Location = New System.Drawing.Point(398, 271)
+        Me.CheckBox38.Name = "CheckBox38"
+        Me.CheckBox38.Size = New System.Drawing.Size(117, 22)
+        Me.CheckBox38.TabIndex = 111
+        Me.CheckBox38.Text = "Komputer 38"
+        Me.CheckBox38.UseVisualStyleBackColor = True
+        '
+        'CheckBox37
+        '
+        Me.CheckBox37.AutoSize = True
+        Me.CheckBox37.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox37.Location = New System.Drawing.Point(398, 239)
+        Me.CheckBox37.Name = "CheckBox37"
+        Me.CheckBox37.Size = New System.Drawing.Size(117, 22)
+        Me.CheckBox37.TabIndex = 110
+        Me.CheckBox37.Text = "Komputer 37"
+        Me.CheckBox37.UseVisualStyleBackColor = True
+        '
+        'CheckBox36
+        '
+        Me.CheckBox36.AutoSize = True
+        Me.CheckBox36.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox36.Location = New System.Drawing.Point(398, 207)
+        Me.CheckBox36.Name = "CheckBox36"
+        Me.CheckBox36.Size = New System.Drawing.Size(117, 22)
+        Me.CheckBox36.TabIndex = 109
+        Me.CheckBox36.Text = "Komputer 36"
+        Me.CheckBox36.UseVisualStyleBackColor = True
+        '
+        'CheckBox35
+        '
+        Me.CheckBox35.AutoSize = True
+        Me.CheckBox35.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox35.Location = New System.Drawing.Point(398, 175)
+        Me.CheckBox35.Name = "CheckBox35"
+        Me.CheckBox35.Size = New System.Drawing.Size(117, 22)
+        Me.CheckBox35.TabIndex = 108
+        Me.CheckBox35.Text = "Komputer 35"
+        Me.CheckBox35.UseVisualStyleBackColor = True
+        '
+        'CheckBox34
+        '
+        Me.CheckBox34.AutoSize = True
+        Me.CheckBox34.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox34.Location = New System.Drawing.Point(398, 138)
+        Me.CheckBox34.Name = "CheckBox34"
+        Me.CheckBox34.Size = New System.Drawing.Size(117, 22)
+        Me.CheckBox34.TabIndex = 107
+        Me.CheckBox34.Text = "Komputer 34"
+        Me.CheckBox34.UseVisualStyleBackColor = True
+        '
+        'CheckBox33
+        '
+        Me.CheckBox33.AutoSize = True
+        Me.CheckBox33.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox33.Location = New System.Drawing.Point(398, 100)
+        Me.CheckBox33.Name = "CheckBox33"
+        Me.CheckBox33.Size = New System.Drawing.Size(117, 22)
+        Me.CheckBox33.TabIndex = 106
+        Me.CheckBox33.Text = "Komputer 33"
+        Me.CheckBox33.UseVisualStyleBackColor = True
+        '
+        'CheckBox32
+        '
+        Me.CheckBox32.AutoSize = True
+        Me.CheckBox32.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox32.Location = New System.Drawing.Point(398, 64)
+        Me.CheckBox32.Name = "CheckBox32"
+        Me.CheckBox32.Size = New System.Drawing.Size(117, 22)
+        Me.CheckBox32.TabIndex = 105
+        Me.CheckBox32.Text = "Komputer 32"
+        Me.CheckBox32.UseVisualStyleBackColor = True
+        '
+        'CheckBox50
+        '
+        Me.CheckBox50.AutoSize = True
+        Me.CheckBox50.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox50.Location = New System.Drawing.Point(525, 340)
+        Me.CheckBox50.Name = "CheckBox50"
+        Me.CheckBox50.Size = New System.Drawing.Size(117, 22)
+        Me.CheckBox50.TabIndex = 104
+        Me.CheckBox50.Text = "Komputer 50"
+        Me.CheckBox50.UseVisualStyleBackColor = True
+        '
+        'CheckBox49
+        '
+        Me.CheckBox49.AutoSize = True
+        Me.CheckBox49.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox49.Location = New System.Drawing.Point(525, 306)
+        Me.CheckBox49.Name = "CheckBox49"
+        Me.CheckBox49.Size = New System.Drawing.Size(117, 22)
+        Me.CheckBox49.TabIndex = 103
+        Me.CheckBox49.Text = "Komputer 49"
+        Me.CheckBox49.UseVisualStyleBackColor = True
+        '
+        'CheckBox48
+        '
+        Me.CheckBox48.AutoSize = True
+        Me.CheckBox48.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox48.Location = New System.Drawing.Point(525, 271)
+        Me.CheckBox48.Name = "CheckBox48"
+        Me.CheckBox48.Size = New System.Drawing.Size(117, 22)
+        Me.CheckBox48.TabIndex = 102
+        Me.CheckBox48.Text = "Komputer 48"
+        Me.CheckBox48.UseVisualStyleBackColor = True
+        '
+        'CheckBox47
+        '
+        Me.CheckBox47.AutoSize = True
+        Me.CheckBox47.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox47.Location = New System.Drawing.Point(525, 239)
+        Me.CheckBox47.Name = "CheckBox47"
+        Me.CheckBox47.Size = New System.Drawing.Size(117, 22)
+        Me.CheckBox47.TabIndex = 101
+        Me.CheckBox47.Text = "Komputer 47"
+        Me.CheckBox47.UseVisualStyleBackColor = True
+        '
+        'CheckBox46
+        '
+        Me.CheckBox46.AutoSize = True
+        Me.CheckBox46.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox46.Location = New System.Drawing.Point(525, 207)
+        Me.CheckBox46.Name = "CheckBox46"
+        Me.CheckBox46.Size = New System.Drawing.Size(117, 22)
+        Me.CheckBox46.TabIndex = 100
+        Me.CheckBox46.Text = "Komputer 46"
+        Me.CheckBox46.UseVisualStyleBackColor = True
+        '
+        'CheckBox45
+        '
+        Me.CheckBox45.AutoSize = True
+        Me.CheckBox45.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox45.Location = New System.Drawing.Point(525, 175)
+        Me.CheckBox45.Name = "CheckBox45"
+        Me.CheckBox45.Size = New System.Drawing.Size(117, 22)
+        Me.CheckBox45.TabIndex = 99
+        Me.CheckBox45.Text = "Komputer 45"
+        Me.CheckBox45.UseVisualStyleBackColor = True
+        '
+        'CheckBox44
+        '
+        Me.CheckBox44.AutoSize = True
+        Me.CheckBox44.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox44.Location = New System.Drawing.Point(525, 138)
+        Me.CheckBox44.Name = "CheckBox44"
+        Me.CheckBox44.Size = New System.Drawing.Size(117, 22)
+        Me.CheckBox44.TabIndex = 98
+        Me.CheckBox44.Text = "Komputer 44"
+        Me.CheckBox44.UseVisualStyleBackColor = True
+        '
+        'CheckBox43
+        '
+        Me.CheckBox43.AutoSize = True
+        Me.CheckBox43.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox43.Location = New System.Drawing.Point(525, 100)
+        Me.CheckBox43.Name = "CheckBox43"
+        Me.CheckBox43.Size = New System.Drawing.Size(117, 22)
+        Me.CheckBox43.TabIndex = 97
+        Me.CheckBox43.Text = "Komputer 43"
+        Me.CheckBox43.UseVisualStyleBackColor = True
+        '
+        'CheckBox42
+        '
+        Me.CheckBox42.AutoSize = True
+        Me.CheckBox42.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox42.Location = New System.Drawing.Point(525, 64)
+        Me.CheckBox42.Name = "CheckBox42"
+        Me.CheckBox42.Size = New System.Drawing.Size(117, 22)
+        Me.CheckBox42.TabIndex = 96
+        Me.CheckBox42.Text = "Komputer 42"
+        Me.CheckBox42.UseVisualStyleBackColor = True
+        '
+        'CheckBox41
+        '
+        Me.CheckBox41.AutoSize = True
+        Me.CheckBox41.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox41.Location = New System.Drawing.Point(525, 25)
+        Me.CheckBox41.Name = "CheckBox41"
+        Me.CheckBox41.Size = New System.Drawing.Size(117, 22)
+        Me.CheckBox41.TabIndex = 95
+        Me.CheckBox41.Text = "Komputer 41"
+        Me.CheckBox41.UseVisualStyleBackColor = True
+        '
+        'CheckBox31
+        '
+        Me.CheckBox31.AutoSize = True
+        Me.CheckBox31.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox31.Location = New System.Drawing.Point(398, 25)
+        Me.CheckBox31.Name = "CheckBox31"
+        Me.CheckBox31.Size = New System.Drawing.Size(117, 22)
+        Me.CheckBox31.TabIndex = 94
+        Me.CheckBox31.Text = "Komputer 31"
+        Me.CheckBox31.UseVisualStyleBackColor = True
+        '
+        'CheckBox30
+        '
+        Me.CheckBox30.AutoSize = True
+        Me.CheckBox30.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox30.Location = New System.Drawing.Point(267, 340)
+        Me.CheckBox30.Name = "CheckBox30"
+        Me.CheckBox30.Size = New System.Drawing.Size(117, 22)
+        Me.CheckBox30.TabIndex = 93
+        Me.CheckBox30.Text = "Komputer 30"
+        Me.CheckBox30.UseVisualStyleBackColor = True
+        '
+        'CheckBox29
+        '
+        Me.CheckBox29.AutoSize = True
+        Me.CheckBox29.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox29.Location = New System.Drawing.Point(267, 306)
+        Me.CheckBox29.Name = "CheckBox29"
+        Me.CheckBox29.Size = New System.Drawing.Size(117, 22)
+        Me.CheckBox29.TabIndex = 92
+        Me.CheckBox29.Text = "Komputer 29"
+        Me.CheckBox29.UseVisualStyleBackColor = True
+        '
+        'CheckBox28
+        '
+        Me.CheckBox28.AutoSize = True
+        Me.CheckBox28.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox28.Location = New System.Drawing.Point(267, 271)
+        Me.CheckBox28.Name = "CheckBox28"
+        Me.CheckBox28.Size = New System.Drawing.Size(117, 22)
+        Me.CheckBox28.TabIndex = 91
+        Me.CheckBox28.Text = "Komputer 28"
+        Me.CheckBox28.UseVisualStyleBackColor = True
+        '
+        'CheckBox27
+        '
+        Me.CheckBox27.AutoSize = True
+        Me.CheckBox27.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox27.Location = New System.Drawing.Point(267, 239)
+        Me.CheckBox27.Name = "CheckBox27"
+        Me.CheckBox27.Size = New System.Drawing.Size(117, 22)
+        Me.CheckBox27.TabIndex = 90
+        Me.CheckBox27.Text = "Komputer 27"
+        Me.CheckBox27.UseVisualStyleBackColor = True
+        '
+        'CheckBox26
+        '
+        Me.CheckBox26.AutoSize = True
+        Me.CheckBox26.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox26.Location = New System.Drawing.Point(267, 207)
+        Me.CheckBox26.Name = "CheckBox26"
+        Me.CheckBox26.Size = New System.Drawing.Size(117, 22)
+        Me.CheckBox26.TabIndex = 89
+        Me.CheckBox26.Text = "Komputer 26"
+        Me.CheckBox26.UseVisualStyleBackColor = True
+        '
+        'CheckBox25
+        '
+        Me.CheckBox25.AutoSize = True
+        Me.CheckBox25.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox25.Location = New System.Drawing.Point(267, 175)
+        Me.CheckBox25.Name = "CheckBox25"
+        Me.CheckBox25.Size = New System.Drawing.Size(117, 22)
+        Me.CheckBox25.TabIndex = 88
+        Me.CheckBox25.Text = "Komputer 25"
+        Me.CheckBox25.UseVisualStyleBackColor = True
+        '
+        'CheckBox24
+        '
+        Me.CheckBox24.AutoSize = True
+        Me.CheckBox24.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox24.Location = New System.Drawing.Point(267, 138)
+        Me.CheckBox24.Name = "CheckBox24"
+        Me.CheckBox24.Size = New System.Drawing.Size(117, 22)
+        Me.CheckBox24.TabIndex = 87
+        Me.CheckBox24.Text = "Komputer 24"
+        Me.CheckBox24.UseVisualStyleBackColor = True
+        '
+        'CheckBox23
+        '
+        Me.CheckBox23.AutoSize = True
+        Me.CheckBox23.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox23.Location = New System.Drawing.Point(267, 100)
+        Me.CheckBox23.Name = "CheckBox23"
+        Me.CheckBox23.Size = New System.Drawing.Size(117, 22)
+        Me.CheckBox23.TabIndex = 86
+        Me.CheckBox23.Text = "Komputer 23"
+        Me.CheckBox23.UseVisualStyleBackColor = True
+        '
+        'CheckBox22
+        '
+        Me.CheckBox22.AutoSize = True
+        Me.CheckBox22.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox22.Location = New System.Drawing.Point(267, 64)
+        Me.CheckBox22.Name = "CheckBox22"
+        Me.CheckBox22.Size = New System.Drawing.Size(117, 22)
+        Me.CheckBox22.TabIndex = 85
+        Me.CheckBox22.Text = "Komputer 22"
+        Me.CheckBox22.UseVisualStyleBackColor = True
+        '
+        'CheckBox21
+        '
+        Me.CheckBox21.AutoSize = True
+        Me.CheckBox21.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox21.Location = New System.Drawing.Point(267, 25)
+        Me.CheckBox21.Name = "CheckBox21"
+        Me.CheckBox21.Size = New System.Drawing.Size(117, 22)
+        Me.CheckBox21.TabIndex = 84
+        Me.CheckBox21.Text = "Komputer 21"
+        Me.CheckBox21.UseVisualStyleBackColor = True
+        '
+        'CheckBox20
+        '
+        Me.CheckBox20.AutoSize = True
+        Me.CheckBox20.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox20.Location = New System.Drawing.Point(134, 340)
+        Me.CheckBox20.Name = "CheckBox20"
+        Me.CheckBox20.Size = New System.Drawing.Size(117, 22)
+        Me.CheckBox20.TabIndex = 83
+        Me.CheckBox20.Text = "Komputer 20"
+        Me.CheckBox20.UseVisualStyleBackColor = True
+        '
+        'CheckBox19
+        '
+        Me.CheckBox19.AutoSize = True
+        Me.CheckBox19.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox19.Location = New System.Drawing.Point(134, 306)
+        Me.CheckBox19.Name = "CheckBox19"
+        Me.CheckBox19.Size = New System.Drawing.Size(117, 22)
+        Me.CheckBox19.TabIndex = 82
+        Me.CheckBox19.Text = "Komputer 19"
+        Me.CheckBox19.UseVisualStyleBackColor = True
+        '
+        'CheckBox18
+        '
+        Me.CheckBox18.AutoSize = True
+        Me.CheckBox18.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox18.Location = New System.Drawing.Point(134, 271)
+        Me.CheckBox18.Name = "CheckBox18"
+        Me.CheckBox18.Size = New System.Drawing.Size(117, 22)
+        Me.CheckBox18.TabIndex = 81
+        Me.CheckBox18.Text = "Komputer 18"
+        Me.CheckBox18.UseVisualStyleBackColor = True
+        '
+        'CheckBox17
+        '
+        Me.CheckBox17.AutoSize = True
+        Me.CheckBox17.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox17.Location = New System.Drawing.Point(134, 239)
+        Me.CheckBox17.Name = "CheckBox17"
+        Me.CheckBox17.Size = New System.Drawing.Size(117, 22)
+        Me.CheckBox17.TabIndex = 80
+        Me.CheckBox17.Text = "Komputer 17"
+        Me.CheckBox17.UseVisualStyleBackColor = True
+        '
+        'CheckBox16
+        '
+        Me.CheckBox16.AutoSize = True
+        Me.CheckBox16.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox16.Location = New System.Drawing.Point(134, 207)
+        Me.CheckBox16.Name = "CheckBox16"
+        Me.CheckBox16.Size = New System.Drawing.Size(117, 22)
+        Me.CheckBox16.TabIndex = 79
+        Me.CheckBox16.Text = "Komputer 16"
+        Me.CheckBox16.UseVisualStyleBackColor = True
+        '
+        'CheckBox15
+        '
+        Me.CheckBox15.AutoSize = True
+        Me.CheckBox15.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox15.Location = New System.Drawing.Point(134, 175)
+        Me.CheckBox15.Name = "CheckBox15"
+        Me.CheckBox15.Size = New System.Drawing.Size(117, 22)
+        Me.CheckBox15.TabIndex = 78
+        Me.CheckBox15.Text = "Komputer 15"
+        Me.CheckBox15.UseVisualStyleBackColor = True
+        '
+        'CheckBox14
+        '
+        Me.CheckBox14.AutoSize = True
+        Me.CheckBox14.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox14.Location = New System.Drawing.Point(134, 138)
+        Me.CheckBox14.Name = "CheckBox14"
+        Me.CheckBox14.Size = New System.Drawing.Size(117, 22)
+        Me.CheckBox14.TabIndex = 77
+        Me.CheckBox14.Text = "Komputer 14"
+        Me.CheckBox14.UseVisualStyleBackColor = True
+        '
+        'CheckBox13
+        '
+        Me.CheckBox13.AutoSize = True
+        Me.CheckBox13.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox13.Location = New System.Drawing.Point(134, 100)
+        Me.CheckBox13.Name = "CheckBox13"
+        Me.CheckBox13.Size = New System.Drawing.Size(117, 22)
+        Me.CheckBox13.TabIndex = 76
+        Me.CheckBox13.Text = "Komputer 13"
+        Me.CheckBox13.UseVisualStyleBackColor = True
+        '
+        'CheckBox12
+        '
+        Me.CheckBox12.AutoSize = True
+        Me.CheckBox12.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox12.Location = New System.Drawing.Point(134, 64)
+        Me.CheckBox12.Name = "CheckBox12"
+        Me.CheckBox12.Size = New System.Drawing.Size(117, 22)
+        Me.CheckBox12.TabIndex = 75
+        Me.CheckBox12.Text = "Komputer 12"
+        Me.CheckBox12.UseVisualStyleBackColor = True
+        '
+        'CheckBox11
+        '
+        Me.CheckBox11.AutoSize = True
+        Me.CheckBox11.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox11.Location = New System.Drawing.Point(134, 25)
+        Me.CheckBox11.Name = "CheckBox11"
+        Me.CheckBox11.Size = New System.Drawing.Size(116, 22)
+        Me.CheckBox11.TabIndex = 74
+        Me.CheckBox11.Text = "Komputer 11"
+        Me.CheckBox11.UseVisualStyleBackColor = True
+        '
+        'CheckBox10
+        '
+        Me.CheckBox10.AutoSize = True
+        Me.CheckBox10.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox10.Location = New System.Drawing.Point(8, 340)
+        Me.CheckBox10.Name = "CheckBox10"
+        Me.CheckBox10.Size = New System.Drawing.Size(117, 22)
+        Me.CheckBox10.TabIndex = 73
+        Me.CheckBox10.Text = "Komputer 10"
+        Me.CheckBox10.UseVisualStyleBackColor = True
+        '
+        'CheckBox9
+        '
+        Me.CheckBox9.AutoSize = True
+        Me.CheckBox9.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox9.Location = New System.Drawing.Point(8, 306)
+        Me.CheckBox9.Name = "CheckBox9"
+        Me.CheckBox9.Size = New System.Drawing.Size(109, 22)
+        Me.CheckBox9.TabIndex = 72
+        Me.CheckBox9.Text = "Komputer 9"
+        Me.CheckBox9.UseVisualStyleBackColor = True
+        '
+        'CheckBox8
+        '
+        Me.CheckBox8.AutoSize = True
+        Me.CheckBox8.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox8.Location = New System.Drawing.Point(8, 271)
+        Me.CheckBox8.Name = "CheckBox8"
+        Me.CheckBox8.Size = New System.Drawing.Size(109, 22)
+        Me.CheckBox8.TabIndex = 71
+        Me.CheckBox8.Text = "Komputer 8"
+        Me.CheckBox8.UseVisualStyleBackColor = True
+        '
+        'CheckBox7
+        '
+        Me.CheckBox7.AutoSize = True
+        Me.CheckBox7.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox7.Location = New System.Drawing.Point(8, 239)
+        Me.CheckBox7.Name = "CheckBox7"
+        Me.CheckBox7.Size = New System.Drawing.Size(109, 22)
+        Me.CheckBox7.TabIndex = 70
+        Me.CheckBox7.Text = "Komputer 7"
+        Me.CheckBox7.UseVisualStyleBackColor = True
+        '
+        'CheckBox6
+        '
+        Me.CheckBox6.AutoSize = True
+        Me.CheckBox6.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox6.Location = New System.Drawing.Point(8, 207)
+        Me.CheckBox6.Name = "CheckBox6"
+        Me.CheckBox6.Size = New System.Drawing.Size(109, 22)
+        Me.CheckBox6.TabIndex = 69
+        Me.CheckBox6.Text = "Komputer 6"
+        Me.CheckBox6.UseVisualStyleBackColor = True
+        '
+        'CheckBox5
+        '
+        Me.CheckBox5.AutoSize = True
+        Me.CheckBox5.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox5.Location = New System.Drawing.Point(8, 175)
+        Me.CheckBox5.Name = "CheckBox5"
+        Me.CheckBox5.Size = New System.Drawing.Size(109, 22)
+        Me.CheckBox5.TabIndex = 68
+        Me.CheckBox5.Text = "Komputer 5"
+        Me.CheckBox5.UseVisualStyleBackColor = True
+        '
+        'CheckBox4
+        '
+        Me.CheckBox4.AutoSize = True
+        Me.CheckBox4.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox4.Location = New System.Drawing.Point(8, 138)
+        Me.CheckBox4.Name = "CheckBox4"
+        Me.CheckBox4.Size = New System.Drawing.Size(109, 22)
+        Me.CheckBox4.TabIndex = 67
+        Me.CheckBox4.Text = "Komputer 4"
+        Me.CheckBox4.UseVisualStyleBackColor = True
+        '
+        'CheckBox3
+        '
+        Me.CheckBox3.AutoSize = True
+        Me.CheckBox3.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox3.Location = New System.Drawing.Point(8, 100)
+        Me.CheckBox3.Name = "CheckBox3"
+        Me.CheckBox3.Size = New System.Drawing.Size(109, 22)
+        Me.CheckBox3.TabIndex = 66
+        Me.CheckBox3.Text = "Komputer 3"
+        Me.CheckBox3.UseVisualStyleBackColor = True
+        '
+        'CheckBox2
+        '
+        Me.CheckBox2.AutoSize = True
+        Me.CheckBox2.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox2.Location = New System.Drawing.Point(8, 64)
+        Me.CheckBox2.Name = "CheckBox2"
+        Me.CheckBox2.Size = New System.Drawing.Size(109, 22)
+        Me.CheckBox2.TabIndex = 65
+        Me.CheckBox2.Text = "Komputer 2"
+        Me.CheckBox2.UseVisualStyleBackColor = True
         '
         'BtnShutdown
         '
-        Me.BtnShutdown.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.BtnShutdown.BackColor = System.Drawing.Color.DarkRed
         Me.BtnShutdown.BackgroundImage = CType(resources.GetObject("BtnShutdown.BackgroundImage"), System.Drawing.Image)
         Me.BtnShutdown.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.BtnShutdown.Cursor = System.Windows.Forms.Cursors.Hand
@@ -895,16 +898,16 @@ Partial Class HOME
         Me.BtnShutdown.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red
         Me.BtnShutdown.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.BtnShutdown.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.BtnShutdown.Location = New System.Drawing.Point(64, 18)
+        Me.BtnShutdown.Location = New System.Drawing.Point(102, 6)
         Me.BtnShutdown.Name = "BtnShutdown"
         Me.BtnShutdown.Padding = New System.Windows.Forms.Padding(10)
-        Me.BtnShutdown.Size = New System.Drawing.Size(113, 104)
+        Me.BtnShutdown.Size = New System.Drawing.Size(75, 71)
         Me.BtnShutdown.TabIndex = 74
         Me.BtnShutdown.UseVisualStyleBackColor = False
         '
         'BtnRestart
         '
-        Me.BtnRestart.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.BtnRestart.BackColor = System.Drawing.Color.Green
         Me.BtnRestart.BackgroundImage = CType(resources.GetObject("BtnRestart.BackgroundImage"), System.Drawing.Image)
         Me.BtnRestart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.BtnRestart.Cursor = System.Windows.Forms.Cursors.Hand
@@ -913,30 +916,30 @@ Partial Class HOME
         Me.BtnRestart.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red
         Me.BtnRestart.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.BtnRestart.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.BtnRestart.Location = New System.Drawing.Point(247, 18)
+        Me.BtnRestart.Location = New System.Drawing.Point(259, 6)
         Me.BtnRestart.Name = "BtnRestart"
         Me.BtnRestart.Padding = New System.Windows.Forms.Padding(10)
-        Me.BtnRestart.Size = New System.Drawing.Size(113, 104)
+        Me.BtnRestart.Size = New System.Drawing.Size(75, 71)
         Me.BtnRestart.TabIndex = 73
         Me.BtnRestart.UseVisualStyleBackColor = False
         '
-        'BtnPing
+        'SignOut
         '
-        Me.BtnPing.BackColor = System.Drawing.Color.DeepSkyBlue
-        Me.BtnPing.BackgroundImage = CType(resources.GetObject("BtnPing.BackgroundImage"), System.Drawing.Image)
-        Me.BtnPing.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BtnPing.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BtnPing.FlatAppearance.BorderColor = System.Drawing.Color.Black
-        Me.BtnPing.FlatAppearance.BorderSize = 5
-        Me.BtnPing.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red
-        Me.BtnPing.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.BtnPing.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.BtnPing.Location = New System.Drawing.Point(618, 18)
-        Me.BtnPing.Name = "BtnPing"
-        Me.BtnPing.Padding = New System.Windows.Forms.Padding(10)
-        Me.BtnPing.Size = New System.Drawing.Size(113, 104)
-        Me.BtnPing.TabIndex = 72
-        Me.BtnPing.UseVisualStyleBackColor = False
+        Me.SignOut.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.SignOut.BackgroundImage = CType(resources.GetObject("SignOut.BackgroundImage"), System.Drawing.Image)
+        Me.SignOut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.SignOut.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.SignOut.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.SignOut.FlatAppearance.BorderSize = 5
+        Me.SignOut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red
+        Me.SignOut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.SignOut.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.SignOut.Location = New System.Drawing.Point(566, 6)
+        Me.SignOut.Name = "SignOut"
+        Me.SignOut.Padding = New System.Windows.Forms.Padding(10)
+        Me.SignOut.Size = New System.Drawing.Size(75, 71)
+        Me.SignOut.TabIndex = 72
+        Me.SignOut.UseVisualStyleBackColor = False
         '
         'MetroLogout
         '
@@ -955,7 +958,7 @@ Partial Class HOME
         '
         'BtnLogOff
         '
-        Me.BtnLogOff.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.BtnLogOff.BackColor = System.Drawing.Color.DodgerBlue
         Me.BtnLogOff.BackgroundImage = CType(resources.GetObject("BtnLogOff.BackgroundImage"), System.Drawing.Image)
         Me.BtnLogOff.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.BtnLogOff.Cursor = System.Windows.Forms.Cursors.Hand
@@ -964,34 +967,83 @@ Partial Class HOME
         Me.BtnLogOff.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red
         Me.BtnLogOff.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.BtnLogOff.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.BtnLogOff.Location = New System.Drawing.Point(434, 18)
+        Me.BtnLogOff.Location = New System.Drawing.Point(412, 6)
         Me.BtnLogOff.Name = "BtnLogOff"
         Me.BtnLogOff.Padding = New System.Windows.Forms.Padding(10)
-        Me.BtnLogOff.Size = New System.Drawing.Size(113, 104)
+        Me.BtnLogOff.Size = New System.Drawing.Size(75, 71)
         Me.BtnLogOff.TabIndex = 75
         Me.BtnLogOff.UseVisualStyleBackColor = False
         '
         'PanelPerintah
         '
         Me.PanelPerintah.Controls.Add(Me.BtnShutdown)
-        Me.PanelPerintah.Controls.Add(Me.BtnPing)
+        Me.PanelPerintah.Controls.Add(Me.SignOut)
         Me.PanelPerintah.Controls.Add(Me.BtnLogOff)
         Me.PanelPerintah.Controls.Add(Me.BtnRestart)
-        Me.PanelPerintah.Location = New System.Drawing.Point(103, 543)
+        Me.PanelPerintah.Location = New System.Drawing.Point(122, 511)
         Me.PanelPerintah.Name = "PanelPerintah"
-        Me.PanelPerintah.Size = New System.Drawing.Size(778, 138)
+        Me.PanelPerintah.Size = New System.Drawing.Size(778, 87)
         Me.PanelPerintah.TabIndex = 76
+        '
+        'Label1
+        '
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.SystemColors.Info
+        Me.Label1.Location = New System.Drawing.Point(384, 70)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(177, 46)
+        Me.Label1.TabIndex = 76
+        Me.Label1.Text = "SHUTDOWN"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label2
+        '
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.SystemColors.Info
+        Me.Label2.Location = New System.Drawing.Point(384, 70)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(177, 46)
+        Me.Label2.TabIndex = 77
+        Me.Label2.Text = "RESTART"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label3
+        '
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.SystemColors.Info
+        Me.Label3.Location = New System.Drawing.Point(384, 70)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(177, 46)
+        Me.Label3.TabIndex = 78
+        Me.Label3.Text = "LOG OFF"
+        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label4
+        '
+        Me.Label4.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.SystemColors.Info
+        Me.Label4.Location = New System.Drawing.Point(366, 70)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(224, 46)
+        Me.Label4.TabIndex = 79
+        Me.Label4.Text = "ADMIN SIGN OUT"
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'HOME
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DimGray
-        Me.ClientSize = New System.Drawing.Size(1312, 710)
+        Me.ClientSize = New System.Drawing.Size(1147, 662)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PanelPerintah)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.PanelHome)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "HOME"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel1.ResumeLayout(False)
@@ -1011,70 +1063,74 @@ Partial Class HOME
     Friend WithEvents PanelHome As System.Windows.Forms.Panel
     Friend WithEvents LblHome As System.Windows.Forms.Label
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
-    Friend WithEvents Kom60 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom59 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom58 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom57 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom56 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom55 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom54 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom53 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom52 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom51 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom40 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom39 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom38 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom37 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom36 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom35 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom34 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom33 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom32 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom50 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom49 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom48 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom47 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom46 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom45 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom44 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom43 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom42 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom41 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom31 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom30 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom29 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom28 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom27 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom26 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom25 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom24 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom23 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom22 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom21 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom20 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom19 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom18 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom17 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom16 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom15 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom14 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom13 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom12 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom11 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom10 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom9 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom8 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom7 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom6 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom5 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom4 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom3 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom2 As System.Windows.Forms.CheckBox
-    Friend WithEvents Kom1 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox60 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox59 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox58 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox57 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox56 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox55 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox54 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox53 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox52 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox51 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox40 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox39 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox38 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox37 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox36 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox35 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox34 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox33 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox32 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox50 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox49 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox48 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox47 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox46 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox45 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox44 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox43 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox42 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox41 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox31 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox30 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox29 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox28 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox27 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox26 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox25 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox24 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox23 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox22 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox21 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox20 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox19 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox18 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox17 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox16 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox15 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox14 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox13 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox12 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox11 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox10 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox9 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox8 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox7 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox6 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox5 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox4 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox3 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox2 As System.Windows.Forms.CheckBox
     Friend WithEvents BtnShutdown As System.Windows.Forms.Button
     Friend WithEvents BtnRestart As System.Windows.Forms.Button
-    Friend WithEvents BtnPing As System.Windows.Forms.Button
+    Friend WithEvents SignOut As System.Windows.Forms.Button
     Friend WithEvents MetroLogout As DevComponents.DotNetBar.Metro.MetroTileItem
     Friend WithEvents BtnLogOff As System.Windows.Forms.Button
     Friend WithEvents PanelPerintah As System.Windows.Forms.Panel
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
 End Class
