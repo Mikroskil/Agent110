@@ -130,23 +130,6 @@ F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server
 F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Server\obj\x86\Debug\Server.exe
 F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Server\obj\x86\Debug\Server.xml
 F:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Server\obj\x86\Debug\Server.pdb
-E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Server\obj\x86\Debug\Server.vbprojResolveAssemblyReference.cache
-E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Server\obj\x86\Debug\Server.HOME.resources
-E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Server\obj\x86\Debug\Server.LoginAdmin.resources
-E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Server\obj\x86\Debug\Server.Resources.resources
-E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Server\obj\x86\Debug\Server.register.resources
-E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Server\obj\x86\Debug\Server.Shutdown.resources
-E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Server\obj\x86\Debug\Server.vbproj.GenerateResource.Cache
-E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Server\bin\Debug\Server.exe
-E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Server\bin\Debug\Server.pdb
-E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Server\bin\Debug\Server.xml
-E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Server\bin\Debug\MySql.Data.dll
-E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Server\bin\Debug\NetLib.dll
-E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Server\bin\Debug\NetLib.pdb
-E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Server\bin\Debug\NetLib.xml
-E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Server\obj\x86\Debug\Server.exe
-E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Server\obj\x86\Debug\Server.xml
-E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Server\obj\x86\Debug\Server.pdb
 D:\KuliAh\PKTI\Server\Server\bin\Debug\Server.exe
 D:\KuliAh\PKTI\Server\Server\bin\Debug\Server.pdb
 D:\KuliAh\PKTI\Server\Server\bin\Debug\Server.xml
@@ -180,3 +163,20 @@ E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\AGENT1
 E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\AGENT110\Server\Server\obj\x86\Debug\Server.exe
 E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\AGENT110\Server\Server\obj\x86\Debug\Server.xml
 E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\AGENT110\Server\Server\obj\x86\Debug\Server.pdb
+E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Server\bin\Debug\Server.exe
+E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Server\bin\Debug\Server.pdb
+E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Server\bin\Debug\Server.xml
+E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Server\bin\Debug\MySql.Data.dll
+E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Server\bin\Debug\NetLib.dll
+E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Server\bin\Debug\NetLib.pdb
+E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Server\bin\Debug\NetLib.xml
+E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Server\obj\x86\Debug\Server.vbprojResolveAssemblyReference.cache
+E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Server\obj\x86\Debug\Server.HOME.resources
+E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Server\obj\x86\Debug\Server.LoginAdmin.resources
+E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Server\obj\x86\Debug\Server.Resources.resources
+E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Server\obj\x86\Debug\Server.register.resources
+E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Server\obj\x86\Debug\Server.Shutdown.resources
+E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Server\obj\x86\Debug\Server.vbproj.GenerateResource.Cache
+E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Server\obj\x86\Debug\Server.exe
+E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Server\obj\x86\Debug\Server.xml
+E:\ShareFolder\Google Drive\Bahan Kuliah\Semester VII\PKTI\Project\Backup\Server\Server\obj\x86\Debug\Server.pdb

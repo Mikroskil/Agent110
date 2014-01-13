@@ -107,18 +107,12 @@ Public Class main
                     trLogOff.Start()
                 End If
 
-                'Dim returnedData As String = "###OK###" '& " From Server"
-                'Dim sw As New StreamWriter(ns)
-                'sw.WriteLine(returnedData)
-                'sw.Flush()
                 sr.Close()
-                'sw.Close()
                 ns.Close()
                 tcpCli.Close()
             Loop
             tcpList.Stop()
         Catch ex As Exception
-            'error
             LISTENING = False
         End Try
     End Sub
@@ -126,70 +120,17 @@ Public Class main
 
 #Region "Kirim Status Client ke Server"
     Sub KirimStatus()
-        ''Mendapatkan alamat IP_Client dari database untuk di kirim ke Server
-        'Dim Sql As String
-        'Dim cmd As MySqlCommand
-        'Dim rdr As MySqlDataReader
-        Try
-            'host yang dipakai adalah host server'
-            Dim host As String = "192.168.3.254"
-            Dim port As Integer = 8000
-            Dim tcpCli As New TcpClient(host, port)
-            Dim ns As NetworkStream = tcpCli.GetStream
-            Dim sw As New StreamWriter(ns)
-            sw.WriteLine(ipAddress.ToString)
-            sw.Flush()
-            sw.Close()
-            ns.Close()
-            MessageBox.Show("Komputer Telah Terkoneksi ke Server")
-
-        Catch ex As Exception
-            MessageBox.Show("Gagal melempar ip ke server")
-        End Try
-
-        ''Tahap pencocokan alamat IP di komputer client dengan IP yang tersimpan di database
-
-        'Try
-        '    Dim mysqlconn As New MySqlConnection("Server=192.168.3.1; Port=3306; User Id=admin; Password=admin; Database=Laboratorium")
-        '    mysqlconn.Open()
-        '    Sql = "SELECT * FROM client WHERE IP_Address='" + ipAddress.ToString + "'"
-        '    cmd = New MySqlCommand(Sql, mysqlconn)
-        '    rdr = cmd.ExecuteReader()
-
-        '    If rdr.HasRows = True Then
-        '        Dim host As String = "192.168.3.2"
-        '        Dim port As Integer = 3306
-
-        '        Dim tcpCli As New TcpClient(host, port)
-        '        Dim ns As NetworkStream = tcpCli.GetStream
-
-        '        Dim sw As New StreamWriter(ns)
-        '        sw.WriteLine(ipAddress.ToString)
-        '        sw.Flush()
-
+        'host yang dipakai adalah host server'
+        Dim host As String = "192.168.3.254"
+        Dim port As Integer = 8000
+        Dim tcpCli As New TcpClient(host, port)
+        Dim ns As NetworkStream = tcpCli.GetStream
+        Dim sw As New StreamWriter(ns)
+        sw.WriteLine(ipAddress.ToString)
+        sw.Flush()
+        sw.Close()
+        ns.Close()
         '        MessageBox.Show("Komputer Telah Terkoneksi ke Server")
-
-        '        'Dim sr As New StreamReader(ns)
-        '        'Dim result As String = sr.ReadLine()
-        '        'If result = "###OK###" Then
-        '        'MsgBox("Operasi Sukses", MsgBoxStyle.Information)
-        '        'End If
-
-        '        'sw.Close()
-        '        'ns.Close()
-
-        '        'Try
-
-        '        'Catch ex As Exception
-        '        '    MsgBox(ex.Message)
-        '        'End Try
-        '    Else
-        '        MessageBox.Show("Alamat IP Client dengan Database Tidak Cocok ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        '    End If
-        'Catch ex As Exception
-        '    MessageBox.Show("Koneksi Gagal !!")
-        'End Try
-
     End Sub
 #End Region
 
@@ -207,6 +148,8 @@ Public Class main
 
         Catch ex As Exception
             MessageBox.Show("Koneksi Gagal...")
+            splash.Show()
+            Me.Hide()
         End Try
 
     End Sub
@@ -238,6 +181,9 @@ Public Class main
 
 #Region "Cancel Button & Kembali Ke Splash"
     Private Sub Cancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancel.Click
+        txtNoKomputer.Clear()
+        txtPass.Clear()
+        txtNoKomputer.Focus()
         splash.Show()
         Me.Close()
     End Sub
@@ -304,6 +250,9 @@ Public Class main
 
 #Region "Sign UP"
     Private Sub BtnSignUp_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnSignUp.Click
+        txtNoKomputer.Clear()
+        txtPass.Clear()
+        txtNoKomputer.Focus()
         Register.Show()
         Me.Close()
     End Sub

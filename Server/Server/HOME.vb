@@ -21,7 +21,6 @@ Public Class HOME
 #Region "Kumpulan Sub Function"
     Private Sub ShutdownPingComplete(ByVal s As Object, ByVal ev As NetScanCompletedEventArgs)
         If ev.Reply.Status = IPStatus.Success Then
-            'Dim li As New String({ev.Reply.Address.ToString(), ev.Reply.RoundtripTime.ToString(CultureInfo.InvariantCulture)})
             Dim port As Integer = 8000
             Dim tcpCli As TcpClient
             Dim ns As NetworkStream
@@ -42,7 +41,6 @@ Public Class HOME
 
     Private Sub RebootPingComplete(ByVal s As Object, ByVal ev As NetScanCompletedEventArgs)
         If ev.Reply.Status = IPStatus.Success Then
-            'Dim li As New String({ev.Reply.Address.ToString(), ev.Reply.RoundtripTime.ToString(CultureInfo.InvariantCulture)})
             Dim port As Integer = 8000
             Dim tcpCli As TcpClient
             Dim ns As NetworkStream
@@ -63,7 +61,6 @@ Public Class HOME
 
     Private Sub LogOffPingComplete(ByVal s As Object, ByVal ev As NetScanCompletedEventArgs)
         If ev.Reply.Status = IPStatus.Success Then
-            'Dim li As New String({ev.Reply.Address.ToString(), ev.Reply.RoundtripTime.ToString(CultureInfo.InvariantCulture)})
             Dim port As Integer = 8000
             Dim tcpCli As TcpClient
             Dim ns As NetworkStream

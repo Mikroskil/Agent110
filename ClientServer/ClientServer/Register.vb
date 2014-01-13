@@ -59,10 +59,11 @@ Public Class Register
         Submit.Left = (Panel3.Width / 3) + 20
         Me.TopMost = True
     End Sub
-#End Region 'Set Form
+#End Region
 
 #Region "Cancel Button"
     Private Sub Cancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+        kosong()
         splash.Show()
         Me.Close()
     End Sub
